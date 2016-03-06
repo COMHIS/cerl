@@ -22,7 +22,7 @@ tab <- cbind(tab, total = rowSums(tab))
 ```
 
 
-We have `r sum(tab)` documents with country and original gatherings information.
+We have `r sum(tab)` documents with country and original gatherings information. We have `r sum(!df$gatherings.original == "NA")` documents with original gatherings information but no country information.
 
 ```{r docsizes-2, echo=FALSE, message=FALSE, warning=FALSE}
 kable(tab, caption = "Gatherings x countries title counts")
@@ -32,7 +32,7 @@ kable(tab, caption = "Gatherings x countries title counts")
 
 ### Selected gatherings across time; by country
 
-```{r docsizes-3, echo=FALSE, message=FALSE, warning=FALSE, fig.width=10, fig.height=8}
+```{r docsizes-3, echo=FALSE, message=FALSE, warning=FALSE, fig.width=8, fig.height=7}
 
 nmin <- 2000
 top.gatherings <- setdiff(names(which(table(df$gatherings.original) > nmin)), "NA")

@@ -11,7 +11,7 @@ output: markdown_document
 
 
 
-We have 1.47348 &times; 10<sup>5</sup> documents with country and original gatherings information.
+We have 1.47348 &times; 10<sup>5</sup> documents with country and original gatherings information. We have 1209764 documents with original gatherings information but no country information.
 
 
 |       | Argentina| Austria| Barbados| Belgium| Canada| Czech| Denmark| England| Estonia| Europe| Finland| France| Germany| Guernesey| Haiti| Hungary| India| Ireland| Italy| Jamaica| Latvia| Lithuania| Netherlands| Poland| Portugal| Russia| Scotland| Spain| Sweden| Switzerland| USA|   NA| total|
