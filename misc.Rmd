@@ -1,0 +1,114 @@
+Paper consumption
+
+```{r summaryTop10publisherstimelinepaper, fig.height=30, fig.width=10, echo=FALSE, warning=FALSE}
+
+# Calculate paper consumption for publishers
+field <- "publisher"
+dfs <- df
+
+dfs$field <- dfs[[field]]
+df2 <- dfs %>%
+    group_by(field) %>%
+    summarize(paper.consumption.km2 = sum(paper.consumption.km2, na.rm = TRUE), n = n()) %>%
+    arrange(desc(paper.consumption.km2))
+
+# Pick top paper consumers
+tops <- as.character(df2$field[1:10])
+
+# Get data for plotting
+dfs <- filter(df, field %in% tops & publication_decade > 1450) %>%
+       group_by(field, publication_decade) %>%
+    summarize(paper.consumption.km2 = sum(paper.consumption.km2, na.rm = TRUE), n = n()) 
+
+p <- ggplot(dfs, aes(x = publication_decade, y = paper.consumption.km2, fill = field)) +
+       geom_bar(stat = "identity", position = "stack") +
+       xlab("Publication decade") +
+       ylab("Paper (km2)") +
+       scale_fill_grey() +
+       guides(fill = guide_legend("field")) +
+       ggtitle("Paper consumption timeline")
+print(p)
+```
+
+Document dimension histogram (surface area). Few document sizes dominate publishing.
+
+```{r summary-surfacearea, fig.height=8, fig.width=10, echo=FALSE, warning=FALSE, message=FALSE}
+p <- ggplot(df, aes(x = area))
+#bw <- diff(range(na.omit(df$area)))/30
+p <- p + geom_histogram() 
+p <- p + xlab("Document surface area (log10)")
+p <- p + ggtitle("Document dimension (surface area)")
+p <- p + scale_x_log10()
+print(p)
+```
+
+
+
+
+### Life span of uniquely identified top authors
+
+Ordered by productivity (number of documents))
+
+```{r, summaryauthorslife, echo=FALSE, message=FALSE, warning=FALSE, fig.width=10, fig.height=10}
+a <- rev(rev(sort(table(df$author_unique)))[1:ntop])
+dfa <- df[, c("author_unique", "author_birth", "author_death")]
+dfa <- filter(dfa, !is.na(author_unique) & (author_unique %in% names(a)))
+dfa <- dfa[!duplicated(dfa), ]
+dfa <- dfa[match(names(a), dfa$author_unique),]
+dfa <- arrange(dfa, author_birth)
+# Order authors by birth year
+dfa$author_unique <- factor(dfa$author_unique, levels = dfa$author_unique)
+dfa$index <- 1:nrow(dfa)
+
+p <- ggplot(dfa)
+p <- p + geom_segment(aes(y = author_unique, yend = author_unique, x = author_birth, xend = author_death), size = 2) 
+p <- p + theme(axis.text.y = element_text(size = 9))
+p <- p + xlab("Author life span (year)") + ylab("")
+print(p)
+```
+
+top10 <- names(sort(table(df$author_unique), decreasing = TRUE))[1:10]
+dfs <- filter(df, author_unique %in% top10)
+dfs <- group_by(dfs, author_unique, publication_year) %>% summarize(ndoc = n())
+p <- ggplot(dfs, aes(x = publication_year, y = ndoc)) 
+p <- p + geom_bar(stat = "identity") 
+p <- p + facet_grid(author_unique ~ .)
+p <- p + ggtitle("Number of documents per year for top-10 titlecount authors")
+print(p)
+
+# --------------------------------------------------
+
+
+Paper consumption
+
+```{r summaryTop10authorstimelinepaper, fig.height=30, fig.width=10, echo=FALSE}
+# Calculate paper consumption for authors
+df2 <- df %>%
+    group_by(author_unique) %>%
+    summarize(paper.consumption.km2 = sum(paper.consumption.km2, na.rm = TRUE), n = n()) 
+# Pick top-10 paper authors
+top10 <- na.omit(as.character(df2[order(df2$paper.consumption.km2, decreasing = TRUE), ]$author_unique))[1:10]
+dfs <- filter(df, author_unique %in% top10)
+dfs <- group_by(dfs, author_unique, publication_year) %>%
+    summarize(paper.consumption.km2 = sum(paper.consumption.km2, na.rm = TRUE), n = n()) 
+p <- ggplot(dfs, aes(x = publication_year, y = paper.consumption.km2)) 
+p <- p + geom_bar(stat = "identity") 
+p <- p + facet_grid(author_unique ~ .)
+p <- p + ggtitle("Paper comsumption per year for top-10 paper authors")
+print(p)
+```
+
+
+
+Title count
+
+```{r summaryTop10publisherstimeline, fig.height=30, fig.width=10, echo=FALSE, warning=FALSE}
+top10 <- na.omit(names(sort(table(df$publisher), decreasing = TRUE)))[1:10]
+dfs <- filter(df, publisher %in% top10)
+dfs <- group_by(dfs, publisher, publication_year) %>% summarize(ndoc = n())
+p <- ggplot(dfs, aes(x = publication_year, y = ndoc)) 
+p <- p + geom_bar(stat = "identity") 
+p <- p + facet_grid(publisher ~ .)
+p <- p + ggtitle("Number of documents per year for top-10 titlecount publishers")
+print(p)
+```

@@ -1,0 +1,7 @@
+*.Rds
+*~
+*.RData
+.Rhistory
+*.csv
+README2
+summary.R
