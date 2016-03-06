@@ -84,11 +84,6 @@ Multi-volume documents average page counts are given per volume.
 
 Here we use the original data only:
 
-
-```
-## Error in eval(expr, envir, enclos): object 'mean.height.original' not found
-```
-
 ![plot of chunk summaryavedimstime](figure/summaryavedimstime-1.png)
 
 
