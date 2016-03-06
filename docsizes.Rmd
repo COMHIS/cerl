@@ -32,7 +32,7 @@ kable(tab, caption = "Gatherings x countries title counts")
 
 ### Selected gatherings across time; by country
 
-```{r docsizes-3, echo=FALSE, message=FALSE, warning=FALSE, fig.width=8, fig.height=7}
+```{r docsizes-3, echo=FALSE, message=FALSE, warning=FALSE, fig.width=8, fig.height=5}
 
 nmin <- 2000
 top.gatherings <- setdiff(names(which(table(df$gatherings.original) > nmin)), "NA")
