@@ -49,7 +49,7 @@ df3 <- df2 %>% group_by(gatherings.original, publication_decade, country) %>%
 # Select specific gatherings
 for (sel.gatherings in top.gatherings) {
   # .. and countries that have enough docs ..
-  top.countries <- names(which(sort(sapply(split(mydf$n, mydf$country), sum)) > 20))
+  top.countries <- names(which(sort(sapply(split(df3$n, df3$country), sum)) > 100))
   mydf <- df3 %>% filter(gatherings.original == sel.gatherings & country %in% top.countries)
   p <- ggplot()
   p <- p + geom_point(data = mydf, aes(x = publication_decade, y = mean.height.original, size = n, group = country, color = country))
