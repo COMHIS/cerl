@@ -34,8 +34,8 @@ df.preprocessed.orig <- df
 
 print("Generic summaries") # Markdown
 df <- df.preprocessed <- df.preprocessed.orig
-sf <- generate_summaryfiles()
-# load_all("../bibliographica/"); sf <- generate_summaryfiles(summaries = c("gender", "topic", "size"))
+#sf <- generate_summaryfiles()
+load_all("../bibliographica/"); sf <- generate_summaryfiles(summaries = c("gender", "topic", "size"))
 
 # ---------------------------------
 
