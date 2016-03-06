@@ -15,6 +15,8 @@ library(knitr)
 # Set global parameters
 timespan <- c(1460, 1830)
 datafile <- "cerl.Rds"
+ntop <- 20
+author <- "Leo Lahti"
 output.folder <- "output.tables/"
 
 # ---------------------------------
@@ -32,8 +34,8 @@ df.preprocessed.orig <- df
 
 print("Generic summaries") # Markdown
 df <- df.preprocessed <- df.preprocessed.orig
-author <- "Leo Lahti"
 sf <- generate_summaryfiles()
+# load_all("../bibliographica/"); sf <- generate_summaryfiles(summaries = c("gender", "topic", "size"))
 
 # ---------------------------------
 
