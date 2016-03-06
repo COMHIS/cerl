@@ -10,10 +10,7 @@ output: markdown_document
 
 ```{r docsizes-1, echo=FALSE, message=FALSE, warning=FALSE}
 # only include gatherings with sufficiently many documents
-nmin <- 2000
-top.gatherings <- names(which(table(df$gatherings.original) > nmin))
 df1 <- filter(df, !is.na(gatherings.original) & (!is.na(height.original) | !is.na(width.original))) %>%
-       #filter(gatherings.original %in% top.gatherings) %>%
        filter(!gatherings.original == "NA") %>%       
        group_by(gatherings.original, country) %>% 
        summarize(n = n())
@@ -35,7 +32,10 @@ kable(tab, caption = "Gatherings x countries title counts")
 
 ### Selected gatherings across time; by country
 
-```{r docsizes-3, echo=FALSE, message=FALSE, warning=FALSE, fig.width=12, fig.height=7}
+```{r docsizes-3, echo=FALSE, message=FALSE, warning=FALSE, fig.width=10, fig.height=8}
+
+nmin <- 2000
+top.gatherings <- setdiff(names(which(table(df$gatherings.original) > nmin)), "NA")
 
 df2 <- filter(df, !is.na(gatherings.original) & (!is.na(height.original) | !is.na(width.original))) %>%
        filter(gatherings.original %in% top.gatherings) %>%
@@ -47,15 +47,16 @@ df3 <- df2 %>% group_by(gatherings.original, publication_decade, country) %>%
 		 n = n())
 
 # Select specific gatherings
-sel.gatherings <- "2fo"
-# .. and countries that have enough docs ..
-top.countries <- names(which(sort(sapply(split(mydf$n, mydf$country), sum)) > 20))
-mydf <- df3 %>% filter(gatherings.original == sel.gatherings & country %in% top.countries)
-p <- ggplot()
-p <- p + geom_point(data = mydf, aes(x = publication_decade, y = mean.height.original, size = n, group = country, color = country))
-p <- p + geom_smooth(data = mydf, method = "loess", aes(x = publication_decade, y = mean.height.original, color = country))
-p <- p + ggtitle(paste(sel.gatherings, ": height"))
-print(p)
+for (sel.gatherings in top.gatherings) {
+  # .. and countries that have enough docs ..
+  top.countries <- names(which(sort(sapply(split(mydf$n, mydf$country), sum)) > 20))
+  mydf <- df3 %>% filter(gatherings.original == sel.gatherings & country %in% top.countries)
+  p <- ggplot()
+  p <- p + geom_point(data = mydf, aes(x = publication_decade, y = mean.height.original, size = n, group = country, color = country))
+  p <- p + geom_smooth(data = mydf, method = "loess", aes(x = publication_decade, y = mean.height.original, color = country))
+  p <- p + ggtitle(paste(sel.gatherings, ": height"))
+  print(p)
+}
 ```
 
 
