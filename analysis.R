@@ -41,7 +41,7 @@ sf <- generate_summaryfiles()
 # ---------------------------------
 
 # CERL-specific analyses
-df <- df.preprocessed <- df.preprocessed.
+df <- df.preprocessed 
 knit("docsizes.Rmd")
 
 # ---------------------------------
