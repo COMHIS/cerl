@@ -34,7 +34,7 @@ df.preprocessed.orig <- df
 
 print("Generic summaries") # Markdown
 df <- df.preprocessed <- df.preprocessed.orig
-sf <- generate_summaryfiles()
+#sf <- generate_summaryfiles()
 #load_all("../bibliographica/");
 #sf <- generate_summaryfiles(summaries = c("size"))
 
@@ -43,6 +43,7 @@ sf <- generate_summaryfiles()
 # CERL-specific analyses
 df <- df.preprocessed 
 knit("docsizes.Rmd")
+knit("digihum.Rmd")
 
 # ---------------------------------
 
