@@ -25,8 +25,7 @@ dfs <- df %>% filter(author %in% top.authors & country %in% top.countries) %>% g
 
 theme_set(theme_bw(20))
 pics <- list()
-countries <- unique(dfs$country)
-for (id in countries[1:12]) {
+for (id in top.countries[1:12]) {
   dfss <- dfs %>% filter(country == id) %>% group_by(author)
 
   dfss$author <- factor(dfss$author, levels = as.character(unique(dfs$author)))
