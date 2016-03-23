@@ -8,12 +8,13 @@ output: markdown_document
 
 ## Top authors in top countries over time
 
-```{r digihum-1, echo=FALSE, message=FALSE, warning=FALSE, out.width="155px", gig.width=5, fig.height=5}
+```{r digihum-1, echo=FALSE, message=FALSE, warning=FALSE, out.width="210px", gig.width=5, fig.height=5}
 dfs <- df %>% group_by(author) %>% tally() %>% arrange(desc(n)) %>% filter(!is.na(author))
 
 #write_xtable(df$author, file = "~/tmp/topauthors.csv")
 
 top.authors <- dfs$author[1:2]
+print(top.authors)
 
 dfs <- df %>% filter(author %in% top.authors) %>% group_by(country) %>% tally() %>% arrange(desc(n)) %>% filter(!is.na(country))
 top.countries <- dfs$country
