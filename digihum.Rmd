@@ -16,7 +16,7 @@ dfs <- df %>% group_by(author) %>% tally() %>% arrange(desc(n)) %>% filter(!is.n
 top.authors <- dfs$author[1:2]
 
 dfs <- df %>% filter(author %in% top.authors) %>% group_by(country) %>% tally() %>% arrange(desc(n)) %>% filter(!is.na(country))
-top.countries <- dfs$country[1:6]
+top.countries <- dfs$country
 
 dfs <- df %>% filter(author %in% top.authors & country %in% top.countries) %>% group_by(country, author, publication_decade) %>% tally() %>% arrange(publication_decade)
 
@@ -28,7 +28,7 @@ countries <- unique(dfs$country)
 for (id in countries[1:12]) {
   dfss <- dfs %>% filter(country == id) %>% group_by(author)
 
-  dfss$author <- factor(dfss$author, levels = levels(dfs$author))
+  dfss$author <- factor(dfss$author, levels = as.character(unique(dfs$author)))
 
   p <- ggplot(dfss, aes(x = publication_decade, y = n, fill = author)) +
        geom_bar(stat = "identity", position = "stack", color = "black") +
