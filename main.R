@@ -1,38 +1,44 @@
 # I/O definitions
-# Data dir
-ddir <- "~/data/CERL/preprocessed"
+fs <- list.files("~/data/CERL/preprocessed", full.names = TRUE, pattern = ".csv")
 output.folder <- "output.tables/"
+
+# Remove selected fields (almost empty and hence rather uninformative)
+ignore.fields <- c("publication_frequency", "publication_interval")) # CERL
 
 # —--------------------------------------------
 
 # Initialize and read raw data
-source("init.R")
-
-reload.data <- FALSE
-source("read.rawdata.R")
+reload.data <- TRUE
+source(system.file("extdata/init.R", package = "bibliographica"))
 
 # ---------------------------------------------
 
 # Selected subsets of the raw data
-source("filtering.R") # -> df.orig
+source("filtering.R") 
 
 # -----------------------------------------------
 
 # Preprocess raw data
-source("preprocessing.R") # -> df.preprocessed
-load("df.preprocessed.RData")
+source(system.file("extdata/preprocessing.R", package = "bibliographica"))
+df.preprocessed <- readRDS("df0.Rds")
+
+# -------------------------------------------------
 
 # Validating and fixing fields
-source("validation.R")
+source(system.file("extdata/validation.R", package = "bibliographica"))
 
-# Enrich the data
-# (add missing information and augment with external data)
-source("enrich.R") # df.preprocessed.RData
+# -------------------------------------------------
 
-# Save the preprocessed data
-print("Saving updates on preprocessed data")
-saveRDS(df.preprocessed, file = "cerl.Rds", compress = TRUE)
+source(system.file("extdata/enrich.R", package = "bibliographica"))
+write.table(dim.estimates, sep = ",", row.names = F, file = paste(output.folder, "sheetsize_means.csv", sep = "/"), quote = FALSE)
+
+# -------------------------------------------------
+
+print("Saving preprocessed data")
+saveRDS(df.preprocessed, file = "df.Rds", compress = TRUE)
 # df.preprocessed <- readRDS("cerl.Rds")
+
+# --------------------------------------------------
 
 # Summarize the data and discarded entries
 tmp <- generate_summary_tables(df.preprocessed, df.orig, output.folder)
