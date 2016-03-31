@@ -1,49 +1,18 @@
-library(ggplot2)
-library(tidyr)
-library(dplyr)
-library(stringr)
-library(bibliographica)
-library(estc)
-library(magrittr)
-library(sorvi)
-library(reshape2)
-library(gridExtra)
-library(knitr)
-
-# ---------------------------------
-
-# Set global parameters
-timespan <- c(1460, 1830)
-datafile <- "cerl.Rds"
-ntop <- 20
-author <- "Leo Lahti"
-output.folder <- "output.tables/"
-
-# ---------------------------------
-
-print("Prepare the final data set")
-
-# Read the preprocessed data
-df <- readRDS(datafile)
-
-# Year limits
-df <- filter(df, publication_year >=  min(timespan) & publication_year <= max(timespan))
-df.preprocessed.orig <- df
+source("analysis.init.R")
 
 # ----------------------------------------
 
 print("Generic summaries") # Markdown
-df <- df.preprocessed <- df.preprocessed.orig
 #sf <- generate_summaryfiles()
 #load_all("../bibliographica/");
-#sf <- generate_summaryfiles(summaries = c("size"))
+sf <- generate_summaryfiles(summaries = c("size"))
 
 # ---------------------------------
 
 # CERL-specific analyses
-df <- df.preprocessed 
 knit("docsizes.Rmd")
 knit("digihum.Rmd")
+source("20160423-WorldBookDay.R")
 
 # ---------------------------------
 

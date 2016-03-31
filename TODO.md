@@ -1,11 +1,24 @@
 ## TODO
 
-Top-200 authors in CERL to Mikko
+23.4.2016 on 400 vuotta Shakespearen kuolemasta. World book day, koska
+Cervantes kuoli 22.4.1616 ja Shakespeare 23.4.1616.
 
-Some aspects.
+ESTC/CERL blogi-pohjainen juttu.
 
-Super-tilaisuus: 23.4.2016 on tullut kuluneeksi 400 vuotta
-Shakespearen kuolemasta. Jos tehtäis ESTC/CERL pohjalta blogi-pohjainen juttu Shakespearesta kirjastoluetteloiden perusteella. Eli putsattais Shakespearen kohdalta kentät (ei mikään mahdoton juttu edes käsin tehtäväks), sitten tehtäis siitä tilasto- ja jotain karttaesitystä kanssa. Erityisesti sen julkaiseminen ympäri Eurooppaa. Spesialiteettina ja erityisenä fokuksena miten eri teokset leviävät ajassa ja kartalla (eli siis käännösten rooli keskeisenä, niistä pitäis tsekata että menee käännökset oikein eli saadaan vaikka eri väreillä eri alkuteoksen eri versiot CERLin pohjalta esitettyä). Kovin paljon isompaa kirjallisuuden tyyppiä ei löydy (tai siis ei löydy) ja tuo 400 vuotta kuolemasta on niin iso juttu että täsmä julkaisu samana päivänä olis tosi hienoa. 
-No niin tietysti: World book day, 23.4. koska ajateltiin että
-Shakespeare ja Cervantes kuolivat samana päivänä. Oikeasti Cervantes
-kuoli 22.4.1616 ja Shakespeare 23.4.1616.
+- Shakespearen + Cervanesin kentät (käsin?)
+  -> Voit katsoa CERLin ja ESTCn author-listat että löytyykö vielä
+     synpnyymisiä versioita nimille:
+  -> Teosnimikkeitä pitää yhdistää. Tsekkaa listat, ja lisää sarake
+     johon tulee kunkin nimikkeen kohdalta lopullinen käytettävä nimi.
+
+- Käännösten rooli; eri väreillä alkuteoksen eri versiot
+  -> Tarkoittaako 'eri versiot' tässä eri kieliä, eri julkaisumaita,
+     vai jotain muuta? Kaikkia tällaisia eri vaihtoehtoja ei voida nyt
+     tähän vertailla kattavasti koska muuttujia on niin paljon eli
+     päätetään yksi ja pysytään siinä ellei tule syitä muuttaa.
+
+- Erityisenä fokuksena miten eri teokset leviävät ajassa ja kartalla
+  -> OK, ensimmäiset CERL-yhteenvedot tehtynä, aletaan tarkentaa: 
+
+
+
