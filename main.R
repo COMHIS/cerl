@@ -8,7 +8,8 @@ ignore.fields <- c("publication_frequency", "publication_interval") # CERL
 # —--------------------------------------------
 
 # Initialize and read raw data
-reload.data <- TRUE
+reload.data <- FALSE
+mc.cores <- 8
 source(system.file("extdata/init.R", package = "bibliographica"))
 
 # ---------------------------------------------
@@ -36,7 +37,7 @@ write.table(dim.estimates, sep = ",", row.names = F, file = paste(output.folder,
 
 print("Saving preprocessed data")
 saveRDS(df.preprocessed, file = "df.Rds", compress = TRUE)
-# df.preprocessed <- readRDS("cerl.Rds")
+# df.preprocessed <- readRDS("df.Rds")
 
 # --------------------------------------------------
 

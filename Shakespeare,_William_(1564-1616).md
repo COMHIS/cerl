@@ -18,11 +18,11 @@ output: markdown_document
 
 This author has:
 
-  * 66 documents
-  * 62 unique titles ([table]('r title.file'))
-  * 22 unique publication places
-  * 8 unique publication countries
-  * 1594, 1830 time span   
+  * 2 documents
+  * 2 unique titles ([table]('r title.file'))
+  * 2 unique publication places
+  * 2 unique publication countries
+  * 1808, 1816 time span   
 
 
 <img src="figure/selected_author_summary_titlecount-1.png" title="plot of chunk selected_author_summary_titlecount" alt="plot of chunk selected_author_summary_titlecount" width="430px" />
@@ -33,11 +33,22 @@ Publication timeline:
 ![plot of chunk selected_author_summary_timeline](figure/selected_author_summary_timeline-1.png)
 
 
+
+```
+## geom_path: Each group consists of only one observation. Do you need to
+## adjust the group aesthetic?
+```
+
 ![plot of chunk selected_author_summary_timeline_by_country](figure/selected_author_summary_timeline_by_country-1.png)
 
 ## Selected title
 
-<img src="figure/selected_author_summary_timeline_by_title-1.png" title="plot of chunk selected_author_summary_timeline_by_title" alt="plot of chunk selected_author_summary_timeline_by_title" width="230px" /><img src="figure/selected_author_summary_timeline_by_title-2.png" title="plot of chunk selected_author_summary_timeline_by_title" alt="plot of chunk selected_author_summary_timeline_by_title" width="230px" /><img src="figure/selected_author_summary_timeline_by_title-3.png" title="plot of chunk selected_author_summary_timeline_by_title" alt="plot of chunk selected_author_summary_timeline_by_title" width="230px" /><img src="figure/selected_author_summary_timeline_by_title-4.png" title="plot of chunk selected_author_summary_timeline_by_title" alt="plot of chunk selected_author_summary_timeline_by_title" width="230px" />
+
+```
+## Error in seq.default(h[1], h[2], length.out = n): 'to' cannot be NA, NaN or infinite
+```
+
+<img src="figure/selected_author_summary_timeline_by_title-1.png" title="plot of chunk selected_author_summary_timeline_by_title" alt="plot of chunk selected_author_summary_timeline_by_title" width="230px" />
 
 
 ## Language

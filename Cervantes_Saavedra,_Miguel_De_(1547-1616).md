@@ -18,11 +18,11 @@ output: markdown_document
 
 This author has:
 
-  * 38 documents
-  * 35 unique titles ([table]('r title.file'))
-  * 20 unique publication places
-  * 9 unique publication countries
-  * 1605, 1830 time span   
+  * 6 documents
+  * 6 unique titles ([table]('r title.file'))
+  * 6 unique publication places
+  * 5 unique publication countries
+  * 1695, 1818 time span   
 
 
 
@@ -44,12 +44,7 @@ Publication timeline:
 
 ## Selected title
 
-
-```
-## Error in seq.default(h[1], h[2], length.out = n): 'to' cannot be NA, NaN or infinite
-```
-
-<img src="figure/selected_author_summary_timeline_by_title-1.png" title="plot of chunk selected_author_summary_timeline_by_title" alt="plot of chunk selected_author_summary_timeline_by_title" width="230px" /><img src="figure/selected_author_summary_timeline_by_title-2.png" title="plot of chunk selected_author_summary_timeline_by_title" alt="plot of chunk selected_author_summary_timeline_by_title" width="230px" /><img src="figure/selected_author_summary_timeline_by_title-3.png" title="plot of chunk selected_author_summary_timeline_by_title" alt="plot of chunk selected_author_summary_timeline_by_title" width="230px" />
+<img src="figure/selected_author_summary_timeline_by_title-1.png" title="plot of chunk selected_author_summary_timeline_by_title" alt="plot of chunk selected_author_summary_timeline_by_title" width="230px" /><img src="figure/selected_author_summary_timeline_by_title-2.png" title="plot of chunk selected_author_summary_timeline_by_title" alt="plot of chunk selected_author_summary_timeline_by_title" width="230px" /><img src="figure/selected_author_summary_timeline_by_title-3.png" title="plot of chunk selected_author_summary_timeline_by_title" alt="plot of chunk selected_author_summary_timeline_by_title" width="230px" /><img src="figure/selected_author_summary_timeline_by_title-4.png" title="plot of chunk selected_author_summary_timeline_by_title" alt="plot of chunk selected_author_summary_timeline_by_title" width="230px" />
 
 
 ## Language
