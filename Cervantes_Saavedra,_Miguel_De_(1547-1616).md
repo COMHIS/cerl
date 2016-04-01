@@ -1,7 +1,7 @@
 ---
 title: "Summary for a selected author: Cervantes Saavedra, Miguel De (1547-1616)"
 author: "Leo Lahti"
-date: "2016-03-30"
+date: "2016-04-01"
 output: markdown_document
 ---
 
@@ -18,11 +18,11 @@ output: markdown_document
 
 This author has:
 
-  * 2300 documents
-  * 959 unique titles ([table]('r title.file'))
-  * 55 unique publication places
-  * 17 unique publication countries
-  * 1585, 1830 time span   
+  * 38 documents
+  * 35 unique titles ([table]('r title.file'))
+  * 20 unique publication places
+  * 9 unique publication countries
+  * 1605, 1830 time span   
 
 
 
@@ -44,7 +44,12 @@ Publication timeline:
 
 ## Selected title
 
-<img src="figure/selected_author_summary_timeline_by_title-1.png" title="plot of chunk selected_author_summary_timeline_by_title" alt="plot of chunk selected_author_summary_timeline_by_title" width="230px" /><img src="figure/selected_author_summary_timeline_by_title-2.png" title="plot of chunk selected_author_summary_timeline_by_title" alt="plot of chunk selected_author_summary_timeline_by_title" width="230px" /><img src="figure/selected_author_summary_timeline_by_title-3.png" title="plot of chunk selected_author_summary_timeline_by_title" alt="plot of chunk selected_author_summary_timeline_by_title" width="230px" /><img src="figure/selected_author_summary_timeline_by_title-4.png" title="plot of chunk selected_author_summary_timeline_by_title" alt="plot of chunk selected_author_summary_timeline_by_title" width="230px" />
+
+```
+## Error in seq.default(h[1], h[2], length.out = n): 'to' cannot be NA, NaN or infinite
+```
+
+<img src="figure/selected_author_summary_timeline_by_title-1.png" title="plot of chunk selected_author_summary_timeline_by_title" alt="plot of chunk selected_author_summary_timeline_by_title" width="230px" /><img src="figure/selected_author_summary_timeline_by_title-2.png" title="plot of chunk selected_author_summary_timeline_by_title" alt="plot of chunk selected_author_summary_timeline_by_title" width="230px" /><img src="figure/selected_author_summary_timeline_by_title-3.png" title="plot of chunk selected_author_summary_timeline_by_title" alt="plot of chunk selected_author_summary_timeline_by_title" width="230px" />
 
 
 ## Language

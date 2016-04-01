@@ -3,7 +3,7 @@ fs <- list.files("~/data/CERL/preprocessed", full.names = TRUE, pattern = ".csv"
 output.folder <- "output.tables/"
 
 # Remove selected fields (almost empty and hence rather uninformative)
-ignore.fields <- c("publication_frequency", "publication_interval")) # CERL
+ignore.fields <- c("publication_frequency", "publication_interval") # CERL
 
 # —--------------------------------------------
 
