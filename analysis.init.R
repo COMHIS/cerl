@@ -27,6 +27,5 @@ print("Prepare the final data set")
 df <- readRDS(datafile)
 
 # Year limits
-df <- filter(df, publication_year >=  min(timespan) & publication_year <= max(timespan))
-df.preprocessed <- df.preprocessed.orig <- df
-
+df.preprocessed <- filter(df, publication_year >=  min(timespan) & publication_year <= max(timespan))
+rm(df)

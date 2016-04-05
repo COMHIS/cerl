@@ -1,15 +1,18 @@
 ---
-title: "Topic preprocessing summaries"
+title: "Subject topic preprocessing summaries"
 author: "Leo Lahti"
-date: "2016-03-06"
+date: "2016-04-04"
 output: markdown_document
 ---
 
-## Topics
+## Subject topics
 
 
 
-Top-20 topics and number of documents for each. In total, there are 0 unique topics and 0 documents assigned to one or more topics (NaN).
+  * 0 unique subject topics
+  * 0 documents assigned to at least one subject topic (NaN)
+
+Top-20 subject topics and number of documents for each.
 
 
 ```

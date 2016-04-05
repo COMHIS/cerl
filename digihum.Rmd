@@ -43,10 +43,6 @@ for (id in top.countries[1:12]) {
   print(p)
 
 }
-
-
-
-
 ```
 
 

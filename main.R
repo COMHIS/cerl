@@ -47,6 +47,8 @@ tmp <- generate_summary_tables(df.preprocessed, df.orig, output.folder)
 # Analyze the preprocessed data
 source("analysis.R")
 
+date()
+
 # Test map visualizations
 # source("map.R")
 

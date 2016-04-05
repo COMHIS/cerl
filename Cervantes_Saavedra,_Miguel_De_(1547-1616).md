@@ -1,7 +1,7 @@
 ---
 title: "Summary for a selected author: Cervantes Saavedra, Miguel De (1547-1616)"
 author: "Leo Lahti"
-date: "2016-04-01"
+date: "2016-04-04"
 output: markdown_document
 ---
 
@@ -18,11 +18,11 @@ output: markdown_document
 
 This author has:
 
-  * 6 documents
-  * 6 unique titles ([table]('r title.file'))
-  * 6 unique publication places
-  * 5 unique publication countries
-  * 1695, 1818 time span   
+  * 2428 documents
+  * 1007 unique titles ([table]('r title.file'))
+  * 142 unique publication places
+  * 17 unique publication countries
+  * 1585, 1830 time span   
 
 
 

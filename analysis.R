@@ -3,13 +3,13 @@ source("analysis.init.R")
 # ----------------------------------------
 
 print("Generic summaries") # Markdown
-#sf <- generate_summaryfiles()
 #load_all("../bibliographica/");
-sf <- generate_summaryfiles(summaries = c("size"))
+sf <- generate_summaryfiles(df.preprocessed, author = author, output.folder = output.folder, ntop = ntop)
 
 # ---------------------------------
 
 # CERL-specific analyses
+df = df.preprocessed
 knit("docsizes.Rmd")
 knit("digihum.Rmd")
 source("20160423-WorldBookDay.R")
