@@ -15,26 +15,31 @@ source(system.file("extdata/init.R", package = "bibliographica"))
 # ---------------------------------------------
 
 # Selected subsets of the raw data
+check = "filtering"
 source("filtering.R") 
 
 # -----------------------------------------------
 
 # Preprocess raw data
+check = "preprocess1"
 source(system.file("extdata/preprocessing.R", package = "bibliographica"))
 df.preprocessed <- readRDS("df0.Rds")
 
 # -------------------------------------------------
 
 # Validating and fixing fields
+check = "validation"
 source(system.file("extdata/validation.R", package = "bibliographica"))
 
 # -------------------------------------------------
 
+check = "enrich"
 source(system.file("extdata/enrich.R", package = "bibliographica"))
 write.table(dim.estimates, sep = ",", row.names = F, file = paste(output.folder, "sheetsize_means.csv", sep = "/"), quote = FALSE)
 
 # -------------------------------------------------
 
+check = "save"
 print("Saving preprocessed data")
 saveRDS(df.preprocessed, file = "df.Rds", compress = TRUE)
 # df.preprocessed <- readRDS("df.Rds")
@@ -42,9 +47,11 @@ saveRDS(df.preprocessed, file = "df.Rds", compress = TRUE)
 # --------------------------------------------------
 
 # Summarize the data and discarded entries
+check = "summary tables"
 tmp <- generate_summary_tables(df.preprocessed, df.orig, output.folder)
 
 # Analyze the preprocessed data
+check = "analysis"
 source("analysis.R")
 
 date()
