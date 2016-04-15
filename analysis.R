@@ -1,5 +1,9 @@
 source("analysis.init.R")
 
+# Summarize the data and discarded entries
+check = "summary tables"
+tmp <- generate_summary_tables(df.preprocessed, df.orig, output.folder)
+
 # ----------------------------------------
 
 print("Generic summaries") # Markdown
@@ -13,6 +17,7 @@ df = df.preprocessed
 knit("docsizes.Rmd")
 knit("digihum.Rmd")
 source("20160423-WorldBookDay.R")
+source("Shakespeare.R")
 
 # ---------------------------------
 

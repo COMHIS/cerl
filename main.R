@@ -1,3 +1,6 @@
+library(devtools)
+load_all("~/proj/2014-Aatelouhinta/bibliographica")
+
 # I/O definitions
 fs <- list.files("~/data/CERL/preprocessed", full.names = TRUE, pattern = ".csv")
 output.folder <- "output.tables/"
@@ -46,10 +49,6 @@ saveRDS(df.preprocessed, file = "df.Rds", compress = TRUE)
 
 # --------------------------------------------------
 
-# Summarize the data and discarded entries
-check = "summary tables"
-tmp <- generate_summary_tables(df.preprocessed, df.orig, output.folder)
-
 # Analyze the preprocessed data
 check = "analysis"
 source("analysis.R")
@@ -58,7 +57,3 @@ date()
 
 # Test map visualizations
 # source("map.R")
-
-
-
-
