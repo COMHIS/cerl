@@ -5,7 +5,8 @@ source("analysis.init.R")
 print("Generic summaries") # Markdown
 #sf <- generate_summaryfiles()
 #load_all("../bibliographica/");
-sf <- generate_summaryfiles(summaries = c("size"))
+#sf <- generate_summaryfiles(summaries = c("size"))
+sf <- generate_summaryfiles(df.preprocessed, author = "Leo Lahti", output.folder = output.folder, ntop = 20)
 
 # ---------------------------------
 

@@ -1,18 +1,18 @@
 ---
 title: "Generic document summaries"
 author: "Leo Lahti"
-date: "2016-03-06"
+date: "2016-04-15"
 output: markdown_document
 ---
 
 
 ### Publication year
 
-[Publication year conversions](output.tables/publication_year_conversion_nontrivial.csv)
+[Publication year conversions](output.tables/publication_year_conversion.csv)
 
 [Publication year discarded](output.tables/publication_year_discarded.csv)
 
-Publication year is available for 5289665 documents (100%). The publication years span 1460-1830
+Publication year is available for 91010 documents (100%). The publication years span 1460-1830
 
 ![plot of chunk summarypublicationyear](figure/summarypublicationyear-1.png)
 
@@ -25,7 +25,7 @@ Publication year is available for 5289665 documents (100%). The publication year
 
 [Title harmonization table](output.tables/title_conversion_nontrivial.csv)
 
-Top-20 titles are shown together with the number of documents. This info is available for 5287778 documents (100%). There are 4173989 unique titles.
+Top-20 titles are shown together with the number of documents. This info is available for 90977 documents (100%). There are 88879 unique titles.
 
 ![plot of chunk summarytitle](figure/summarytitle-1.png)
 

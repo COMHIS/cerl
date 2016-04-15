@@ -7,9 +7,12 @@ ESTC/CERL blogi-pohjainen juttu.
 
 - Shakespearen + Cervanesin kentät (käsin?)
   -> Voit katsoa CERLin ja ESTCn author-listat että löytyykö vielä
-     synpnyymisiä versioita nimille:
+     synpnyymisiä versioita nimille
+     
   -> Teosnimikkeitä pitää yhdistää. Tsekkaa listat, ja lisää sarake
      johon tulee kunkin nimikkeen kohdalta lopullinen käytettävä nimi.
+     originaali, publication place, publisher, title, vuosi, kieli
+     ESTC + CERL - Mikko hakee duplikaatit sieltä jotenkin - anna ohjeet
 
 - Käännösten rooli; eri väreillä alkuteoksen eri versiot
   -> Tarkoittaako 'eri versiot' tässä eri kieliä, eri julkaisumaita,
@@ -17,8 +20,10 @@ ESTC/CERL blogi-pohjainen juttu.
      tähän vertailla kattavasti koska muuttujia on niin paljon eli
      päätetään yksi ja pysytään siinä ellei tule syitä muuttaa.
 
-- Erityisenä fokuksena miten eri teokset leviävät ajassa ja kartalla
-  -> OK, ensimmäiset CERL-yhteenvedot tehtynä, aletaan tarkentaa: 
+- Erityisenä fokuksena miten eri Shakespeare vs. Cervantes
+  teokset leviävät ajassa ja kartalla eri maissa
+  (Cervantes lähtee Espanjasta jne) - ks. Shakespeare.Rmd
 
-
+- Top-100 authorien luokitus 1700-luvulta Mikolla tehtynä. Tsekkaa
+  niitä ajassa + paikassa.
 
