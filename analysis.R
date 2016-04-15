@@ -1,19 +1,24 @@
 source("analysis.init.R")
 
+# Summarize the data and discarded entries
+check = "summary tables"
+tmp <- generate_summary_tables(df.preprocessed, df.orig, output.folder)
+
 # ----------------------------------------
 
 print("Generic summaries") # Markdown
-#sf <- generate_summaryfiles()
 #load_all("../bibliographica/");
-#sf <- generate_summaryfiles(summaries = c("size"))
-sf <- generate_summaryfiles(df.preprocessed, author = "Leo Lahti", output.folder = output.folder, ntop = 20)
+
+sf <- generate_summaryfiles(df.preprocessed, author = author, output.folder = output.folder, ntop = ntop)
 
 # ---------------------------------
 
 # CERL-specific analyses
+df = df.preprocessed
 knit("docsizes.Rmd")
 knit("digihum.Rmd")
 source("20160423-WorldBookDay.R")
+source("Shakespeare.R")
 
 # ---------------------------------
 
