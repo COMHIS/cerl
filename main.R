@@ -1,5 +1,5 @@
 library(devtools)
-load_all("~/proj/2014-Aatelouhinta/bibliographica")
+#load_all("~/proj/2014-Aatelouhinta/bibliographica")
 
 # I/O definitions
 fs <- list.files("~/data/CERL/preprocessed", full.names = TRUE, pattern = ".csv")
