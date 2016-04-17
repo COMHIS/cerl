@@ -1,7 +1,7 @@
 ---
 title: "Document dimension preprocessing summary"
 author: "Leo Lahti"
-date: "2016-04-16"
+date: "2016-04-17"
 output: markdown_document
 ---
 
@@ -35,7 +35,7 @@ These include estimates that are based on auxiliary information sheets:
   
 <!--[Discarded dimension info](https://raw.githubusercontent.com/rOpenGov/estc/master/inst/examples/output.tables/dimensions_discarded.csv)-->
 
-Document size (area) info in area is available for 2967 documents (32%). Estimates of document size (area) info in gatherings system are available for 9223 documents (100%). 
+Document size (area) info in area is available for 5928 documents (33%). Estimates of document size (area) info in gatherings system are available for 18212 documents (100%). 
 
 ![plot of chunk summarysize](figure/summarysize-1.png)
 
@@ -49,7 +49,7 @@ Document dimension histogram (surface area). Few document sizes dominate publish
 ![plot of chunk summary-surfacearea](figure/summary-surfacearea-1.png)
 
 
-Compare gatherings and page counts. Page count information is originally missing but subsequently estimated for 4080 documents and updated (changed) for 25 documents. 
+Compare gatherings and page counts. Page count information is originally missing but subsequently estimated for 8144 documents and updated (changed) for 45 documents. 
 
 
 ![plot of chunk summarypagecomp](figure/summarypagecomp-1.png)
@@ -69,17 +69,18 @@ Multi-volume documents average page counts are given per volume.
 
 |doc.dimension | mean.pages.singlevol| median.pages.singlevol| n.singlevol| mean.pages.multivol| median.pages.multivol| n.multivol| mean.pages.issue| median.pages.issue| n.issue|
 |:-------------|--------------------:|----------------------:|-----------:|-------------------:|---------------------:|----------:|----------------:|------------------:|-------:|
-|1to           |                 2.00|                   2.00|           5|                  NA|                    NA|         NA|               NA|                 NA|      NA|
-|2fo           |               204.40|                 117.00|         291|                  NA|                    NA|         NA|            22.53|                 20|      30|
+|1to           |                 2.00|                    2.0|          11|                  NA|                    NA|         NA|               NA|                 NA|      NA|
+|2fo           |               304.55|                  136.0|         571|             1124.42|               1124.42|         14|            23.72|               22.0|      72|
 |4long         |                  NaN|                     NA|           1|                  NA|                    NA|         NA|               NA|                 NA|      NA|
-|4to           |               113.48|                  26.00|         706|               26.00|                  26.0|          1|            26.02|                 26|     481|
-|8vo           |               225.69|                 171.00|         916|              184.13|                 186.0|         15|            26.36|                 26|     147|
-|12mo          |               297.63|                 260.50|         124|               45.00|                  45.0|          1|            41.00|                 45|       4|
-|16mo          |               405.69|                 341.25|          18|                  NA|                    NA|         NA|            12.00|                 12|       1|
-|18mo          |               174.50|                 174.50|           2|                  NA|                    NA|         NA|               NA|                 NA|      NA|
-|24mo          |               526.00|                 526.00|           2|                  NA|                    NA|         NA|               NA|                 NA|      NA|
-|64mo          |               128.00|                 128.00|           1|                  NA|                    NA|         NA|               NA|                 NA|      NA|
-|NA            |                 -Inf|                 102.00|        7151|              319.11|                 337.5|        261|            24.07|                 23|     989|
+|4to           |                96.41|                   24.0|        1420|               82.08|                 24.00|          6|            24.41|               24.0|     998|
+|8vo           |               224.48|                  161.5|        1807|              259.46|                264.25|         27|            25.95|               24.5|     294|
+|12mo          |               302.82|                  274.0|         219|              153.25|                170.00|          8|            35.11|               36.0|       9|
+|16mo          |               334.69|                  289.5|          29|                  NA|                    NA|         NA|            30.00|               30.0|       2|
+|18mo          |               211.00|                  191.0|           9|                  NA|                    NA|         NA|               NA|                 NA|      NA|
+|24mo          |               371.00|                  371.0|           3|                  NA|                    NA|         NA|               NA|                 NA|      NA|
+|32mo          |                32.00|                   32.0|           1|                  NA|                    NA|         NA|            32.00|               32.0|       1|
+|64mo          |               128.00|                  128.0|           1|                  NA|                    NA|         NA|               NA|                 NA|      NA|
+|NA            |                 -Inf|                   96.0|       14129|              382.35|                404.00|        512|            24.49|               23.0|    2022|
 
 
 ![plot of chunk summarypagecountsmulti2](figure/summarypagecountsmulti2-1.png)

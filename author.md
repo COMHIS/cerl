@@ -1,13 +1,13 @@
 ---
 title: "Author preprocessing summary"
 author: "Leo Lahti"
-date: "2016-04-16"
+date: "2016-04-17"
 output: markdown_document
 ---
 
 ## Authors
 
-[Accepted author names](output.tables/author_accepted.csv) These are the final accepted author names, merging all name variants from the custom [author synonyme table](https://github.com/rOpenGov/bibliographica/blob/master/inst/extdata/ambiguous-authors.csv) and excluding known pseudonymes. If multiple names for the same author are still being observed, the should be added on the author synonyme table.
+[Accepted unique authors](output.tables/author_accepted.csv) These are the final accepted author names, merging all name variants from the custom [author synonyme table](https://github.com/rOpenGov/bibliographica/blob/master/inst/extdata/ambiguous-authors.csv) and excluding known pseudonymes. If multiple names for the same author are still being observed, the should be added on the author synonyme table.
 
 [Accepted pseudonymes](output.tables/pseudonyme_accepted.csv) Recognized based on custom pseudonyme lists ([first](https://github.com/rOpenGov/bibliographica/blob/master/inst/extdata/names/pseudonymes/first.csv), [last](https://github.com/rOpenGov/bibliographica/blob/master/inst/extdata/names/pseudonymes/last.csv), [misc](https://github.com/rOpenGov/bibliographica/blob/master/inst/extdata/pseudonymes.csv))
 
@@ -15,9 +15,9 @@ output: markdown_document
   * [Stopwords for names](https://github.com/rOpenGov/bibliographica/blob/master/inst/extdata/stopwords_for_names.csv)
   * [Stopwords for titles](https://github.com/rOpenGov/bibliographica/blob/master/inst/extdata/stopwords_titles.csv)
 
+[Author name conversions](output.tables/author_conversion_nontrivial.csv) Non-trivial conversions from the original to final names
 
-
-Top-20 uniquely identified authors and their productivity (title count). In total, there are 2472 unique authors and 2600 documents with unambiguous author information (72%).
+Top-20 uniquely identified authors and their productivity (title count). In total, there are 10514 unique authors and 12992 documents with unambiguous author information (71%).
 
 <img src="figure/summaryauthors-1.png" title="plot of chunk summaryauthors" alt="plot of chunk summaryauthors" width="430px" /><img src="figure/summaryauthors-2.png" title="plot of chunk summaryauthors" alt="plot of chunk summaryauthors" width="430px" />
 
@@ -35,11 +35,6 @@ Should also add living year information from supporting sources later.
 ### Life span of uniquely identified top authors
 
 Ordered by productivity (number of documents))
-
-
-```
-## Error in if (zero_range(from) || zero_range(to)) {: missing value where TRUE/FALSE needed
-```
 
 ![plot of chunk summaryauthorslife](figure/summaryauthorslife-1.png)
 

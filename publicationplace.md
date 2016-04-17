@@ -1,7 +1,7 @@
 ---
 title: "Publication place preprocessing summary"
 author: "Leo Lahti"
-date: "2016-04-16"
+date: "2016-04-17"
 output: markdown_document
 ---
 
@@ -21,11 +21,11 @@ output: markdown_document
 
 [Publication place conversions](output.tables/publication_place_conversion_nontrivial.csv)
 
-[Places missing geocoordinate information](output.tables/absentgeocoordinates.csv). Altogether ``72.02``% of the documents have missing geocoordinates.
+[Places missing geocoordinate information](output.tables/absentgeocoordinates.csv). Altogether ``72.4``% of the documents have missing geocoordinates.
 
 
 
-Top-20 publication places are shown together with the number of documents. This info is available for 8330 documents (90%). There are 1380 unique publication places. Overall 28% of the places could be matched to geographic coordinates (from the [Geonames](http://download.geonames.org/export/dump/) database).
+Top-20 publication places are shown together with the number of documents. This info is available for 16388 documents (90%). There are 2175 unique publication places. Overall 27.6% of the places could be matched to geographic coordinates (from the [Geonames](http://download.geonames.org/export/dump/) database).
 
 
 <img src="figure/summaryplace-1.png" title="plot of chunk summaryplace" alt="plot of chunk summaryplace" width="430px" /><img src="figure/summaryplace-2.png" title="plot of chunk summaryplace" alt="plot of chunk summaryplace" width="430px" />
@@ -34,9 +34,9 @@ Top-20 publication places are shown together with the number of documents. This 
 
 |name        |    n|  fraction|
 |:-----------|----:|---------:|
-|France      | 1834| 19.885070|
-|Germany     | 1624| 17.608154|
-|England     |  788|  8.543858|
-|Italy       |  750|  8.131844|
-|Netherlands |  477|  5.171853|
-|Switzerland |  152|  1.648054|
+|France      | 3527| 19.366352|
+|Germany     | 3226| 17.713595|
+|England     | 1552|  8.521854|
+|Italy       | 1452|  7.972765|
+|Netherlands |  946|  5.194377|
+|Switzerland |  294|  1.614320|
