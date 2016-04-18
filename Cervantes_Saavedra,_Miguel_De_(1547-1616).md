@@ -1,7 +1,7 @@
 ---
 title: "Summary for a selected author: Cervantes Saavedra, Miguel De (1547-1616)"
 author: "Leo Lahti"
-date: "2016-04-15"
+date: "2016-04-17"
 output: markdown_document
 ---
 

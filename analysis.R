@@ -1,5 +1,7 @@
 source("analysis.init.R")
 
+source("Shakespeare.R")
+
 # Summarize the data and discarded entries
 check = "summary tables"
 tmp <- generate_summary_tables(df.preprocessed, df.orig, output.folder)
@@ -8,6 +10,7 @@ tmp <- generate_summary_tables(df.preprocessed, df.orig, output.folder)
 
 print("Generic summaries") # Markdown
 #load_all("../bibliographica/");
+
 sf <- generate_summaryfiles(df.preprocessed, author = author, output.folder = output.folder, ntop = ntop)
 
 # ---------------------------------

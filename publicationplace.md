@@ -1,7 +1,7 @@
 ---
 title: "Publication place preprocessing summary"
 author: "Leo Lahti"
-date: "2016-04-15"
+date: "2016-04-17"
 output: markdown_document
 ---
 
@@ -21,17 +21,26 @@ output: markdown_document
 
 [Publication place conversions](output.tables/publication_place_conversion_nontrivial.csv)
 
+<<<<<<< HEAD
 [Places missing geocoordinate information](output.tables/absentgeocoordinates.csv). Altogether ``72.72``% of the documents have missing geocoordinates.
 
 
 
 Top-20 publication places are shown together with the number of documents. This info is available for 4918470 documents (90%). There are 82802 unique publication places. Overall 27.3% of the places could be matched to geographic coordinates (from the [Geonames](http://download.geonames.org/export/dump/) database).
+=======
+[Places missing geocoordinate information](output.tables/absentgeocoordinates.csv). Altogether ``72.4``% of the documents have missing geocoordinates.
+
+
+
+Top-20 publication places are shown together with the number of documents. This info is available for 16388 documents (90%). There are 2175 unique publication places. Overall 27.6% of the places could be matched to geographic coordinates (from the [Geonames](http://download.geonames.org/export/dump/) database).
+>>>>>>> 1b3b14fe8c0d732b9cf051ae94e60f5bfe7c94fe
 
 
 <img src="figure/summaryplace-1.png" title="plot of chunk summaryplace" alt="plot of chunk summaryplace" width="430px" /><img src="figure/summaryplace-2.png" title="plot of chunk summaryplace" alt="plot of chunk summaryplace" width="430px" />
 
 
 
+<<<<<<< HEAD
 |name        |       n|  fraction|
 |:-----------|-------:|---------:|
 |France      | 1056215| 19.335461|
@@ -40,3 +49,13 @@ Top-20 publication places are shown together with the number of documents. This 
 |Italy       |  448799|  8.215880|
 |Netherlands |  275947|  5.051587|
 |Switzerland |   83883|  1.535593|
+=======
+|name        |    n|  fraction|
+|:-----------|----:|---------:|
+|France      | 3527| 19.366352|
+|Germany     | 3226| 17.713595|
+|England     | 1552|  8.521854|
+|Italy       | 1452|  7.972765|
+|Netherlands |  946|  5.194377|
+|Switzerland |  294|  1.614320|
+>>>>>>> 1b3b14fe8c0d732b9cf051ae94e60f5bfe7c94fe

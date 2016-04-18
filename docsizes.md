@@ -1,7 +1,7 @@
 ---
 title: "Document dimension analysis"
 author: "Leo Lahti"
-date: "2016-04-15"
+date: "2016-04-17"
 output: markdown_document
 ---
 
@@ -11,6 +11,7 @@ output: markdown_document
 
 
 
+<<<<<<< HEAD
 We have 1.5131 &times; 10<sup>5</sup> documents with country and original gatherings information. We have 1235159 documents with original gatherings information but no country information.
 
 
@@ -33,6 +34,22 @@ We have 1.5131 &times; 10<sup>5</sup> documents with country and original gather
 |32mo   |         7|         0|       0|        0|       2|      0|       0|    0|              0|       0|       3|       0|       0|      5|       2|         0|     0|       0|     0|    0|       0|     0|       0|      0|         0|     0|          0|      0|           2|                0|      0|        0|      0|        3|     0|      0|           1|      0|   26|    3|    54|
 |48mo   |         1|         0|       0|        0|       0|      0|       0|    0|              0|       0|       0|       0|       0|      0|       0|         0|     0|       0|     0|    0|       0|     0|       0|      0|         0|     0|          0|      0|           0|                0|      0|        0|      0|        0|     0|      0|           0|      0|    1|    0|     2|
 |64mo   |         0|         0|       0|        0|       0|      0|       0|    0|              0|       0|       0|       0|       0|      0|       0|         0|     0|       0|     0|    0|       0|     0|       0|      0|         0|     0|          0|      0|           0|                0|      0|        0|      0|        1|     0|      0|           0|      0|    0|    0|     1|
+=======
+We have 484 documents with country and original gatherings information. We have 4072 documents with original gatherings information but no country information.
+
+
+|     | Ambiguous| Belgium| England| France| Germany| Ireland| Italy| Latvia| Netherlands| Russia| Scotland| Spain| Sweden| Switzerland| USA| NA| total|
+|:----|---------:|-------:|-------:|------:|-------:|-------:|-----:|------:|-----------:|------:|--------:|-----:|------:|-----------:|---:|--:|-----:|
+|1to  |         0|       0|       1|      1|       0|       1|     0|      0|           0|      0|        0|     0|      0|           0|   0|  0|     3|
+|2fo  |         0|       0|       8|      1|       2|       0|     6|      0|           0|      0|        1|     3|      0|           0|   0|  7|    28|
+|4to  |         1|       1|      21|     18|       6|       1|     9|      0|           4|      0|        1|     1|      1|           1|   0|  9|    74|
+|8vo  |         2|       1|      31|     21|      10|       0|     3|      1|           5|      1|        8|     3|      0|           1|   4| 11|   102|
+|12mo |         0|       0|      11|      9|       1|       1|     1|      0|           0|      0|        2|     0|      0|           0|   3|  2|    30|
+|16mo |         0|       0|       0|      0|       0|       0|     0|      0|           1|      0|        0|     0|      0|           0|   0|  0|     1|
+|18mo |         0|       0|       1|      0|       1|       0|     0|      0|           0|      0|        0|     0|      0|           0|   0|  0|     2|
+|24mo |         0|       0|       0|      0|       0|       0|     0|      0|           1|      0|        0|     0|      0|           0|   0|  0|     1|
+|32mo |         0|       0|       0|      0|       0|       0|     0|      0|           0|      0|        0|     0|      0|           0|   1|  0|     1|
+>>>>>>> 1b3b14fe8c0d732b9cf051ae94e60f5bfe7c94fe
 
 
 

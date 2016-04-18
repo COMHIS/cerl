@@ -1,5 +1,5 @@
 library(devtools)
-load_all("~/proj/2014-Aatelouhinta/bibliographica")
+#load_all("~/proj/2014-Aatelouhinta/bibliographica")
 
 # I/O definitions
 fs <- list.files("~/data/CERL/preprocessed", full.names = TRUE, pattern = ".csv")
@@ -18,31 +18,31 @@ source(system.file("extdata/init.R", package = "bibliographica"))
 # ---------------------------------------------
 
 # Selected subsets of the raw data
-check = "filtering"
+check <- "filtering"
 source("filtering.R") 
 
 # -----------------------------------------------
 
 # Preprocess raw data
-check = "preprocess1"
+check <- "preprocess1"
 source(system.file("extdata/preprocessing.R", package = "bibliographica"))
 df.preprocessed <- readRDS("df0.Rds")
 
 # -------------------------------------------------
 
 # Validating and fixing fields
-check = "validation"
+check <- "validation"
 source(system.file("extdata/validation.R", package = "bibliographica"))
 
 # -------------------------------------------------
 
-check = "enrich"
+check <- "enrich"
 source(system.file("extdata/enrich.R", package = "bibliographica"))
 write.table(dim.estimates, sep = ",", row.names = F, file = paste(output.folder, "sheetsize_means.csv", sep = "/"), quote = FALSE)
 
 # -------------------------------------------------
 
-check = "save"
+check <- "save"
 print("Saving preprocessed data")
 saveRDS(df.preprocessed, file = "df.Rds", compress = TRUE)
 # df.preprocessed <- readRDS("df.Rds")
@@ -50,7 +50,7 @@ saveRDS(df.preprocessed, file = "df.Rds", compress = TRUE)
 # --------------------------------------------------
 
 # Analyze the preprocessed data
-check = "analysis"
+check <- "analysis"
 source("analysis.R")
 
 date()

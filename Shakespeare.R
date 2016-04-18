@@ -11,7 +11,7 @@ for (my.author in my.authors) {
     dplyr::arrange(cerl_control_number, title, publication_year, language,
                    publication_place, country, publisher)
 
-  write.table(df, file = paste(output.dir, gsub(" ", "_", my.author), "_cerl.csv", sep = ""), quote = F, row.names = F, sep = "|")
+  write.table(df, file = paste(output.folder, gsub(" ", "_", my.author), "_cerl.csv", sep = ""), quote = F, row.names = F, sep = "|")
 
 }
 
