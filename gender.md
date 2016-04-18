@@ -21,11 +21,11 @@ output: markdown_document
 Author gender distribution in the complete data:
 
 
-|author_gender | docs| fraction|
-|:-------------|----:|--------:|
-|female        |  276|     2.99|
-|male          | 4482|    48.60|
-|NA            | 4465|    48.41|
+|author_gender |    docs| fraction|
+|:-------------|-------:|--------:|
+|female        |  164386|     3.01|
+|male          | 2607552|    47.73|
+|NA            | 2690642|    49.26|
 
 Author gender distribution over time. Note that the name-gender mappings change over time. This has not been taken into account yet.
 

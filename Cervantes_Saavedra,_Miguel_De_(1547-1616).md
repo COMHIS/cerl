@@ -18,11 +18,11 @@ output: markdown_document
 
 This author has:
 
-  * 6 documents
-  * 6 unique titles ([table]('r title.file'))
-  * 6 unique publication places
-  * 5 unique publication countries
-  * 1695, 1818 time span   
+  * 2428 documents
+  * 1007 unique titles ([table]('r title.file'))
+  * 175 unique publication places
+  * 18 unique publication countries
+  * 1585, 1830 time span   
 
 
 
