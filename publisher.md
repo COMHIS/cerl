@@ -1,7 +1,7 @@
 ---
 title: "Publisher preprocessing summary"
 author: "Leo Lahti"
-date: "2016-04-17"
+date: "2016-04-18"
 output: markdown_document
 ---
 
@@ -14,11 +14,7 @@ output: markdown_document
 
 
 
-<<<<<<< HEAD
-The 20 most common publishers are shown with the number of documents. Publisher information is available for 4052552 documents (74%). There are 975930 unique publisher names (some may be synonymes, though).
-=======
-The 20 most common publishers are shown with the number of documents. Publisher information is available for 13507 documents (74%). There are 10949 unique publisher names (some may be synonymes, though).
->>>>>>> 1b3b14fe8c0d732b9cf051ae94e60f5bfe7c94fe
+The 20 most common publishers are shown with the number of documents. Publisher information is available for 337772 documents (74%). There are 154028 unique publisher names (some may be synonymes, though).
 
 
 ![plot of chunk summarypublisher2](figure/summarypublisher2-1.png)
@@ -35,20 +31,10 @@ Title count versus paper consumption (top publishers):
 
 ![plot of chunk publishertitlespapers](figure/publishertitlespapers-1.png)
 
-<<<<<<< HEAD
-|publisher  | titles|     paper|
-|:----------|------:|---------:|
-|decker     |   5546| 7.7950897|
-|imp royale |  11609| 0.1355957|
-|meyer      |   6258|      -Inf|
-|müller      |   9533|      -Inf|
-|royale     |  13267|      -Inf|
-=======
 |publisher | titles|     paper|
 |:---------|------:|---------:|
-|hendel    |     20| 0.0303596|
-|meyer     |     26| 0.0395217|
-|müller     |     37| 0.0374655|
-|reusner   |     18| 0.0071997|
-|royale    |     73| 0.0277457|
->>>>>>> 1b3b14fe8c0d732b9cf051ae94e60f5bfe7c94fe
+|decker    |    460| 0.6989438|
+|lucius    |    450| 0.5712256|
+|meyer     |    508| 0.9154488|
+|müller     |    771| 1.0980890|
+|royale    |   2112| 0.3504074|

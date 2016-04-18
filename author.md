@@ -1,7 +1,7 @@
 ---
 title: "Author preprocessing summary"
 author: "Leo Lahti"
-date: "2016-04-17"
+date: "2016-04-18"
 output: markdown_document
 ---
 
@@ -17,11 +17,7 @@ output: markdown_document
 
 [Author name conversions](output.tables/author_conversion_nontrivial.csv) Non-trivial conversions from the original to final names
 
-<<<<<<< HEAD
-Top-20 uniquely identified authors and their productivity (title count). In total, there are 598002 unique authors and 3892682 documents with unambiguous author information (71%).
-=======
-Top-20 uniquely identified authors and their productivity (title count). In total, there are 10514 unique authors and 12992 documents with unambiguous author information (71%).
->>>>>>> 1b3b14fe8c0d732b9cf051ae94e60f5bfe7c94fe
+Top-20 uniquely identified authors and their productivity (title count). In total, there are 129995 unique authors and 324617 documents with unambiguous author information (71%).
 
 <img src="figure/summaryauthors-1.png" title="plot of chunk summaryauthors" alt="plot of chunk summaryauthors" width="430px" /><img src="figure/summaryauthors-2.png" title="plot of chunk summaryauthors" alt="plot of chunk summaryauthors" width="430px" />
 
