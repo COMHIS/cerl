@@ -12,7 +12,7 @@ ignore.fields <- c("publication_frequency", "publication_interval") # CERL
 
 # Initialize and read raw data
 reload.data <- FALSE
-mc.cores <- 8
+mc.cores <- 1 # Try 3 next time
 source(system.file("extdata/init.R", package = "bibliographica"))
 
 # ---------------------------------------------
