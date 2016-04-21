@@ -44,6 +44,7 @@ write.table(dim.estimates, sep = ",", row.names = F, file = paste(output.folder,
 
 check <- "save"
 print("Saving preprocessed data")
+gc()
 saveRDS(df.preprocessed, file = "df.Rds", compress = TRUE)
 # df.preprocessed <- readRDS("df.Rds")
 
