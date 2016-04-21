@@ -1,7 +1,7 @@
 ---
 title: "Document dimension preprocessing summary"
 author: "Leo Lahti"
-date: "2016-04-18"
+date: "2016-04-21"
 output: markdown_document
 ---
 
@@ -35,7 +35,7 @@ These include estimates that are based on auxiliary information sheets:
   
 <!--[Discarded dimension info](https://raw.githubusercontent.com/rOpenGov/estc/master/inst/examples/output.tables/dimensions_discarded.csv)-->
 
-Document size (area) info in area is available for 149256 documents (33%). Estimates of document size (area) info in gatherings system are available for 454969 documents (100%). 
+Document size (area) info in area is available for 1796036 documents (33%). Estimates of document size (area) info in gatherings system are available for 5462580 documents (100%). 
 
 ![plot of chunk summarysize](figure/summarysize-1.png)
 
@@ -49,7 +49,7 @@ Document dimension histogram (surface area). Few document sizes dominate publish
 ![plot of chunk summary-surfacearea](figure/summary-surfacearea-1.png)
 
 
-Compare gatherings and page counts. Page count information is originally missing but subsequently estimated for 204623 documents and updated (changed) for 1190 documents. 
+Compare gatherings and page counts. Page count information is originally missing but subsequently estimated for 2466767 documents and updated (changed) for 9224 documents. 
 
 
 ![plot of chunk summarypagecomp](figure/summarypagecomp-1.png)
@@ -69,24 +69,22 @@ Multi-volume documents average page counts are given per volume.
 
 |doc.dimension | mean.pages.singlevol| median.pages.singlevol| n.singlevol| mean.pages.multivol| median.pages.multivol| n.multivol| mean.pages.issue| median.pages.issue| n.issue|
 |:-------------|--------------------:|----------------------:|-----------:|-------------------:|---------------------:|----------:|----------------:|------------------:|-------:|
-|1to           |                 1.91|                    2.0|          53|                  NA|                    NA|         NA|               NA|                 NA|      NA|
-|2long         |                44.00|                   22.0|           4|                  NA|                    NA|         NA|            42.00|                 42|       1|
-|2fo           |                 -Inf|                  127.5|       14122|              485.23|                490.00|        299|            21.46|                 17|    1714|
-|4long         |                80.06|                   34.5|          34|                  NA|                    NA|         NA|            24.12|                 24|      16|
-|4to           |                 -Inf|                   24.0|       35914|               82.77|                 24.00|        167|            24.26|                 24|   24853|
-|6to           |               734.00|                  734.0|           1|                  NA|                    NA|         NA|               NA|                 NA|      NA|
-|8long         |                 2.00|                    2.0|           2|                  NA|                    NA|         NA|               NA|                 NA|      NA|
-|8vo           |                 -Inf|                  180.0|       45693|              310.17|                325.00|        542|            26.71|                 27|    6482|
-|12long        |               209.00|                  209.0|           3|                  NA|                    NA|         NA|               NA|                 NA|      NA|
-|12mo          |                 -Inf|                  262.0|        5904|              257.42|                266.00|        234|            30.25|                 28|     409|
-|16mo          |                 -Inf|                  192.0|         689|              305.18|                321.25|         17|            37.29|                 48|     110|
-|18mo          |                 -Inf|                  209.0|         308|               36.00|                 36.00|          1|            34.16|                 36|      19|
-|24long        |               432.00|                  432.0|           1|                  NA|                    NA|         NA|               NA|                 NA|      NA|
-|24mo          |              1983.10|                  276.0|         128|              291.50|                291.50|          4|            27.29|                 24|       7|
-|32mo          |               197.64|                  154.0|          33|                  NA|                    NA|         NA|            31.75|                 32|       4|
-|48mo          |               244.00|                  244.0|           2|                  NA|                    NA|         NA|               NA|                 NA|      NA|
-|64mo          |               175.27|                  128.0|          11|                  NA|                    NA|         NA|               NA|                 NA|      NA|
-|NA            |                 -Inf|                   95.0|      351773|              295.81|                310.00|      12299|            24.42|                 23|   49458|
+|1to           |                   NA|                     NA|           1|                  NA|                    NA|         NA|               NA|                 NA|      NA|
+|2long         |               122.00|                 122.00|          13|               61.00|                 61.00|          1|               NA|                 NA|      NA|
+|2fo           |              1326.41|                 941.00|        4875|              457.00|                467.67|       3845|               18|                 18|       1|
+|4long         |                  NaN|                     NA|           9|                  NA|                    NA|         NA|               NA|                 NA|      NA|
+|4to           |               215.91|                  68.00|        2611|               77.95|                 34.00|       2144|               34|                 34|     411|
+|6to           |                  NaN|                     NA|           1|                  NA|                    NA|         NA|               NA|                 NA|      NA|
+|8long         |                  NaN|                     NA|           6|                  NA|                    NA|         NA|               NA|                 NA|      NA|
+|8vo           |                 -Inf|                 709.67|        6639|              340.37|                354.83|       6049|               15|                 15|       1|
+|12long        |                98.00|                  98.00|           1|               24.50|                 24.50|          1|               NA|                 NA|      NA|
+|12mo          |               842.37|                 550.50|        2906|              270.82|                271.25|       2765|               NA|                 NA|      NA|
+|16mo          |              1006.70|                 819.75|         225|              267.92|                273.25|        219|               45|                 45|       1|
+|18mo          |               343.52|                 281.25|         205|               94.15|                 93.75|        191|               NA|                 NA|      NA|
+|20to          |                  NaN|                     NA|           1|                  NA|                    NA|         NA|               NA|                 NA|      NA|
+|24mo          |               807.05|                 765.75|          55|              266.07|                255.25|         47|               NA|                 NA|      NA|
+|32mo          |               443.11|                 384.00|          19|              190.88|                192.00|         13|               NA|                 NA|      NA|
+|NA            |                 -Inf|                 586.00|      199455|              283.81|                293.00|     142845|                8|                  8|   56322|
 
 
 ![plot of chunk summarypagecountsmulti2](figure/summarypagecountsmulti2-1.png)
@@ -104,10 +102,13 @@ Here we use the original data only:
 Only the most frequently occurring gatherings are listed here:
 
 
-|gatherings.original | mean.width| median.width| mean.height| median.height|    n|
-|:-------------------|----------:|------------:|-----------:|-------------:|----:|
-|2fo                 |      23.68|        23.68|       32.74|         32.74|  945|
-|4to                 |      20.40|        20.40|       22.46|         22.46| 1949|
-|8vo                 |      13.64|        13.64|       19.32|         19.32| 2458|
-|12mo                |      11.50|        11.50|       15.98|         15.98|  850|
+|gatherings.original | mean.width| median.width| mean.height| median.height|     n|
+|:-------------------|----------:|------------:|-----------:|-------------:|-----:|
+|1to                 |      38.44|        38.44|       54.81|         54.81|   402|
+|2fo                 |      23.82|        23.82|       32.87|         32.87| 11562|
+|4to                 |      19.36|        19.36|       22.44|         22.44| 23343|
+|8vo                 |      14.03|        14.03|       19.23|         19.23| 29211|
+|12mo                |      11.17|        11.17|       16.07|         16.07|  9899|
+|16mo                |       9.83|         9.83|       12.78|         12.78|   620|
+|18mo                |       9.00|         9.00|       14.24|         14.24|   225|
 

@@ -1,7 +1,7 @@
 ---
 title: "Summary for a selected author: Shakespeare, William (1564-1616)"
 author: "Leo Lahti"
-date: "2016-04-18"
+date: "2016-04-21"
 output: markdown_document
 ---
 
@@ -18,11 +18,11 @@ output: markdown_document
 
 This author has:
 
-  * 322 documents
-  * 258 unique titles ([table]('r title.file'))
-  * 49 unique publication places
-  * 14 unique publication countries
-  * 1594, 1830 time span   
+  * 3747 documents
+  * 1729 unique titles ([table]('r title.file'))
+  * 125 unique publication places
+  * 20 unique publication countries
+  * 1593, 1830 time span   
 
 
 <img src="figure/selected_author_summary_titlecount-1.png" title="plot of chunk selected_author_summary_titlecount" alt="plot of chunk selected_author_summary_titlecount" width="430px" />

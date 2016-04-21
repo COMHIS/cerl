@@ -1,7 +1,7 @@
 ---
 title: "Publication place preprocessing summary"
 author: "Leo Lahti"
-date: "2016-04-18"
+date: "2016-04-21"
 output: markdown_document
 ---
 
@@ -21,22 +21,22 @@ output: markdown_document
 
 [Publication place conversions](output.tables/publication_place_conversion_nontrivial.csv)
 
-[Places missing geocoordinate information](output.tables/absentgeocoordinates.csv). Altogether ``72.72``% of the documents have missing geocoordinates.
+[Places missing geocoordinate information](output.tables/absentgeocoordinates.csv). Altogether ``72.71``% of the documents have missing geocoordinates.
 
 
 
-Top-20 publication places are shown together with the number of documents. This info is available for 409941 documents (90%). There are 16626 unique publication places. Overall 27.3% of the places could be matched to geographic coordinates (from the [Geonames](http://download.geonames.org/export/dump/) database).
+Top-20 publication places are shown together with the number of documents. This info is available for 4918618 documents (90%). There are 83309 unique publication places. Overall 27.3% of the places could be matched to geographic coordinates (from the [Geonames](http://download.geonames.org/export/dump/) database).
 
 
 <img src="figure/summaryplace-1.png" title="plot of chunk summaryplace" alt="plot of chunk summaryplace" width="430px" /><img src="figure/summaryplace-2.png" title="plot of chunk summaryplace" alt="plot of chunk summaryplace" width="430px" />
 
 
 
-|name        |     n|  fraction|
-|:-----------|-----:|---------:|
-|France      | 88431| 19.436709|
-|Germany     | 79725| 17.523172|
-|England     | 38037|  8.360350|
-|Italy       | 37788|  8.305621|
-|Netherlands | 22941|  5.042322|
-|Switzerland |  6994|  1.537248|
+|name        |       n|  fraction|
+|:-----------|-------:|---------:|
+|France      | 1056355| 19.338023|
+|Germany     |  955799| 17.497208|
+|England     |  460372|  8.427739|
+|Italy       |  448803|  8.215953|
+|Netherlands |  275638|  5.045931|
+|Switzerland |   83888|  1.535685|
