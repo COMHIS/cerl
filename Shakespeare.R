@@ -1,19 +1,25 @@
 
-# Pick info sheet for Shakespeare & Cervantes
-my.authors <- c("Shakespeare, William (1564-1616)", "Cervantes Saavedra, Miguel De (1547-1616)")
+# Creating initial Shakespeare/Cervantes data for manual checking
+# source("Shakespeare_data.R")
 
-for (my.author in my.authors) {
+source("analysis.init.R")
 
-  df <- df.preprocessed %>%
-    dplyr::filter(author %in% my.author) %>%
-    dplyr::select(cerl_control_number = original_row, title, publication_year, language, 
-                  publication_place, country, publisher) %>%
-    dplyr::arrange(cerl_control_number, title, publication_year, language,
-                   publication_place, country, publisher)
+# -----------------------------------------
 
-  write.table(df, file = paste(output.folder, gsub(" ", "_", my.author), "_cerl.csv", sep = ""), quote = F, row.names = F, sep = "|")
+# Read the manually polished data
+source("Shakespeare.init.R")
 
-}
+# ------------------------------------------
 
+# Summary document
 
+knit("Shakespeare.Rmd")
+
+# Cervantes: Don Quixote, erityisesti CERL:
+#- miten teosta julkaistiin eri maissa eri aikoina?
+#- Don Quixoten julkaisemisen vertaaminen koko Euroopassa Shakespeareen
+
+# Shakespeare
+#- CERL: yhdistetään kaikki muualla kuin englanninkielisellä
+#  julkaistut teokset alkuperäisiin ja katsoa sitä kartalla.
 
