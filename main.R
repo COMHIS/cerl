@@ -7,6 +7,7 @@ output.folder <- "output.tables/"
 
 # Remove selected fields (almost empty and hence rather uninformative)
 ignore.fields <- c("publication_frequency", "publication_interval") # CERL
+update.fields = "publication_place"
 
 # —--------------------------------------------
 
@@ -38,7 +39,7 @@ source(system.file("extdata/validation.R", package = "bibliographica"))
 
 check <- "enrich"
 source(system.file("extdata/enrich.R", package = "bibliographica"))
-write.table(dim.estimates, sep = ",", row.names = F, file = paste(output.folder, "sheetsize_means.csv", sep = "/"), quote = FALSE)
+# write.table(dim.estimates, sep = ",", row.names = F, file = paste(output.folder, "sheetsize_means.csv", sep = "/"), quote = FALSE)
 
 # -------------------------------------------------
 
