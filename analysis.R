@@ -20,7 +20,6 @@ df = df.preprocessed
 knit("docsizes.Rmd")
 knit("digihum.Rmd")
 source("20160423-WorldBookDay.R")
-source("Shakespeare.R")
 
 # ---------------------------------
 

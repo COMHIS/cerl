@@ -12,12 +12,13 @@ languages <- c("english")
 
 # Remove selected fields (almost empty and hence rather uninformative)
 ignore.fields <- c("publication_frequency", "publication_interval") # CERL
+update.fields = "publication_place"
 
 # —--------------------------------------------
 
 # Initialize and read raw data
 reload.data <- FALSE
-mc.cores <- 8
+mc.cores <- 1 # Try 3 next time
 source(system.file("extdata/init.R", package = "bibliographica"))
 
 # ---------------------------------------------
@@ -43,14 +44,19 @@ source(system.file("extdata/validation.R", package = "bibliographica"))
 
 check <- "enrich"
 source(system.file("extdata/enrich.R", package = "bibliographica"))
+<<<<<<< HEAD
 source("enrich.cerl.R")
 
 write.table(dim.estimates, sep = ",", row.names = F, file = paste(output.folder, "sheetsize_means.csv", sep = "/"), quote = FALSE)
+=======
+# write.table(dim.estimates, sep = ",", row.names = F, file = paste(output.folder, "sheetsize_means.csv", sep = "/"), quote = FALSE)
+>>>>>>> 8959e8fb60df5bb53013b31c2cbee69c4462f2e7
 
 # -------------------------------------------------
 
 check <- "save"
 print("Saving preprocessed data")
+gc()
 saveRDS(df.preprocessed, file = "df.Rds", compress = TRUE)
 # df.preprocessed <- readRDS("df.Rds")
 
