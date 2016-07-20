@@ -1,29 +1,51 @@
 ## TODO
 
-23.4.2016 on 400 vuotta Shakespearen kuolemasta. World book day, koska
-Cervantes kuoli 22.4.1616 ja Shakespeare 23.4.1616.
+* Technical
 
-ESTC/CERL blogi-pohjainen juttu.
+Cervantes/Shakespeare blogaus toistettavuus
 
-- Shakespearen + Cervanesin kentät (käsin?)
-  -> Voit katsoa CERLin ja ESTCn author-listat että löytyykö vielä
-     synpnyymisiä versioita nimille
-     
-  -> Teosnimikkeitä pitää yhdistää. Tsekkaa listat, ja lisää sarake
-     johon tulee kunkin nimikkeen kohdalta lopullinen käytettävä nimi.
-     originaali, publication place, publisher, title, vuosi, kieli
-     ESTC + CERL - Mikko hakee duplikaatit sieltä jotenkin - anna ohjeet
+Göttingen: hintakehitysdemo -> onko meillä jo kaikki relevantit kentät
+sieltä XML:Stä pitää tarkistaa ?
+kuulin että siellä olis joku 530 vai mikä ihme kenttä se oli
+esim. jossa olisi täydennettyjä tietoja.
 
-- Käännösten rooli; eri väreillä alkuteoksen eri versiot
-  -> Tarkoittaako 'eri versiot' tässä eri kieliä, eri julkaisumaita,
-     vai jotain muuta? Kaikkia tällaisia eri vaihtoehtoja ei voida nyt
-     tähän vertailla kattavasti koska muuttujia on niin paljon eli
-     päätetään yksi ja pysytään siinä ellei tule syitä muuttaa.
+enrichments on hitaita - pitää vielä optimoida jotta
+skaalautuu. Monissa paikoissa unohdettu käsitellä vain uniikit eli
+tulee paljon tuplatyötä -> fiksaa.
 
-- Erityisenä fokuksena miten eri Shakespeare vs. Cervantes
-  teokset leviävät ajassa ja kartalla eri maissa
-  (Cervantes lähtee Espanjasta jne) - ks. Shakespeare.Rmd
 
-- Top-100 authorien luokitus 1700-luvulta Mikolla tehtynä. Tsekkaa
-  niitä ajassa + paikassa.
+* Author
+
+author gender ei toimi johtuen erityisesti ranskan kielestä. Melkein
+kaikki vai onko jopa kaikki top-naiset on oikeasti miehiä. Tämä pitää
+ehkä muuttaa ja ehkäpä käsin etsiä top-naiset mukaan analyysiin.
+
+ESTC:ssä lisäinfoa authoreille. Pitäisikö nämä ottaa mukaan
+myös CERLiin?  life.info <- estc::author_info_table()
+ambiguous.authors <- estc::ambiguous_authors_table()
+
+
+* Dimensions
+
+maakohtaiset erot dokumenttikoossa ajassa (50 vuoden palkeissa) - huom
+kokoestimaattien tulee pohjautua vain alkuperäisiin tietoihin, ei
+täydennettyihin!!!
+
+korkeuden lisäksi voidaan katsoa myös leveyttä ja sivumäärää sekä
+yleisesti paperinkulutusta per dokkarityyppi
+
+jos saadaan kokoja (cm vs. format) vertailemalla löydettyä yleinen
+trendi miten paljon quarto (tai muut) pienenevät 1600-luvun
+kuluessa. yleisiä trendejä miten kirjojen painamisen lisääntyminen
+suhtautuu kirjakoon yleiseen trendiin. Eli katseltaisiin myös
+pinta-alaa.
+
+paras jos pystytään tapauksista joista tiedossa merkityt sivut
+laskemaan historiallista muuttumista eri kirjakokojen suhteen (oletus
+että kirjat pienenee vuosien saatossa ainakin kooltaan, mutta
+mahdollisesti myös sivumäärältä), niin että saadaan jonkinlainen
+kerroin jolla sitten voidaan laskea eri aikakausille omat
+keskiarvot. Mutta tämä sellaista viilailua kun katsellaan myöhemmin
+ihan koko kirjapainotuotantoa ja tosiaan on se X10 määrä materiaalia
+
 

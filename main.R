@@ -4,6 +4,11 @@ library(devtools)
 # I/O definitions
 fs <- list.files("~/data/CERL/preprocessed", full.names = TRUE, pattern = ".csv")
 output.folder <- "output.tables/"
+catalog <- "cerl"
+
+# Languages to consider in cleanup.
+# TODO: recognize the necessary languages automatically ?
+languages <- c("english")
 
 # Remove selected fields (almost empty and hence rather uninformative)
 ignore.fields <- c("publication_frequency", "publication_interval") # CERL
@@ -26,7 +31,7 @@ source("filtering.R")
 # Preprocess raw data
 check <- "preprocess1"
 source(system.file("extdata/preprocessing.R", package = "bibliographica"))
-df.preprocessed <- readRDS("df0.Rds")
+#df.preprocessed <- readRDS("df0.Rds")
 
 # -------------------------------------------------
 
@@ -38,6 +43,8 @@ source(system.file("extdata/validation.R", package = "bibliographica"))
 
 check <- "enrich"
 source(system.file("extdata/enrich.R", package = "bibliographica"))
+source("enrich.cerl.R")
+
 write.table(dim.estimates, sep = ",", row.names = F, file = paste(output.folder, "sheetsize_means.csv", sep = "/"), quote = FALSE)
 
 # -------------------------------------------------

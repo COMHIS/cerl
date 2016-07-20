@@ -9,8 +9,8 @@ dfs <- df
 dfs$field <- dfs[[field]]
 df2 <- dfs %>%
     group_by(field) %>%
-    summarize(paper.consumption.km2 = sum(paper.consumption.km2, na.rm = TRUE), n = n()) %>%
-    arrange(desc(paper.consumption.km2))
+    summarize(paper = sum(paper, na.rm = TRUE), n = n()) %>%
+    arrange(desc(paper))
 
 # Pick top paper consumers
 tops <- as.character(df2$field[1:10])
@@ -18,12 +18,12 @@ tops <- as.character(df2$field[1:10])
 # Get data for plotting
 dfs <- filter(df, field %in% tops & publication_decade > 1450) %>%
        group_by(field, publication_decade) %>%
-    summarize(paper.consumption.km2 = sum(paper.consumption.km2, na.rm = TRUE), n = n()) 
+    summarize(paper = sum(paper, na.rm = TRUE), n = n()) 
 
-p <- ggplot(dfs, aes(x = publication_decade, y = paper.consumption.km2, fill = field)) +
+p <- ggplot(dfs, aes(x = publication_decade, y = paper, fill = field)) +
        geom_bar(stat = "identity", position = "stack") +
        xlab("Publication decade") +
-       ylab("Paper (km2)") +
+       ylab("Paper") +
        scale_fill_grey() +
        guides(fill = guide_legend("field")) +
        ggtitle("Paper consumption timeline")
@@ -85,13 +85,13 @@ Paper consumption
 # Calculate paper consumption for authors
 df2 <- df %>%
     group_by(author_unique) %>%
-    summarize(paper.consumption.km2 = sum(paper.consumption.km2, na.rm = TRUE), n = n()) 
+    summarize(paper = sum(paper, na.rm = TRUE), n = n()) 
 # Pick top-10 paper authors
-top10 <- na.omit(as.character(df2[order(df2$paper.consumption.km2, decreasing = TRUE), ]$author_unique))[1:10]
+top10 <- na.omit(as.character(df2[order(df2$paper, decreasing = TRUE), ]$author_unique))[1:10]
 dfs <- filter(df, author_unique %in% top10)
 dfs <- group_by(dfs, author_unique, publication_year) %>%
-    summarize(paper.consumption.km2 = sum(paper.consumption.km2, na.rm = TRUE), n = n()) 
-p <- ggplot(dfs, aes(x = publication_year, y = paper.consumption.km2)) 
+    summarize(paper = sum(paper, na.rm = TRUE), n = n()) 
+p <- ggplot(dfs, aes(x = publication_year, y = paper)) 
 p <- p + geom_bar(stat = "identity") 
 p <- p + facet_grid(author_unique ~ .)
 p <- p + ggtitle("Paper comsumption per year for top-10 paper authors")

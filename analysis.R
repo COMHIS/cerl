@@ -11,7 +11,7 @@ tmp <- generate_summary_tables(df.preprocessed, df.orig, output.folder)
 print("Generic summaries") # Markdown
 #load_all("../bibliographica/");
 
-sf <- generate_summaryfiles(df.preprocessed, author = author, output.folder = output.folder, ntop = ntop)
+sf <- generate_summaryfiles(df.preprocessed, df.orig, author = author, output.folder = output.folder, ntop = ntop)
 
 # ---------------------------------
 
