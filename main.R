@@ -1,56 +1,96 @@
+
 library(devtools)
-#load_all("~/proj/2014-Aatelouhinta/bibliographica")
+load_all("bibliographica")
 
 # I/O definitions
-fs <- list.files("~/data/CERL/preprocessed", full.names = TRUE, pattern = ".csv")
 output.folder <- "output.tables/"
+
+fs <- list.files("data/cerl", full.names = TRUE, pattern = ".csv")
 catalog <- "cerl"
 
 # Languages to consider in cleanup.
 # TODO: recognize the necessary languages automatically ?
 languages <- c("english")
 
+# Cores
+mc.cores <- 2 # Try 3 next time
+
+update.fields <- "publication_place"
+
 # Remove selected fields (almost empty and hence rather uninformative)
 ignore.fields <- c("publication_frequency", "publication_interval") # CERL
-update.fields = "publication_place"
 
-# —--------------------------------------------
+# ----------------------------------------------------
+#            LOAD DATA FOR PREPROCESSING
+# ----------------------------------------------------
 
 # Initialize and read raw data
 reload.data <- FALSE
-mc.cores <- 1 # Try 3 next time
 source(system.file("extdata/init.R", package = "bibliographica"))
-
-# ---------------------------------------------
+df.orig <- load_initial_datafile(fs, ignore.fields, reload.data)
 
 # Selected subsets of the raw data
 check <- "filtering"
-source("filtering.R") 
+# source("filtering.R") 
+df.orig <- df.orig[1:1000, ]
 
-# -----------------------------------------------
+data.preprocessing <- get_preprocessing_data(df.orig, 
+                                             update.fields,
+                                             ignore.fields)
+
+# ----------------------------------------------------
+#           PREPROCESS DATA
+# ----------------------------------------------------
 
 # Preprocess raw data
 check <- "preprocess1"
 source(system.file("extdata/preprocessing.R", package = "bibliographica"))
-#df.preprocessed <- readRDS("df0.Rds")
+data.preprocessed <- preprocess_data(data.preprocessing, 
+                                     df.orig,
+                                     languages, 
+                                     mc.cores = mc.cores)
+# rm(data.preprocessing)
+# df.preprocessed <- readRDS("df0.Rds")
 
-# -------------------------------------------------
+# ----------------------------------------------------
+#           VALIDATE PREPROCESSED DATA
+# ----------------------------------------------------
 
-# Validating and fixing fields
-check <- "validation"
 source(system.file("extdata/validation.R", package = "bibliographica"))
+data.validated <- validate_preprocessed_data(data.preprocessed)
+# rm(data.preprocessed)
 
-# -------------------------------------------------
+# -----------------------------------------------------
+#           ENRICH VALIDATED DATA
+# ----------------------------------------------------
 
 check <- "enrich"
+
 source(system.file("extdata/enrich.R", package = "bibliographica"))
-<<<<<<< HEAD
-source("enrich.cerl.R")
+data.enriched <- enrich_preprocessed_data(data.validated, df.orig)
+rm(data.validated)
+
+df.preprocessed <- data.enriched$df.preprocessed
+# ----------------------------------------------------
+
+# dim.estimates not visible... copied from df.preprocessed
+dim.orig <- df.preprocessed[, c("gatherings.original", "width.original", "height.original", "obl.original")]
+names(dim.orig) <- gsub("\\.original$", "", names(dim.orig))
+
+library(dplyr)
+# Mean dimensions for each gatherings
+dim.estimates <- dim.orig %>%
+  group_by(gatherings, obl) %>%
+  summarize(
+            mean.width = mean(width, na.rm = TRUE),
+            mean.height = mean(height, na.rm = TRUE),
+            n = n()
+            )
 
 write.table(dim.estimates, sep = ",", row.names = F, file = paste(output.folder, "sheetsize_means.csv", sep = "/"), quote = FALSE)
-=======
+# =======
 # write.table(dim.estimates, sep = ",", row.names = F, file = paste(output.folder, "sheetsize_means.csv", sep = "/"), quote = FALSE)
->>>>>>> 8959e8fb60df5bb53013b31c2cbee69c4462f2e7
+# >>>>>>> 8959e8fb60df5bb53013b31c2cbee69c4462f2e7
 
 # -------------------------------------------------
 
