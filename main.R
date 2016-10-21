@@ -1,5 +1,5 @@
 library(devtools)
-#load_all("~/proj/2014-Aatelouhinta/bibliographica")
+# load_all("~/Rpackages/bibliographica")
 
 # I/O definitions
 fs <- list.files("~/data/CERL/preprocessed", full.names = TRUE, pattern = ".csv")
@@ -44,13 +44,9 @@ source(system.file("extdata/validation.R", package = "bibliographica"))
 
 check <- "enrich"
 source(system.file("extdata/enrich.R", package = "bibliographica"))
-<<<<<<< HEAD
-source("enrich.cerl.R")
 
+# source("enrich.cerl.R") # not found - was there something earlier ? / LL
 write.table(dim.estimates, sep = ",", row.names = F, file = paste(output.folder, "sheetsize_means.csv", sep = "/"), quote = FALSE)
-=======
-# write.table(dim.estimates, sep = ",", row.names = F, file = paste(output.folder, "sheetsize_means.csv", sep = "/"), quote = FALSE)
->>>>>>> 8959e8fb60df5bb53013b31c2cbee69c4462f2e7
 
 # -------------------------------------------------
 
