@@ -1,21 +1,34 @@
-region;country;comment
-Augusta (Ambiguous);Ambiguous;Augsburg/Augusta GA/Augusta Me
-Bath;Ambiguous;England|USA
-Blandford (Ambiguous);Ambiguous;England|USA
-Boston;Ambiguous;England|USA
-Cambridge (Ambiguous);Ambiguous;England|USA
-Canterbury (Ambiguous);Ambiguous;England|USA
-Carlisle;Ambiguous;England/USA
-Charlottetown;Ambiguous;Canada/USA
-Chatham;Ambiguous;England/USA
-Chelmsford;Ambiguous;England/USA
-Europe;Ambiguous;
-Gloucester;Ambiguous;England|USA
-Newark (Ambiguous);Ambiguous;England|USA
-Newport;Ambiguous;England/USA
-Reading;Ambiguous;England|USA
-Salem;Ambiguous;England|USA
-Salisbury;Ambiguous;England|USA
-Westminster (Ambiguous);Ambiguous;
-Worcester;Ambiguous;England|USA
-York (Ambiguous);Ambiguous;
+region;country;X
+Bath;England|USA;NA
+Blandford;England|USA;NA
+Cambridge;England|USA;NA
+Canterbury;England|USA;NA
+Carlisle;England|USA;NA
+Carrick;Ambiguous;NA
+Charlottetown;Canada|USA;NA
+Chatham;England|USA;NA
+Chelmsford;England|USA;NA
+Dumfries;Scotland|USA;NA
+Europe;Ambiguous;NA
+Exeter;England|USA;NA
+Geneva;Switzerland|USA;NA
+Gloucester;England|USA;NA
+Halifax;England|USA|Canada;NA
+Keene;England|USA;NA
+Kingston;Jamaica|England|USA;NA
+Leominster;England|USA;NA
+Monmouth;England|USA;NA
+Newark;England|USA;NA
+Newport;England|USA;NA
+Paris;France|USA;NA
+Plymouth;England|USA;NA
+Portsmouth;England|USA;NA
+Reading;England|USA;NA
+Richmond;England|USA;NA
+Rome;Italy|USA;NA
+Salem;USA|England;NA
+Salisbury;England|USA;NA
+Trenton;Canada|USA;NA
+Winchester;England|USA;NA
+Worcester;England|USA;NA
+York;England|USA;NA

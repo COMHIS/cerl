@@ -1,21 +1,23 @@
 ---
 title: "Publisher preprocessing summary"
 author: "Leo Lahti"
-date: "2016-04-21"
+date: "2016-10-22"
 output: markdown_document
 ---
 
 
 ### Publishers
 
-[Publishers accepted](output.tables/publisher_accepted.csv)
+ * 48634 [unique publishers](output.tables/publisher_accepted.csv)
 
-[Publishers discarded](output.tables/publisher_discarded.csv)
+ * 75445 documents have unambiguous publisher information (84%). 
+
+ * [Discarded publisher entries](output.tables/publisher_discarded.csv)
+
+ * [Conversions from original to final names](output.tables/publisher_conversion_nontrivial.csv) (only non-trivial conversions shown)
 
 
-
-The 20 most common publishers are shown with the number of documents. Publisher information is available for 4051713 documents (74%). There are 966966 unique publisher names (some may be synonymes, though).
-
+The 20 most common publishers are shown with the number of documents. 
 
 ![plot of chunk summarypublisher2](figure/summarypublisher2-1.png)
 
@@ -31,10 +33,17 @@ Title count versus paper consumption (top publishers):
 
 ![plot of chunk publishertitlespapers](figure/publishertitlespapers-1.png)
 
-|publisher | titles|    paper|
-|:---------|------:|--------:|
-|decker    |   5547| 40.19342|
-|lucius    |   5334|     -Inf|
-|meyer     |   6258| 27.87265|
-|müller     |   9533| 60.62857|
-|royale    |  24876|     -Inf|
+|publisher                   | titles| paper|
+|:---------------------------|------:|-----:|
+|imp. de P.-J. Mariette      |    261|     0|
+|imp. royale                 |    315|     0|
+|Imp. royale                 |    748|     0|
+|impr. de H. Guerin          |    167|     0|
+|impr. de L. Delatour        |    216|     0|
+|Impr. roy                   |    486|     0|
+|impr. royale                |    249|     0|
+|Impr. royale                |    159|     0|
+|P. Prault                   |    542|     0|
+|Vve Saugrain et : P. Prault |    238|     0|
+
+

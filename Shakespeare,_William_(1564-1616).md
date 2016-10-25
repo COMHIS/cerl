@@ -1,7 +1,7 @@
 ---
 title: "Summary for a selected author: Shakespeare, William (1564-1616)"
 author: "Leo Lahti"
-date: "2016-04-21"
+date: "2016-10-22"
 output: markdown_document
 ---
 
@@ -13,16 +13,16 @@ output: markdown_document
 ```
 
 ```
-## Error in paste("Writing", filename): object 'title.file' not found
+## Error in write_xtable(dfa$title, file = title.file): object 'title.file' not found
 ```
 
 This author has:
 
-  * 3747 documents
-  * 1729 unique titles ([table]('r title.file'))
-  * 125 unique publication places
-  * 20 unique publication countries
-  * 1593, 1830 time span   
+  * 70 documents
+  * 57 unique titles ([table]('r title.file'))
+  * 10 unique publication places
+  * 8 unique publication countries
+  * 1604, 1828 time span   
 
 
 <img src="figure/selected_author_summary_titlecount-1.png" title="plot of chunk selected_author_summary_titlecount" alt="plot of chunk selected_author_summary_titlecount" width="430px" />
