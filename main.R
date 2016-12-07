@@ -1,5 +1,5 @@
 library(devtools)
-# load_all("~/Rpackages/bibliographica")
+load_all("~/Rpackages/bibliographica")
 
 # I/O definitions
 output.folder <- "output.tables/"
