@@ -70,7 +70,10 @@ source(system.file("extdata/enrich.R", package = "bibliographica"))
 data.enriched <- enrich_preprocessed_data(data.validated, df.orig)
 rm(data.validated)
 
-df.preprocessed <- data.enriched$df.preprocessed
+# Validate enriched data one more time
+data.validated2 <- validate_preprocessed_data(data.enriched)
+
+df.preprocessed <- data.validated2$df.preprocessed
 
 # ----------------------------------------------------
 
@@ -88,8 +91,6 @@ dim.estimates <- dim.orig %>%
             n = n()
             )
 
-
-# source("enrich.cerl.R") # not found - was there something earlier ? / LL
 write.table(dim.estimates, sep = ",", row.names = F, file = paste(output.folder, "sheetsize_means.csv", sep = "/"), quote = FALSE)
 
 # -------------------------------------------------
