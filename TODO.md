@@ -1,18 +1,6 @@
 ## TODO
 
-* Tue
-
-- Add edition field in the data (helps with duplicate identification)
-- Add/Remove the remaining updates with the names
-- Clean place names for Cicero
-- Group the entries by place & year & language + alphabetic ordering for titles
-- Associate Tue's titles to CERL titles
-- Remove unnecessary languages - just keep the language name column
-  (not the TRUE/FALSE version)
-- Luther, Voltaire, Cicero -> Could we use Eetu's point and click tool here
-- Check why CERL top author summary page shows so few documents
-  (Cicero ~ 200 docs although Tue had 14000 entries..)
-- Clean up by summer and then article writing during fall 2017 ?
+* Cicero: see TODO-Cicero.md
 
 * Technical
 
