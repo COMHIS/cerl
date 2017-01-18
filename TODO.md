@@ -2,6 +2,13 @@
 
 * Cicero: see TODO-Cicero.md
 
+* Title
+
+Note that Cicero, Plato and Zeno wrote a work on the state abbreviated Rep. We need to add author info if we want to have unique title identifiers.
+
+- Associate Tue's abbreviations (Cicero\ abbreviations*.csv/xlsx picked from OCD.ABBREVIATIONS.pdf by Tue) to titles. The list has a more general purpose and could be used more widely in cleaning up catalog title fields. It is made as a general help for students and scholars within classics so it includes all kinds of relevant abbreviations. But since the OCD is a standard work within the field and the list is now (since Sep. 2016) publicly available I was thinking that we could use these abbreviations and then link to the OCD site: http://classics.oxfordre.com/page/abbreviation-list/
+
+
 * Technical
 
 Cervantes/Shakespeare blogaus toistettavuus
