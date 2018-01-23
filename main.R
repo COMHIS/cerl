@@ -1,39 +1,20 @@
-library(devtools)
-load_all("~/Rpackages/bibliographica")
-
-# I/O definitions
-output.folder <- "output.tables/"
-
-fs <- list.files("data/cerl", full.names = TRUE, pattern = ".csv")
-catalog <- "cerl"
-
-# Languages to consider in cleanup.
-# TODO: recognize the necessary languages automatically ?
-languages <- c("english")
-
-# Cores
-mc.cores <- 1 # Some problems occur with multiple cores
-
-# FIXME: does not work if this is on
-# update.fields <- "publication_place"
-update.fields <- NULL
-
-# Remove selected fields (almost empty and hence rather uninformative)
-ignore.fields <- c("publication_frequency", "publication_interval") # CERL
+source("init.R")
 
 # ----------------------------------------------------
 #            LOAD DATA FOR PREPROCESSING
 # ----------------------------------------------------
 
-# Initialize and read raw data
 reload.data <- FALSE
+if (!"df.raw.Rds" %in% dir()) {
+  reload.data <- TRUE
+}
 source(system.file("extdata/init.R", package = "bibliographica"))
 df.orig <- load_initial_datafile(fs, ignore.fields, reload.data)
 
 # Selected subsets of the raw data
 check <- "filtering"
 # source("filtering.R") 
-# df.orig <- df.orig[1:1e5, ]
+df.orig <- df.orig[1:1e5, ]
 
 data.preprocessing <- get_preprocessing_data(df.orig, 
                                              update.fields,
@@ -48,26 +29,25 @@ check <- "preprocess1"
 source(system.file("extdata/preprocessing.R", package = "bibliographica"))
 data.preprocessed <- preprocess_data(data.preprocessing, 
                                      df.orig,
-                                     languages, 
-                                     mc.cores = mc.cores)
+                                     languages)
 # rm(data.preprocessing)
-# df.preprocessed <- readRDS("df0.Rds")
 
 # ----------------------------------------------------
 #           VALIDATE PREPROCESSED DATA
 # ----------------------------------------------------
 
-source(system.file("extdata/validation.R", package = "bibliographica"))
+library(bibliographica)
+data.preprocessed <- readRDS("df0.Rds")
 data.validated <- validate_preprocessed_data(data.preprocessed)
-# rm(data.preprocessed)
+rm(data.preprocessed)
 
 # -----------------------------------------------------
 #           ENRICH VALIDATED DATA
 # ----------------------------------------------------
 
 check <- "enrich"
-source(system.file("extdata/enrich.R", package = "bibliographica"))
-data.enriched <- enrich_preprocessed_data(data.validated, df.orig)
+source("init.R")
+data.enriched <- enrich_preprocessed_data(data.validated$df.preprocessed, df.orig)
 rm(data.validated)
 
 # Validate enriched data one more time
