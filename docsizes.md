@@ -1,7 +1,7 @@
 ---
 title: "Document dimension analysis"
 author: "Leo Lahti"
-date: "2016-10-22"
+date: "2018-01-25"
 output: markdown_document
 ---
 
@@ -11,15 +11,15 @@ output: markdown_document
 
 
 
-We have 1668 documents with country and original gatherings information. We have 7740 documents with original gatherings information but no country information.
+We have 1632 documents with country and original gatherings information. We have 7643 documents with original gatherings information but no country information.
 
 
 |     | Austria| Belgium| Czech Republic| Denmark| England| France| Germany| Ireland| Italy| Netherlands| Portugal| Scotland| Spain| Sweden| Switzerland| USA| NA| total|
 |:----|-------:|-------:|--------------:|-------:|-------:|------:|-------:|-------:|-----:|-----------:|--------:|--------:|-----:|------:|-----------:|---:|--:|-----:|
 |1to  |       0|       0|              0|       0|       2|      0|       0|       0|     0|           0|        0|        0|     0|      0|           0|   0|  2|     4|
-|2fo  |       0|       2|              0|       0|      44|     13|      10|       1|    35|           2|        1|       13|    13|      0|           4|   1| 30|   169|
-|4to  |       1|       2|              0|       0|      79|     75|      29|       1|    28|           7|        0|       12|     2|      4|           1|   8| 23|   272|
-|8vo  |       3|       1|              1|       5|     110|     46|      20|       4|    12|          14|        1|       26|     0|      0|           6|  27| 15|   291|
+|2fo  |       0|       2|              0|       0|      42|     12|      10|       1|    35|           2|        1|       11|    13|      0|           4|   1| 30|   164|
+|4to  |       1|       2|              0|       0|      74|     75|      29|       1|    27|           7|        0|       12|     2|      4|           1|   8| 22|   265|
+|8vo  |       3|       1|              1|       5|     107|     46|      20|       3|    10|          14|        1|       26|     0|      0|           6|  27| 15|   285|
 |12mo |       0|       2|              0|       0|      32|     16|       3|       2|     3|           6|        0|       12|     0|      0|           2|  11|  3|    92|
 |16mo |       0|       1|              0|       0|       0|      2|       0|       0|     0|           0|        0|        0|     0|      0|           0|   0|  1|     4|
 |18mo |       0|       0|              0|       0|       0|      0|       0|       0|     0|           0|        0|        0|     0|      0|           0|   1|  0|     1|
@@ -39,7 +39,7 @@ Only cases with 2000 documents are shown:
 
 |gatherings.original | mean.height| median.height| mean.width| median.width|   n|
 |:-------------------|-----------:|-------------:|----------:|------------:|---:|
-|2fo                 |    32.33136|      32.33136|   21.16667|     21.16667| 169|
+|2fo                 |     32.2561|       32.2561|   21.16667|     21.16667| 164|
 
 
 
@@ -55,9 +55,9 @@ Only cases with 2000 documents are shown:
 |2fo                 |England     |               1560|    29.00000|      29.00000|        NaN|          NaN|  1|
 |2fo                 |England     |               1630|    28.50000|      28.50000|        NaN|          NaN|  2|
 |2fo                 |England     |               1660|    29.00000|      29.00000|        NaN|          NaN|  1|
-|2fo                 |England     |               1680|    34.00000|      34.00000|        NaN|          NaN|  4|
+|2fo                 |England     |               1680|    31.66667|      31.66667|        NaN|          NaN|  3|
 |2fo                 |England     |               1690|    32.00000|      32.00000|        NaN|          NaN|  1|
-|2fo                 |England     |               1700|    29.75000|      29.75000|        NaN|          NaN|  4|
+|2fo                 |England     |               1700|    29.33333|      29.33333|        NaN|          NaN|  3|
 |2fo                 |England     |               1710|    32.50000|      32.50000|        NaN|          NaN|  2|
 |2fo                 |England     |               1730|    32.50000|      32.50000|        NaN|          NaN|  2|
 |2fo                 |England     |               1740|    30.50000|      30.50000|        NaN|          NaN|  2|
@@ -68,7 +68,7 @@ Only cases with 2000 documents are shown:
 |2fo                 |England     |               1790|    34.00000|      34.00000|        NaN|          NaN|  1|
 |2fo                 |France      |               1470|    29.00000|      29.00000|        NaN|          NaN|  1|
 |2fo                 |France      |               1480|    28.00000|      28.00000|        NaN|          NaN|  1|
-|2fo                 |France      |               1490|    27.50000|      27.50000|        NaN|          NaN|  2|
+|2fo                 |France      |               1490|    27.00000|      27.00000|        NaN|          NaN|  1|
 |2fo                 |France      |               1550|    31.00000|      31.00000|        NaN|          NaN|  1|
 |2fo                 |France      |               1560|    35.00000|      35.00000|        NaN|          NaN|  1|
 |2fo                 |France      |               1570|    33.00000|      33.00000|        NaN|          NaN|  1|
@@ -110,7 +110,7 @@ Only cases with 2000 documents are shown:
 |2fo                 |Scotland    |               1690|    33.00000|      33.00000|        NaN|          NaN|  1|
 |2fo                 |Scotland    |               1710|    33.00000|      33.00000|        NaN|          NaN|  1|
 |2fo                 |Scotland    |               1720|    34.25000|      34.25000|        NaN|          NaN|  4|
-|2fo                 |Scotland    |               1730|    36.66667|      36.66667|        NaN|          NaN|  3|
+|2fo                 |Scotland    |               1730|    36.00000|      36.00000|        NaN|          NaN|  1|
 |2fo                 |Scotland    |               1740|    36.50000|      36.50000|        NaN|          NaN|  2|
 |2fo                 |Scotland    |               1790|    34.00000|      34.00000|        NaN|          NaN|  1|
 |2fo                 |Spain       |               1600|    30.00000|      30.00000|        NaN|          NaN|  1|

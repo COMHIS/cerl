@@ -14,7 +14,7 @@ df.orig <- load_initial_datafile(fs, ignore.fields, reload.data)
 # Selected subsets of the raw data
 check <- "filtering"
 # source("filtering.R") 
-df.orig <- df.orig[1:1e5, ]
+# df.orig <- df.orig[1:1e5, ]
 
 data.preprocessing <- get_preprocessing_data(df.orig, 
                                              update.fields,
@@ -30,14 +30,15 @@ source(system.file("extdata/preprocessing.R", package = "bibliographica"))
 data.preprocessed <- preprocess_data(data.preprocessing, 
                                      df.orig,
                                      languages)
-# rm(data.preprocessing)
+rm(data.preprocessing)
 
 # ----------------------------------------------------
 #           VALIDATE PREPROCESSED DATA
 # ----------------------------------------------------
 
+check <- "validate"
 library(bibliographica)
-data.preprocessed <- readRDS("df0.Rds")
+# data.preprocessed <- readRDS("df0.Rds")
 data.validated <- validate_preprocessed_data(data.preprocessed)
 rm(data.preprocessed)
 
@@ -46,14 +47,15 @@ rm(data.preprocessed)
 # ----------------------------------------------------
 
 check <- "enrich"
-source("init.R")
-data.enriched <- enrich_preprocessed_data(data.validated$df.preprocessed, df.orig)
+# source("init.R")
+data.enriched <- enrich_preprocessed_data(data.validated, df.orig)
 rm(data.validated)
 
 # Validate enriched data one more time
+check <- "validate2"
 data.validated2 <- validate_preprocessed_data(data.enriched)
-
 df.preprocessed <- data.validated2$df.preprocessed
+rm(data.validated2)
 
 # ----------------------------------------------------
 
@@ -79,6 +81,7 @@ check <- "save"
 print("Saving preprocessed data")
 gc()
 saveRDS(df.preprocessed, file = "df.Rds", compress = TRUE)
+rm(df.preprocessed)
 # df.preprocessed <- readRDS("df.Rds")
 
 # --------------------------------------------------
