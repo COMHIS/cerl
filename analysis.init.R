@@ -14,8 +14,8 @@ library(knitr)
 
 # Set global parameters
 timespan <- c(1460, 1830)
-datafile <- "df.Rds"
-datafile.orig <- "df.raw.Rds"
+datafile <- "data/unified/polished/df.Rds"
+datafile.orig <- "data/unified/polished/df.raw.Rds"
 ntop <- 20
 author <- "Leo Lahti"
 output.folder <- "output.tables/"

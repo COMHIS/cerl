@@ -1,3 +1,4 @@
+# TODO: move the script in the Gitlab repos so all in one place..
 source("init.R")
 
 # ----------------------------------------------------
@@ -5,7 +6,7 @@ source("init.R")
 # ----------------------------------------------------
 
 reload.data <- FALSE
-if (!"df.raw.Rds" %in% dir()) {
+if (!"df.raw.Rds" %in% dir("data/unified/polished")) {
   reload.data <- TRUE
 }
 source(system.file("extdata/init.R", package = "bibliographica"))
@@ -38,7 +39,7 @@ rm(data.preprocessing)
 
 check <- "validate"
 library(bibliographica)
-# data.preprocessed <- readRDS("df0.Rds")
+# data.preprocessed <- readRDS("data/unified/polished/df0.Rds")
 data.validated <- validate_preprocessed_data(data.preprocessed)
 rm(data.preprocessed)
 
@@ -80,9 +81,9 @@ write.table(dim.estimates, sep = ",", row.names = F, file = paste(output.folder,
 check <- "save"
 print("Saving preprocessed data")
 gc()
-saveRDS(df.preprocessed, file = "df.Rds", compress = TRUE)
+saveRDS(df.preprocessed, file = "data/unified/polished/df.Rds", compress = TRUE)
 rm(df.preprocessed)
-# df.preprocessed <- readRDS("df.Rds")
+# df.preprocessed <- readRDS("data/unified/polished/df.Rds")
 
 # --------------------------------------------------
 
