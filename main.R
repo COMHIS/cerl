@@ -24,9 +24,10 @@ data.preprocessing <- get_preprocessing_data(df.orig,
 # ----------------------------------------------------
 
 # PREPROCESS GEODATA
-stop("HERE")
 source("preprocess_publication_place.R")
 
+# Ideally, we would then rewrite the updates into the
+# final data file. Have to think what's the best way..
 # Update preprocessed data in the datafile
 # FIXME: this step could be sped up with the
 # rio/feather/data.table packages/tools

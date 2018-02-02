@@ -7,6 +7,10 @@ place <- polish_place(df.orig[[field]], remove.unknown = FALSE)
 # Add country and geocoordinates
 df.preprocessed <- enrich_geo(place)
 
+# Add identifier that couples the original and preprocessed
+# versions even after possible subsettings
+df.preprocessed$original_row <- df.orig$original_row
+
 # Summarize the data and discarded entries
 # This generates all summary tables that are linked at
 # https://github.com/COMHIS/cerl/blob/master/publicationplace.md
