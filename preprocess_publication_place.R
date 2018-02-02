@@ -1,6 +1,10 @@
 # Preprocess publication_place field
 field <- "publication_place"
+
+# Polish place names
 place <- polish_place(df.orig[[field]], remove.unknown = FALSE)
+
+# Add country and geocoordinates
 df.preprocessed <- enrich_geo(place)
 
 # Summarize the data and discarded entries
@@ -10,9 +14,7 @@ tmp <- generate_summary_tables_geo(df.preprocessed, df.orig, output.folder)
 
 # This can be modified at:
 # bibliographica::inst/extdata/publicationplace.Rmd
-# Sometimes we like to restricted the evaluated time period (see analysis.init.R)
-# but for now, let's just do all
-author <- "Leo Lahti"
-ntop <- 20
+# Sometimes we like to restricted the evaluated time period
+# (see analysis.init.R) but for now, let's just do all
 sf <- generate_summaryfiles(df.preprocessed, df.orig, author = author, output.folder = output.folder, ntop = ntop, summaries = "publicationplace")
 

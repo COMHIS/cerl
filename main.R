@@ -24,6 +24,7 @@ data.preprocessing <- get_preprocessing_data(df.orig,
 # ----------------------------------------------------
 
 # PREPROCESS GEODATA
+stop("HERE")
 source("preprocess_publication_place.R")
 
 # Update preprocessed data in the datafile

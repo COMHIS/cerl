@@ -12,6 +12,10 @@ dir.create(output.folder)
 fs <- list.files("data/unified/", full.names = TRUE, pattern = ".csv.gz")
 catalog <- "cerl"
 
+# Summary info
+author <- "Leo Lahti"
+ntop <- 20
+
 # Languages to consider in cleanup.
 # TODO: recognize the necessary languages automatically ?
 languages <- c("english")
