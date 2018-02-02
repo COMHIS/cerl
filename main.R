@@ -15,11 +15,24 @@ df.orig <- load_initial_datafile(fs, ignore.fields, reload.data)
 # Selected subsets of the raw data
 check <- "filtering"
 # source("filtering.R") 
-# df.orig <- df.orig[1:1e5, ]
+df.orig <- df.orig[1:1e5, ]
 
 data.preprocessing <- get_preprocessing_data(df.orig, 
                                              update.fields,
                                              ignore.fields)
+
+# ----------------------------------------------------
+
+# PREPROCESS GEODATA
+datafile <- "data/unified/polished/df.Rds"
+source("preprocess_publication_place.R")
+
+# Update preprocessed data in the datafile
+# FIXME: this step could be sped up with the
+# rio/feather/data.table packages/tools
+# update.mode <- "overwrite"
+# f <- update_preprocessed_data_file(datafile, df.preprocessed, mode = update.mode)
+stop("HERE")
 
 # ----------------------------------------------------
 #           PREPROCESS DATA
