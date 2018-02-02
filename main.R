@@ -24,7 +24,6 @@ data.preprocessing <- get_preprocessing_data(df.orig,
 # ----------------------------------------------------
 
 # PREPROCESS GEODATA
-datafile <- "data/unified/polished/df.Rds"
 source("preprocess_publication_place.R")
 
 # Update preprocessed data in the datafile
