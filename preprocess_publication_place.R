@@ -11,6 +11,9 @@ df.preprocessed <- enrich_geo(place)
 # versions even after possible subsettings
 df.preprocessed$original_row <- df.orig$original_row
 
+# Store this data.frame
+preprocessed[[field]] <- df.preprocessed
+
 # Summarize the data and discarded entries
 # This generates all summary tables that are linked at
 # https://github.com/COMHIS/cerl/blob/master/publicationplace.md

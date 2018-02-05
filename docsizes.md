@@ -1,7 +1,7 @@
 ---
 title: "Document dimension analysis"
 author: "Leo Lahti"
-date: "2018-01-25"
+date: "2018-02-02"
 output: markdown_document
 ---
 
@@ -17,7 +17,7 @@ We have 1632 documents with country and original gatherings information. We have
 |     | Austria| Belgium| Czech Republic| Denmark| England| France| Germany| Ireland| Italy| Netherlands| Portugal| Scotland| Spain| Sweden| Switzerland| USA| NA| total|
 |:----|-------:|-------:|--------------:|-------:|-------:|------:|-------:|-------:|-----:|-----------:|--------:|--------:|-----:|------:|-----------:|---:|--:|-----:|
 |1to  |       0|       0|              0|       0|       2|      0|       0|       0|     0|           0|        0|        0|     0|      0|           0|   0|  2|     4|
-|2fo  |       0|       2|              0|       0|      42|     12|      10|       1|    35|           2|        1|       11|    13|      0|           4|   1| 30|   164|
+|2fo  |       0|       2|              0|       0|      42|     12|      10|       1|    35|           2|        1|       11|    14|      0|           4|   1| 29|   164|
 |4to  |       1|       2|              0|       0|      74|     75|      29|       1|    27|           7|        0|       12|     2|      4|           1|   8| 22|   265|
 |8vo  |       3|       1|              1|       5|     107|     46|      20|       3|    10|          14|        1|       26|     0|      0|           6|  27| 15|   285|
 |12mo |       0|       2|              0|       0|      32|     16|       3|       2|     3|           6|        0|       12|     0|      0|           2|  11|  3|    92|
@@ -116,6 +116,7 @@ Only cases with 2000 documents are shown:
 |2fo                 |Spain       |               1600|    30.00000|      30.00000|        NaN|          NaN|  1|
 |2fo                 |Spain       |               1610|    29.00000|      29.00000|        NaN|          NaN|  1|
 |2fo                 |Spain       |               1670|    30.00000|      30.00000|        NaN|          NaN|  1|
+|2fo                 |Spain       |               1680|    29.00000|      29.00000|        NaN|          NaN|  1|
 |2fo                 |Spain       |               1710|    29.00000|      29.00000|        NaN|          NaN|  2|
 |2fo                 |Spain       |               1720|    29.00000|      29.00000|        NaN|          NaN|  1|
 |2fo                 |Spain       |               1760|    27.50000|      27.50000|        NaN|          NaN|  2|
@@ -133,7 +134,6 @@ Only cases with 2000 documents are shown:
 |2fo                 |NA          |               1630|    36.00000|      36.00000|        NaN|          NaN|  1|
 |2fo                 |NA          |               1640|    30.00000|      30.00000|        NaN|          NaN|  1|
 |2fo                 |NA          |               1660|    31.00000|      31.00000|        NaN|          NaN|  2|
-|2fo                 |NA          |               1680|    29.00000|      29.00000|        NaN|          NaN|  1|
 |2fo                 |NA          |               1700|    34.00000|      34.00000|        NaN|          NaN|  1|
 |2fo                 |NA          |               1720|    29.00000|      29.00000|        NaN|          NaN|  1|
 |2fo                 |NA          |               1730|    54.00000|      54.00000|        NaN|          NaN|  1|
