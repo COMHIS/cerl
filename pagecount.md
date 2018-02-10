@@ -1,7 +1,7 @@
 ---
 title: "Pagecount preprocessing summary"
 author: "Leo Lahti"
-date: "2018-02-05"
+date: "2018-02-10"
 output: markdown_document
 ---
 
@@ -10,15 +10,15 @@ output: markdown_document
 
 ## Page counts
 
-  * Page count available for 5385362 documents in total (99.6%), including both readily available and estimated page counts.
+  * Page count available for 89129 documents in total (99.7%), including both readily available and estimated page counts.
 
-  * Page count readily available for 3387611 documents (62.7%). 
+  * Page count readily available for 59355 documents (66.4%). 
 
-  * Page count estimated for 1997751 documents (37%).
+  * Page count estimated for 29774 documents (33.3%).
 
-  * Page count missing and could not be estimated for 20993 documents (0.4%).
+  * Page count missing and could not be estimated for 294 documents (0.3%).
 
-  * Page count updated for 379666 documents in the validation phase.
+  * Page count updated for 1463 documents in the validation phase.
   
   * [Conversions from raw data to final page count estimates](output.tables/pagecount_conversions.csv)
 
@@ -60,7 +60,7 @@ count estimate.
 ## Error in FUN(X[[i]], ...): object '.group' not found
 ```
 
-Left: Gatherings vs. overall pagecounts (original + estimated). Right: Only the estimated page counts (for the 1997751 documents that have missing pagecount info in the original data):
+Left: Gatherings vs. overall pagecounts (original + estimated). Right: Only the estimated page counts (for the 29774 documents that have missing pagecount info in the original data):
 
 
 ```
@@ -82,7 +82,7 @@ Left: Gatherings vs. overall pagecounts (original + estimated). Right: Only the 
 
 ## Estimated paper consumption
 
-Note: there are 3638101 documents that have some dimension info but sheet area information could not be calculated. 
+Note: there are 54996 documents that have some dimension info but sheet area information could not be calculated. 
 
 ![plot of chunk paperconsumption](figure/pagecount-paperconsumption-1.png)![plot of chunk paperconsumption](figure/pagecount-paperconsumption-2.png)
 

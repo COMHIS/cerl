@@ -1,18 +1,18 @@
 ---
 title: "Publisher preprocessing summary"
 author: "Leo Lahti"
-date: "2018-02-05"
+date: "2018-02-10"
 output: markdown_document
 ---
 
 
 ### Publishers
 
- * 1188702 [unique publishers](output.tables/publisher_accepted.csv)
+ * 46632 [unique publishers](output.tables/publisher_accepted.csv)
 
- * 4047161 documents have unambiguous publisher information (74.9%). This includes documents identified as self-published; the author name is used as the publisher in those cases (if known).
+ * 74230 documents have unambiguous publisher information (83%). This includes documents identified as self-published; the author name is used as the publisher in those cases (if known).
 
- * 376 documents are identified as self-published (0%). 
+ * 0 documents are identified as self-published (0%). 
 
  * [Discarded publisher entries](output.tables/publisher_discarded.csv)
 
@@ -35,18 +35,18 @@ Title count versus paper consumption (top publishers):
 
 ![plot of chunk publishertitlespapers](figure/publishertitlespapers-1.png)
 
-|publisher    | titles|       paper|
-|:------------|------:|-----------:|
-|[s. n.]      |  11106| 12211270.61|
-|[s.n.?]      |   4824|  5302006.60|
-|Cotta        |   4676| 21863788.41|
-|imp. royale  |   5642|    12850.26|
-|Imp. royale  |   5682|    39615.45|
-|Impr. royale |  11543|  1671536.85|
-|Lucius       |   4913| 26489278.39|
-|Meyer        |   6049| 28046745.83|
-|Müller       |   9064| 45797975.17|
-|s. n         |   8807|  9378238.54|
+|publisher                   | titles|   paper|
+|:---------------------------|------:|-------:|
+|]                           |    718| 5457067|
+|imp. de P.-J. Mariette      |    261|       0|
+|imp. royale                 |    315|       0|
+|Imp. royale                 |    748|       0|
+|impr. de L. Delatour        |    216|       0|
+|Impr. roy                   |    486|       0|
+|impr. royale                |    249|       0|
+|P. Prault                   |    542|       0|
+|s.n                         |    568| 2452047|
+|Vve Saugrain et : P. Prault |    238|       0|
 
 
 ### Corporates

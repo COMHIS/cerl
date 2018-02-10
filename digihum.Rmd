@@ -16,17 +16,17 @@ dfs <- df %>% group_by(author) %>% tally() %>% arrange(desc(n)) %>% filter(!is.n
 top.authors <- dfs$author[1:2]
 print(top.authors)
 
-dfs <- df %>% filter(author %in% top.authors) %>% group_by(country) %>% tally() %>% arrange(desc(n)) %>% filter(!is.na(country))
-top.countries <- dfs$country
+dfs <- df %>% filter(author %in% top.authors) %>% group_by(publication_country) %>% tally() %>% arrange(desc(n)) %>% filter(!is.na(publication_country))
+top.countries <- dfs$publication_country
 
-dfs <- df %>% filter(author %in% top.authors & country %in% top.countries) %>% group_by(country, author, publication_decade) %>% tally() %>% arrange(publication_decade)
+dfs <- df %>% filter(author %in% top.authors & publication_country %in% top.countries) %>% group_by(publication_country, author, publication_decade) %>% tally() %>% arrange(publication_decade)
 
 # Top-2 authors in their top-6 countries
 
 theme_set(theme_bw(20))
 pics <- list()
 for (id in top.countries[1:12]) {
-  dfss <- dfs %>% filter(country == id) %>% group_by(author)
+  dfss <- dfs %>% filter(publication_country == id) %>% group_by(author)
 
   dfss$author <- factor(dfss$author, levels = as.character(unique(dfs$author)))
 

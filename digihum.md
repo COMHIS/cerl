@@ -1,7 +1,7 @@
 ---
 title: "Top author analysis"
 author: "Leo Lahti"
-date: "2018-02-02"
+date: "2018-02-10"
 output: markdown_document
 ---
 
