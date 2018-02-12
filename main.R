@@ -97,16 +97,15 @@ write.table(dim.estimates, sep = ",", row.names = F, file = paste(output.folder,
 # -------------------------------------------------
 
 # Combine separately processed fields
-df.preprocessed <- bind_cols(df.preprocessed, preprocessed$publication_place)
+df.preprocessed <- merge(df.preprocessed, preprocessed$publication_place, by = "original_row")
 
 # --------------------------------------------------
 
 check <- "save"
 print("Saving preprocessed data")
 gc()
-saveRDS(df.preprocessed, file = "data/unified/polished/df.Rds", compress = TRUE)
+saveRDS(df.preprocessed, file = datafile, compress = TRUE)
 rm(df.preprocessed)
-# df.preprocessed <- readRDS("data/unified/polished/df.Rds")
 
 # --------------------------------------------------
 
