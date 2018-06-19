@@ -1,7 +1,7 @@
 ---
 title: "Pagecount preprocessing summary"
 author: "Leo Lahti"
-date: "2018-02-10"
+date: "2018-06-18"
 output: markdown_document
 ---
 
@@ -10,15 +10,15 @@ output: markdown_document
 
 ## Page counts
 
-  * Page count available for 89129 documents in total (99.7%), including both readily available and estimated page counts.
+  * Page count available for 2665032 documents in total (99.4%), including both readily available and estimated page counts.
 
-  * Page count readily available for 59355 documents (66.4%). 
+  * Page count readily available for 2161345 documents (80.6%). 
 
-  * Page count estimated for 29774 documents (33.3%).
+  * Page count estimated for 503687 documents (18.8%).
 
-  * Page count missing and could not be estimated for 294 documents (0.3%).
+  * Page count missing and could not be estimated for 15578 documents (0.6%).
 
-  * Page count updated for 1463 documents in the validation phase.
+  * Page count updated for 281559 documents in the validation phase.
   
   * [Conversions from raw data to final page count estimates](output.tables/pagecount_conversions.csv)
 
@@ -55,23 +55,11 @@ count estimate.
 
 ### Document size distribution
 
+![plot of chunk pagecountstat](figure/pagecount-pagecountstat-1.png)
 
-```
-## Error in FUN(X[[i]], ...): object '.group' not found
-```
+Left: Gatherings vs. overall pagecounts (original + estimated). Right: Only the estimated page counts (for the 503687 documents that have missing pagecount info in the original data):
 
-Left: Gatherings vs. overall pagecounts (original + estimated). Right: Only the estimated page counts (for the 29774 documents that have missing pagecount info in the original data):
-
-
-```
-## Error in grouped_indices_grouped_df_impl(.data): Column `pagecount` is unknown
-```
-
-```
-## Error in FUN(X[[i]], ...): object '.group' not found
-```
-
-<img src="figure/pagecount-size-estimated-1.png" title="plot of chunk size-estimated" alt="plot of chunk size-estimated" width="430px" />
+<img src="figure/pagecount-size-estimated-1.png" title="plot of chunk size-estimated" alt="plot of chunk size-estimated" width="430px" /><img src="figure/pagecount-size-estimated-2.png" title="plot of chunk size-estimated" alt="plot of chunk size-estimated" width="430px" />
 
 
 
@@ -82,7 +70,7 @@ Left: Gatherings vs. overall pagecounts (original + estimated). Right: Only the 
 
 ## Estimated paper consumption
 
-Note: there are 54996 documents that have some dimension info but sheet area information could not be calculated. 
+Note: there are 1116112 documents that have some dimension info but sheet area information could not be calculated. 
 
 ![plot of chunk paperconsumption](figure/pagecount-paperconsumption-1.png)![plot of chunk paperconsumption](figure/pagecount-paperconsumption-2.png)
 
@@ -119,20 +107,10 @@ Gatherings height: does it change over time? How increased printing activity is 
 
 Page counts: does it change over time? Also suggested we could calculate some kind of factor for each time period based on this ? In principle, we could calculate this separately for any given publication place as well but leẗ́s discuss this later. Would help to specify some specific places of interest.
 
-
-```
-## Error in FUN(X[[i]], ...): object '.group' not found
-```
-
-![plot of chunk pagecounts-gatsize2](figure/pagecount-pagecounts-gatsize2-1.png)
+![plot of chunk pagecounts-gatsize2](figure/pagecount-pagecounts-gatsize2-1.png)![plot of chunk pagecounts-gatsize2](figure/pagecount-pagecounts-gatsize2-2.png)![plot of chunk pagecounts-gatsize2](figure/pagecount-pagecounts-gatsize2-3.png)![plot of chunk pagecounts-gatsize2](figure/pagecount-pagecounts-gatsize2-4.png)
 
 
 Same for documents that have a sufficient number of pages:
 
-
-```
-## Error in FUN(X[[i]], ...): object '.group' not found
-```
-
-![plot of chunk pagecounts-gatsize3](figure/pagecount-pagecounts-gatsize3-1.png)
+![plot of chunk pagecounts-gatsize3](figure/pagecount-pagecounts-gatsize3-1.png)![plot of chunk pagecounts-gatsize3](figure/pagecount-pagecounts-gatsize3-2.png)![plot of chunk pagecounts-gatsize3](figure/pagecount-pagecounts-gatsize3-3.png)![plot of chunk pagecounts-gatsize3](figure/pagecount-pagecounts-gatsize3-4.png)
 

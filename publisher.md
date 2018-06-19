@@ -1,18 +1,18 @@
 ---
 title: "Publisher preprocessing summary"
 author: "Leo Lahti"
-date: "2018-02-10"
+date: "2018-06-18"
 output: markdown_document
 ---
 
 
 ### Publishers
 
- * 46632 [unique publishers](output.tables/publisher_accepted.csv)
+ * 792622 [unique publishers](output.tables/publisher_accepted.csv)
 
- * 74230 documents have unambiguous publisher information (83%). This includes documents identified as self-published; the author name is used as the publisher in those cases (if known).
+ * 2260169 documents have unambiguous publisher information (84.3%). This includes documents identified as self-published; the author name is used as the publisher in those cases (if known).
 
- * 0 documents are identified as self-published (0%). 
+ * 177 documents are identified as self-published (0%). 
 
  * [Discarded publisher entries](output.tables/publisher_discarded.csv)
 
@@ -35,18 +35,18 @@ Title count versus paper consumption (top publishers):
 
 ![plot of chunk publishertitlespapers](figure/publishertitlespapers-1.png)
 
-|publisher                   | titles|   paper|
-|:---------------------------|------:|-------:|
-|]                           |    718| 5457067|
-|imp. de P.-J. Mariette      |    261|       0|
-|imp. royale                 |    315|       0|
-|Imp. royale                 |    748|       0|
-|impr. de L. Delatour        |    216|       0|
-|Impr. roy                   |    486|       0|
-|impr. royale                |    249|       0|
-|P. Prault                   |    542|       0|
-|s.n                         |    568| 2452047|
-|Vve Saugrain et : P. Prault |    238|       0|
+|publisher         | titles|     paper|
+|:-----------------|------:|---------:|
+|]                 |  13420|  60966820|
+|Dieterich         |   2458|  10664111|
+|Kilius            |   2414|  16800807|
+|kungl.tryckeriet) |   2396|   3327198|
+|Lucius            |   3840|  25986818|
+|Meyer             |   3244|  26593852|
+|Müller            |   5233|  44692203|
+|Mullerus          |   3349|  28785286|
+|s. n              |   8374|   9301364|
+|s.n               |  35383| 137469896|
 
 
 ### Corporates

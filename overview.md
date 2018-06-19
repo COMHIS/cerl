@@ -1,13 +1,13 @@
 ---
 title: "Preprocessing overview"
 author: "Leo Lahti"
-date: "2018-02-10"
+date: "2018-06-18"
 output: markdown_document
 ---
 
 # Preprocessing summary
 
-The data spanning years 1462-1830 has been included and contains 89423 documents (also other filter may apply depending on the data collection, see the source code for details.
+The data spanning years 1-2013 has been included and contains 2680627 documents (also other filter may apply depending on the data collection, see the source code for details.
 
 
 
@@ -28,7 +28,7 @@ The data spanning years 1462-1830 has been included and contains 89423 documents
 ## Annotated documents
 
   * 6004893 documents in the original raw data
-  * 89423 documents in the final preprocessed data (1.49%)
+  * 2680627 documents in the final preprocessed data (44.64%)
 
 Fraction of documents with data:
 
@@ -39,61 +39,60 @@ Same in exact numbers: documents with available/missing entries, and number of u
 
 |field name              | available (%)| available (n)| missing (%)| unique (n)|
 |:-----------------------|-------------:|-------------:|-----------:|----------:|
-|volnumber               |           0.1|            85|        99.9|         15|
-|parts                   |           0.3|           239|        99.7|         19|
-|width.original          |           0.8|           716|        99.2|        187|
-|publication_year_till   |           3.2|          2864|        96.8|        373|
-|first_edition           |           9.3|          8330|        90.7|          3|
-|obl                     |          20.0|         17852|        80.0|          3|
-|author_age              |          24.7|         22107|        75.3|        138|
-|height.original         |          30.9|         27598|        69.1|        225|
-|paper                   |          38.4|         34299|        61.6|      10988|
-|width                   |          38.5|         34427|        61.5|        195|
-|height                  |          38.5|         34427|        61.5|        227|
-|area                    |          38.5|         34427|        61.5|        482|
-|author_death            |          41.1|         36718|        58.9|        657|
-|author_birth            |          41.3|         36896|        58.7|        636|
-|author_gender           |          41.5|         37110|        58.5|          5|
-|self_published          |          61.6|         55071|        38.4|          2|
-|author_name             |          63.7|         56977|        36.3|      26635|
-|author                  |          63.7|         56977|        36.3|      27356|
-|pagecount.orig          |          66.4|         59355|        33.6|       1579|
-|publication_country     |          73.7|         65871|        26.3|         38|
-|publisher               |          83.0|         74230|        17.0|      46632|
-|publication_place       |          87.0|         77777|        13.0|       3407|
-|dissertation            |          99.6|         89073|         0.4|          2|
-|synodal                 |          99.6|         89073|         0.4|          2|
-|pagecount               |          99.7|         89129|         0.3|       1588|
-|volcount                |          99.8|         89225|         0.2|         53|
-|publication_year_from   |          99.8|         89263|         0.2|        368|
-|title                   |         100.0|         89386|         0.0|      83761|
-|pagecount.sheet         |         100.0|         89411|         0.0|        709|
-|language_count          |         100.0|         89423|         0.0|          8|
-|multilingual            |         100.0|         89423|         0.0|          2|
-|languages               |         100.0|         89423|         0.0|        444|
-|language_primary        |         100.0|         89423|         0.0|         71|
-|pagecount.multiplier    |         100.0|         89423|         0.0|          2|
-|pagecount.squarebracket |         100.0|         89423|         0.0|        480|
-|pagecount.plate         |         100.0|         89423|         0.0|        221|
-|pagecount.arabic        |         100.0|         89423|         0.0|       1510|
-|pagecount.roman         |         100.0|         89423|         0.0|        356|
-|gatherings.original     |         100.0|         89423|         0.0|         12|
-|obl.original            |         100.0|         89423|         0.0|          2|
-|original_row            |         100.0|         89423|         0.0|      89423|
-|pagecount_from          |         100.0|         89423|         0.0|          4|
-|author_pseudonyme       |         100.0|         89423|         0.0|          2|
-|publication_year        |         100.0|         89423|         0.0|        367|
-|publication_decade      |         100.0|         89423|         0.0|         38|
-|gatherings              |         100.0|         89423|         0.0|         16|
-|singlevol               |         100.0|         89423|         0.0|          2|
-|multivol                |         100.0|         89423|         0.0|          2|
-|issue                   |         100.0|         89423|         0.0|          2|
-|original_row1           |         100.0|         89423|         0.0|      89423|
+|volnumber               |           0.0|            41|       100.0|          9|
+|parts                   |           0.2|          5784|        99.8|         57|
+|width.original          |           2.2|         59323|        97.8|        866|
+|publication_year_till   |           3.0|         79853|        97.0|        634|
+|first_edition           |          19.6|        524236|        80.4|          3|
+|height.original         |          24.2|        648600|        75.8|       1131|
+|author_age              |          34.9|        935252|        65.1|        626|
+|obl                     |          45.1|       1209949|        54.9|          3|
+|author_gender           |          49.0|       1313965|        51.0|          5|
+|author_death            |          51.5|       1381105|        48.5|       1041|
+|author_birth            |          52.5|       1406233|        47.5|       1224|
+|paper                   |          57.9|       1552281|        42.1|      46090|
+|area                    |          58.4|       1564515|        41.6|       5917|
+|height                  |          58.4|       1564520|        41.6|       1127|
+|width                   |          58.4|       1564538|        41.6|        866|
+|author_name             |          75.0|       2010999|        25.0|     343293|
+|author                  |          75.0|       2011002|        25.0|     369109|
+|self_published          |          76.9|       2060518|        23.1|          3|
+|publication_country     |          77.0|       2062853|        23.0|         59|
+|pagecount.orig          |          80.6|       2161345|        19.4|       3505|
+|publisher               |          84.3|       2260169|        15.7|     792622|
+|publication_place       |          88.5|       2372974|        11.5|      31939|
+|publication_year_from   |          94.1|       2523725|         5.9|        867|
+|publication_year        |          94.6|       2536443|         5.4|        890|
+|publication_decade      |          94.6|       2536443|         5.4|        154|
+|dissertation            |          95.4|       2556442|         4.6|          3|
+|synodal                 |          95.4|       2556442|         4.6|          2|
+|pagecount               |          99.4|       2665032|         0.6|       3539|
+|volcount                |          99.5|       2667720|         0.5|        210|
+|pagecount.sheet         |         100.0|       2679594|         0.0|       2147|
+|title                   |         100.0|       2680279|         0.0|    2223108|
+|obl.original            |         100.0|       2680626|         0.0|          3|
+|original_row            |         100.0|       2680627|         0.0|    2680627|
+|language_count          |         100.0|       2680627|         0.0|         13|
+|multilingual            |         100.0|       2680627|         0.0|          2|
+|languages               |         100.0|       2680627|         0.0|       3481|
+|language_primary        |         100.0|       2680627|         0.0|        207|
+|pagecount.multiplier    |         100.0|       2680627|         0.0|          2|
+|pagecount.squarebracket |         100.0|       2680627|         0.0|       1462|
+|pagecount.plate         |         100.0|       2680627|         0.0|        747|
+|pagecount.arabic        |         100.0|       2680627|         0.0|       3870|
+|pagecount.roman         |         100.0|       2680627|         0.0|        897|
+|gatherings.original     |         100.0|       2680627|         0.0|         20|
+|pagecount_from          |         100.0|       2680627|         0.0|          4|
+|author_pseudonyme       |         100.0|       2680627|         0.0|          2|
+|gatherings              |         100.0|       2680627|         0.0|         23|
+|singlevol               |         100.0|       2680627|         0.0|          2|
+|multivol                |         100.0|       2680627|         0.0|          2|
+|issue                   |         100.0|       2680627|         0.0|          2|
 
 ```
 ##             used   (Mb) gc trigger   (Mb)  max used   (Mb)
-## Ncells   9641860  515.0   14609022  780.3  14609022  780.3
-## Vcells 206258810 1573.7  321966814 2456.5 263688517 2011.8
+## Ncells  11248344  600.8   48772065 2604.8  95257942 5087.4
+## Vcells 452702635 3453.9  976066160 7446.8 975283582 7440.9
 ```
 
 
