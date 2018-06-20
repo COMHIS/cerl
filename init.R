@@ -19,7 +19,7 @@ dir.create(output.folder)
 
 fs <- list.files("data/unified/", full.names = TRUE, pattern = ".csv.gz")
 catalog <- "cerl"
-datafile <- "data/unified/polished/df.Rds"
+datafile      <- "data/unified/polished/df.Rds"
 datafile.orig <- "data/unified/polished/df.raw.Rds"
 
 # Summary info

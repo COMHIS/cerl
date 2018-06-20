@@ -15,13 +15,13 @@ df.orig <- load_initial_datafile(fs, ignore.fields, reload.data)
 # Selected subsets of the raw data
 check <- "filtering"
 source("filtering.R") 
-# df.orig <- df.orig[1:1e5, ]
+#df.orig <- df.orig[1:1e5, ]
 
 data.preprocessing <- get_preprocessing_data(df.orig, 
                                              update.fields,
                                              ignore.fields)
 
-# ----------------------------------------------------
+# ----------------------------------------------------------------
 
 preprocessed <- list()
 

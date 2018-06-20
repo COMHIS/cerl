@@ -1,18 +1,18 @@
 ---
 title: "Publisher preprocessing summary"
 author: "Leo Lahti"
-date: "2018-06-18"
+date: "2018-06-20"
 output: markdown_document
 ---
 
 
 ### Publishers
 
- * 792622 [unique publishers](output.tables/publisher_accepted.csv)
+ * 55722 [unique publishers](output.tables/publisher_accepted.csv)
 
- * 2260169 documents have unambiguous publisher information (84.3%). This includes documents identified as self-published; the author name is used as the publisher in those cases (if known).
+ * 90013 documents have unambiguous publisher information (90%). This includes documents identified as self-published; the author name is used as the publisher in those cases (if known).
 
- * 177 documents are identified as self-published (0%). 
+ * 0 documents are identified as self-published (0%). 
 
  * [Discarded publisher entries](output.tables/publisher_discarded.csv)
 
@@ -35,18 +35,18 @@ Title count versus paper consumption (top publishers):
 
 ![plot of chunk publishertitlespapers](figure/publishertitlespapers-1.png)
 
-|publisher         | titles|     paper|
-|:-----------------|------:|---------:|
-|]                 |  13420|  60966820|
-|Dieterich         |   2458|  10664111|
-|Kilius            |   2414|  16800807|
-|kungl.tryckeriet) |   2396|   3327198|
-|Lucius            |   3840|  25986818|
-|Meyer             |   3244|  26593852|
-|Müller            |   5233|  44692203|
-|Mullerus          |   3349|  28785286|
-|s. n              |   8374|   9301364|
-|s.n               |  35383| 137469896|
+|publisher                                                      | titles|     paper|
+|:--------------------------------------------------------------|------:|---------:|
+|]                                                              |    999| 6316293.8|
+|Ex officina Christophori Plantini                              |    103|  872839.4|
+|Foucault, libraire, rue des Noyers, No 37                      |    122|       0.0|
+|Im Verlag bey Joseph Wolff                                     |     99|  608043.0|
+|Printed & sold by the author, at his music warehouse,          |    107| 1676132.8|
+|Printed by Longman and Broderip                                |    182|  648867.2|
+|Printed for C. Smith                                           |    125| 5053840.6|
+|Printed for the proprietors, under the direction of John Bell, |    159|       0.0|
+|Published ... by J. Cary Engraver                              |    218|  799755.2|
+|s.n                                                            |   2483| 7758897.4|
 
 
 ### Corporates
