@@ -10,15 +10,15 @@ output: markdown_document
 
 ## Page counts
 
-  * Page count available for 99540 documents in total (99.5%), including both readily available and estimated page counts.
+  * Page count available for 2665032 documents in total (99.4%), including both readily available and estimated page counts.
 
-  * Page count readily available for 83273 documents (83.3%). 
+  * Page count readily available for 2161345 documents (80.6%). 
 
-  * Page count estimated for 16267 documents (16.3%).
+  * Page count estimated for 503687 documents (18.8%).
 
-  * Page count missing and could not be estimated for 457 documents (0.5%).
+  * Page count missing and could not be estimated for 15578 documents (0.6%).
 
-  * Page count updated for 6418 documents in the validation phase.
+  * Page count updated for 281559 documents in the validation phase.
   
   * [Conversions from raw data to final page count estimates](output.tables/pagecount_conversions.csv)
 
@@ -57,7 +57,7 @@ count estimate.
 
 ![plot of chunk pagecountstat](figure/pagecount-pagecountstat-1.png)
 
-Left: Gatherings vs. overall pagecounts (original + estimated). Right: Only the estimated page counts (for the 16267 documents that have missing pagecount info in the original data):
+Left: Gatherings vs. overall pagecounts (original + estimated). Right: Only the estimated page counts (for the 503687 documents that have missing pagecount info in the original data):
 
 
 ```
@@ -79,7 +79,7 @@ Left: Gatherings vs. overall pagecounts (original + estimated). Right: Only the 
 
 ## Estimated paper consumption
 
-Note: there are 39937 documents that have some dimension info but sheet area information could not be calculated. 
+Note: there are 1116112 documents that have some dimension info but sheet area information could not be calculated. 
 
 ![plot of chunk paperconsumption](figure/pagecount-paperconsumption-1.png)![plot of chunk paperconsumption](figure/pagecount-paperconsumption-2.png)
 
