@@ -4,9 +4,9 @@
 #df.orig <- df.orig[1:1000, ]
 #print(paste("Total documents:", nrow(df.orig)))
 
-df.orig <- df.orig %>% filter(!is.na(publication_time)) %>%
-                  filter(!is.na(language)) %>%
-                  filter(!is.na(publication_place)) %>%
-                  filter(!is.na(physical_extent)) %>%
-                  filter(!is.na(physical_dimension)) 		  
+#df.orig <- df.orig %>% filter(!is.na(publication_time)) %>%
+#                  filter(!is.na(language)) %>%
+#                  filter(!is.na(publication_place)) %>%
+#                  filter(!is.na(physical_extent)) %>%
+#                  filter(!is.na(physical_dimension)) 		  
 
