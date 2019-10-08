@@ -40,6 +40,9 @@ We have 1.47584 &times; 10<sup>5</sup> documents with publication country and or
 
 ![plot of chunk docsizes-3](figure/docsizes-3-1.png)![plot of chunk docsizes-3](figure/docsizes-3-2.png)![plot of chunk docsizes-3](figure/docsizes-3-3.png)![plot of chunk docsizes-3](figure/docsizes-3-4.png)![plot of chunk docsizes-3](figure/docsizes-3-5.png)![plot of chunk docsizes-3](figure/docsizes-3-6.png)![plot of chunk docsizes-3](figure/docsizes-3-7.png)
 
+### Examples
+
+<img src="figure/quarto-1.png" title="plot of chunk quarto" alt="plot of chunk quarto" width="50%" /><img src="figure/quarto-2.png" title="plot of chunk quarto" alt="plot of chunk quarto" width="50%" />
 
 ### Average document sizes 
 
