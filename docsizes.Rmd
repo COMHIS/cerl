@@ -12,17 +12,17 @@ output: markdown_document
 # only include gatherings with sufficiently many documents
 df1 <- filter(df, !is.na(gatherings.original) & (!is.na(height.original) | !is.na(width.original))) %>%
        filter(!gatherings.original == "NA") %>%       
-       group_by(gatherings.original, country) %>% 
+       group_by(gatherings.original, publication_country) %>% 
        summarize(n = n())
 
 # Gatherings x countries title counts
 library(reshape2)
-tab <- acast(df1, gatherings.original ~ country, fill = 0)
+tab <- acast(df1, gatherings.original ~ publication_country, fill = 0)
 tab <- cbind(tab, total = rowSums(tab))
 ```
 
 
-We have `r sum(tab)` documents with country and original gatherings information. We have `r sum(!df$gatherings.original == "NA")` documents with original gatherings information but no country information.
+We have `r sum(tab)` documents with publication country and original gatherings information. We have `r sum(!df$gatherings.original == "NA")` documents with original gatherings information but no publication country information.
 
 ```{r docsizes-2, echo=FALSE, message=FALSE, warning=FALSE}
 kable(tab, caption = "Gatherings x countries title counts")
@@ -30,7 +30,7 @@ kable(tab, caption = "Gatherings x countries title counts")
 
 
 
-### Selected gatherings across time; by country
+### Selected gatherings across time; by publication country
 
 ```{r docsizes-3, echo=FALSE, message=FALSE, warning=FALSE, fig.width=8, fig.height=5}
 
@@ -39,9 +39,9 @@ top.gatherings <- setdiff(names(which(table(df$gatherings.original) > nmin)), "N
 
 df2 <- filter(df, !is.na(gatherings.original) & (!is.na(height.original) | !is.na(width.original))) %>%
        filter(gatherings.original %in% top.gatherings) %>%
-       select(publication_decade, gatherings.original, height.original, width.original, country)
+       select(publication_decade, gatherings.original, height.original, width.original, publication_country)
        
-df3 <- df2 %>% group_by(gatherings.original, publication_decade, country) %>% 
+df3 <- df2 %>% group_by(gatherings.original, publication_decade, publication_country) %>% 
        summarize(mean.height.original = mean(height.original, na.rm = T),
     	         mean.width.original  = mean(width.original, na.rm = T),
 		 n = n())
@@ -49,11 +49,11 @@ df3 <- df2 %>% group_by(gatherings.original, publication_decade, country) %>%
 # Select specific gatherings
 for (sel.gatherings in top.gatherings) {
   # .. and countries that have enough docs ..
-  top.countries <- names(which(sort(sapply(split(df3$n, df3$country), sum)) > 100))
-  mydf <- df3 %>% filter(gatherings.original == sel.gatherings & country %in% top.countries)
+  top.countries <- names(which(sort(sapply(split(df3$n, df3$publication_country), sum)) > 100))
+  mydf <- df3 %>% filter(gatherings.original == sel.gatherings & publication_country %in% top.countries)
   p <- ggplot()
-  p <- p + geom_point(data = mydf, aes(x = publication_decade, y = mean.height.original, size = n, group = country, color = country))
-  p <- p + geom_smooth(data = mydf, method = "loess", aes(x = publication_decade, y = mean.height.original, color = country))
+  p <- p + geom_point(data = mydf, aes(x = publication_decade, y = mean.height.original, size = n, group = publication_country, color = publication_country))
+  p <- p + geom_smooth(data = mydf, method = "loess", aes(x = publication_decade, y = mean.height.original, color = publication_country))
   p <- p + ggtitle(paste(sel.gatherings, ": height"))
   print(p)
 }
@@ -80,14 +80,14 @@ kable(mean.dimensions, caption = "Average document dimensions")
 
 
 
-### Average document sizes by decade and country
+### Average document sizes by decade and publication country
 
 Only cases with `r nmin` documents are shown:
 
 ```{r docsizes-5, echo=FALSE, message=FALSE, warning=FALSE}
 df2 <- filter(df, !is.na(gatherings.original) & (!is.na(height.original) | !is.na(width.original))) %>%
        filter(gatherings.original %in% top.gatherings) %>%
-       group_by(gatherings.original, country, publication_decade) %>% 
+       group_by(gatherings.original, publication_country, publication_decade) %>% 
        summarize(mean.height = mean(height.original, na.rm = T),
 	    median.height = mean(height.original, na.rm = T),
     	    mean.width = mean(width.original, na.rm = T), 

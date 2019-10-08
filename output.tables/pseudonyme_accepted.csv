@@ -1,54 +1,51 @@
-author	Count
-Total count: 	9115
-***	 16
-Admirer Of Truth	  1
-African Merchant	  2
+Name	Count
+Total count (na.rm TRUE): 	5468
+Affectionate Brother	  1
+African Merchant	  1
 Agitator In The City	  1
 Aliquis	  1
-Amateur	 29
+Amateur	 28
 Amateur Of Eminence	  3
 American	  4
 American Citizen In Whose Heart The Amor Patriae Holds The Highest Place	  1
 American Gentleman	  1
+American In England	  1
 American Lady	  1
 Amicus	  9
 Amicus Investigationis	  1
 Amicus Patriae	  2
+Aminadab	  1
 Aminidab	  1
 Amor Patriae	  1
-Anacharsis	 22
-Anacreon	490
-Anglicanus	  2
+Anacharsis	 19
+Anacreon	182
+Anglicanus	  1
 Anglicanus Theophilus	  1
-Anglicus	  2
+Anglicus	  1
 Anglo Britannus	  2
 Anglo nativus	  2
-Anglo saxon	  3
-Anon	  1
-Anonymus	 15
+Anglo saxon	  2
+Anonymus	  9
 Anonymus Londinensis	  1
-Another Hand	  1
 Anti jacobin	  2
 Antigallicus Titus	  1
 Apothecary	  1
 Apothecary In Birmingham	  1
 Archaicus	  2
 Artist	  1
-Attorney	  3
+Attorney	  6
 Author Of A Poetic Lecture On Lotteries	  1
 Author Of A Proper Reply To A Lady	  1
 Author Of Absalom & Achitophel	  3
-Author Of An Appeal To The Good Sense Of The Higher And Wealthy Orders Of The People	  1
 Author Of Antichrist In The French Convention	  1
 Author Of Dearness Of Provisions	  3
 Author Of Eliza Warwick	  1
-Author Of Hamlain	  1
 Author Of Le Mecanisme De L'esprit	  1
 Author Of Leheup's Ballad	  1
-Author Of Some Information On The Use Of Indian Corn	  1
 Author Of The Abdicated Prince	  1
 Author Of The Attorney's Practice Epitomized	  2
 Author Of The Case Of The Protestant Dissenters Fairly Stated	  2
+Author Of The Christian And Critical Remarks	  1
 Author Of The Consolatory Letter To The Noble Lord Dismissed The Military Service	  1
 Author Of The Creed Of An Independent Whig	  1
 Author Of The Crisis Stated	  1
@@ -59,18 +56,19 @@ Author Of The Divine Rights Of The British Nation	  2
 Author Of The Duke Of Anjou's Succession Considered	  3
 Author Of The E l Of Ch m's Apology	  1
 Author Of The Essay On The Rights Of The East india Company	  1
-Author Of The Exposition Of The Reasons Of Dissent	  1
+Author Of The First	  1
 Author Of The Flower Of The Jacobins	  1
 Author Of The Former Letter For Liberty Of Conscience	  1
 Author Of The Former Remarks	  1
 Author Of The Groans Of Ireland	  1
+Author Of The Ground And Nature Of Human Knowledge	  1
 Author Of The Lawfulness Glory And Advantage	  1
 Author Of The Lay man's Vindication	  1
 Author Of The Letter To A Lady	  1
 Author Of The Magpies	  1
 Author Of The Necessity Of An Incorporate Union	  1
 Author Of The Practical Scheme	  5
-Author Of The Remarkable Queries	  2
+Author Of The Remarkable Queries	  1
 Author Of The Remarques On The Town	  1
 Author Of The Reprisal	  1
 Author Of The Saints A Satire	  1
@@ -80,51 +78,53 @@ Author Of The Way To Please Him	  1
 Authors Of The Abstract With Improvements	  1
 B de	  1
 Baalzebub	  1
-Barrister	 12
-Barrister At Law	  4
+Barrister	 11
+Barrister At Law	  3
 Barrister Of The Middle Temple	  1
 Basilius Anonymus	  2
 Beelzebub	  1
 Birmingham Manufacturer	  1
 Britannia	  2
-Britannicus	 15
+Britannicus	 14
 Britannicus Mercurius	  1
-Britannus	  1
+Britannus	  2
 British Commoner	  1
 British Freeholder	  2
-British Merchant	  2
+British Merchant	  1
 British Muse	  1
+British Officer Now In Germany	  1
 Briton	  3
+Brother	  1
 Brother Freeholder	  1
 Brother Freeman	  2
 Brother Lunatic	  1
 Brother Of The Birch	  1
 By stander	  2
-Bystander	  1
-Camillus	 13
+Bystander	  2
+Camillus	  2
 Canana	  2
-Candidus	 26
+Candidus	 17
 Candor	  8
 Cantabrigiensis	  1
 Captain In Lichfield	  1
 Captain Of A Company	  1
-Catholic	  2
+Catholic	  1
 Catholic Church	  7
 Catholic Layman	  1
 Catholick	  2
 Catholick christian	  1
 Catholicus	  1
-Cato	 25
+Cato	 19
 Cato Brutus	  2
-Cato Dionysius	524
+Cato Dionysius	180
 Cato Redivivus	  2
 Censor Dramaticus	  1
 Censor Of Great Britain	  1
-Censorinus	 75
-Chevalier	 28
-Chresner A	  3
-Christian	357
-Christianus	 17
+Censorinus	 45
+Chevalier	 11
+Chresner A	  5
+Christian	205
+Christianus	 11
 Church Of England	  3
 Church Of England man	  3
 Church Of England Man	  1
@@ -133,19 +133,16 @@ Cit	  2
 Citizen And Watchmaker	  1
 Citizen Of Aberdeen	  1
 Citizen Of Bath	  1
-Citizen Of Dublin	  1
-Citizen Of Edinburgh	  5
-Citizen Of London	 12
+Citizen Of London	 10
 Citizen Of New Sarum	  1
 Citizen Of New York	  1
 Citizen Of The Isle Of Man	  3
 Citizen Of The United States	  1
-Citizen Of Westminster	  1
 Citizen Randol	  1
 Citoyen	  6
 Civicus	  1
-Civilian	  2
-Civis	 16
+Civilian	  3
+Civis	 17
 Cleaner Of Faded Portraits	  1
 Cleombrotus	  1
 Clergy man	  1
@@ -153,71 +150,67 @@ Clergy man In The Country	  3
 Clergy man In The Diocese Of Bath And Wells	  1
 Clergy Man Lately Escaped From Thence	  1
 Clergy man Of The Church Of England	  1
-Clergyman	 19
+Clergyman	 23
 Clergyman In London	  1
-Clergyman In The Country	  2
+Clergyman In The Country	  1
 Clergyman Of The Church Of England	 15
-Clergyman Of The Established Church	  4
+Clergyman Of The Established Church	  3
 Clergyman Of Wiltshire	  1
 Clericus	  5
 Coachman	  1
 Coachman Robert	  2
-Colluthus	 64
+Colluthus	 17
 Colonell In The Army	  1
 Columbian	  1
 Comedian	  1
 Commissioned Officer On Board The Fleet	  3
-Commoner	  9
+Commissioner Of Bankrupts	  1
+Commoner	  8
 Compiler Of An Easy Introduction To Reading &c	  1
 Comte De ***	  4
-Confucius	 74
+Confucius	 48
 Considerable Stock holder	  1
 Constitutional Reformer	  1
 Converted Cavalier	  1
 Corinna	  1
-Corn dealer	  1
 Corregidor	  1
 Cosmopolita	  2
 Countrey Minister	  1
-Countrey Trades man	  1
 Country Banker	  1
-Country Curate	  6
+Country Curate	  8
 Country Divine	  2
 Country Farmer	  4
-Country Gentleman	 46
-Country Justice Of The Peace	  1
+Country Gentleman	 31
 Country Layman	  1
 Country Magistrate	  2
 Country Scholar	  1
 Country School boy	  1
 Country Vicar	  1
-Countryman	  3
-Curate	  1
-Curate Jacob	  8
+Countryman	  1
+Curate	  2
+Curate Jacob	  7
 Curfet	  1
 D n	  1
-D***	 11
+D***	  7
 De G	  2
 Democri diogenes	  1
-Democritus	 26
-Demophilus	 28
-Demosthenes	938
-Diabreck	  1
+Democritus	 10
+Demophilus	 17
+Demosthenes	397
 Disconsolate Englishman	  1
-Disinterested Hand	  1
 Disinterested Person	  1
 Disinterested Person Who Neither Has Or Expects Any Place Or Pension	  1
 Dissenter	  3
+Dissenter In The Country	  1
 Dissenting Lay man	  2
 Divine	  1
 Divine In The North	  1
 Divine Of That Church	  1
 Divine Of The Kirk Of Scotland	  1
-Dwalphintramis	  7
+Dwalphintramis	  6
 East India Company	  1
-Eboracensis	  1
 Edinus	  1
-Elector	  1
+Elector	  2
 Elector Of The Borough Of Great Yarmouth	  1
 Elector Of Westminster	  1
 Emigrant	  1
@@ -230,22 +223,18 @@ England	  1
 England And Wales	  9
 English Covenanter	  2
 English Factor	  1
-English Gentleman	  5
-English Gentleman Abroad	  5
-English Gentleman Of Ireland	  1
+English Gentleman	  6
+English Gentleman Abroad	  3
 English Gentleman Of Very Good Account	  2
 English man	  1
-English Merchant	  1
 English Merchant Of London	  2
 English Merchant Residing At Leghorn	  1
 English Protestant That Lately Narrowly Escaped With His Life From Thence	  3
-Englishman	 19
-Erra Pater	 27
+Englishman	 14
+Erra Pater	 15
 Eton Scholar	  2
-Examinator	  1
-Exchange Broker	  1
 Experienced Farrier	  1
-Experienced Surveyor	  1
+Experienced Surveyor	  2
 Explainer	  2
 Eye witness	  5
 Eye Witness	  3
@@ -254,86 +243,77 @@ Eye witness Of Their Most Noble Courage For The Example Of Their Neighbouring Co
 Eye witnesse	  1
 Eye Witnesse To A Person Of Honour	  1
 Fact Tom	  1
-Fair Merchant	  1
 Fair Play	  2
 Faithful Friend	  1
 Faithful Member Of The Church Of England	  2
-Faithful Subject Of The Best Of Kings	  2
+Faithful Subject Of The Best Of Kings	  1
 Faithfull And Loyall Subject To The Present King	  1
-Famous Prussian	  2
-Farmer	 23
-Father Of Candor	 19
+Farmer	 14
+Father L	  1
+Father Of Candor	 17
 Fathers Of The Society Of Jesus	  1
 Fellow Of The Royal Society	  5
 Fidelio	  1
-Fidelis	  6
-Fidelitas	  2
+Fidelis	  2
 Fidelity	  1
 Firm Friend To Truth Liberty	  2
 Foreign Minister Lately Residing At Paris	  1
-Free Citizen	  3
 Free thinker	  3
 Freeholder	 16
-Freeman Philanax	  2
+Freeman Philanax	  1
+French Lady At Paris	  1
 French Minister	  3
-French Nobleman	  1
-Friend	  6
+Friend	  4
 Friend And Servant To Both	  1
-Friend And Wel wisher To This Common wealth	  1
 Friend At Oxford	  1
 Friend At The Hague	  1
 Friend In The Countrey	  2
-Friend Of Great Britain	  1
+Friend Of Great Britain	  2
 Friend Of Master Osbornes And A Lover Of Truth	  1
-Friend Of Order	  1
 Friend Of The Light	  1
 Friend Of The People	  1
 Friend Of Truth	  1
 Friend To All Parties	  1
-Friend To Both Countries	  2
+Friend To Both Countries	  3
 Friend To Commerce And Humanity	  2
-Friend To Fair Discussion	  1
-Friend To His Country	  3
-Friend To Ireland	  3
+Friend To Ireland	  1
 Friend To Justice And The Common wealth	  1
 Friend To Liberty And Foe To Tyranny	  1
 Friend To Mankind	  1
 Friend To National Industry	  1
 Friend To Peace	  1
-Friend To Physick	  1
 Friend To Religious And Civil Liberty	  1
 Friend To Social Order	  1
 Friend To The Church And Constitution	  1
 Friend To The Commonwealth Of England	  1
-Friend To The Constitution	  9
+Friend To The Constitution	  6
 Friend To The Constitution And A Lover Of Peace	  1
 Friend To The Constitution To The Royal Family	  1
 Friend To The Coole Conference	  2
 Friend To The English Constitution	  3
-Friend To The Freedom Of The Press	  1
 Friend To The German Doctor	  1
 Friend To The People	  2
 Friend To The People And Their Liberties	  1
-Friend To The Poor	  2
-Friend To The Public	  5
-Friend To The Revenue	  1
+Friend To The Poor	  1
+Friend To The Public	  4
+Friend To The Rights Of The Constitution	  1
 Friend To The Souls In Prison	  1
-Friend To The Threshing Floor Of Ornan	  2
+Friend To The Threshing Floor Of Ornan	  1
 Friend To The Youth Of Columbia	  1
+Friend To Them	  1
 Friend To Trade	  1
-Friend To Trade And Liberty	  1
 Friend To Youth	  2
 Frostiface Icedore	  1
-Gentil	 13
+Gentil	  3
 Gentleman At Chichester	  1
-Gentleman At Dantzick	  1
-Gentleman At Edinburgh	  4
-Gentleman At Liverpool	  1
+Gentleman At Edinburgh	  2
+Gentleman At Liverpool	  2
+Gentleman At The West End Of The Town	  1
 Gentleman At York	  2
 Gentleman Belonging To The Bishop Of Londonderry	  1
 Gentleman Belonging To The Jerusalem Lodge	  3
 Gentleman Bred In His Family	  1
-Gentleman Farmer	  3
+Gentleman Farmer	  2
 Gentleman For Many Years A Resident In America	  1
 Gentleman Formerly In The Army	  1
 Gentleman In Algier	  1
@@ -343,59 +323,62 @@ Gentleman In Fife	  1
 Gentleman In Glasgow	  1
 Gentleman In Ireland	  1
 Gentleman In London	  5
+Gentleman In Munster	  1
 Gentleman In Northampton	  1
 Gentleman In Scotland	  1
 Gentleman In South brittain	  1
 Gentleman In The City	  1
-Gentleman In The Countrey	  1
-Gentleman In The Country	 13
+Gentleman In The Countrey	  2
+Gentleman In The Country	 11
+Gentleman In The Neighbourhood	  1
 Gentleman In The West Of England	  1
-Gentleman In Town	  8
+Gentleman In Town	  7
 Gentleman In Yorkshire	  1
 Gentleman Lately Arriv'd	  1
 Gentleman Lately Arriv'd There From Ireland	  1
-Gentleman Long Resident In India	  1
 Gentleman Near Kelso	  1
 Gentleman No Professed Author But A Lover Of History And Of The Theatre	  2
 Gentleman Now Resident In The Court Of Spaine	  1
 Gentleman Now Residing There	  1
-Gentleman Of Cambridge	  4
+Gentleman Of Cambridge	  2
 Gentleman Of Exeter	  1
 Gentleman Of Exon	  1
 Gentleman Of Experience	  2
 Gentleman Of Fortune	  2
 Gentleman Of Glasgow	  2
 Gentleman Of Good Worth Now Resident In London	  1
-Gentleman Of Gray's inn	  1
+Gentleman Of Gray's inn	  2
 Gentleman Of Ireland	  1
-Gentleman Of Lincoln's inn	  4
+Gentleman Of Lincoln's inn	  2
 Gentleman Of New Inn Hall	  1
-Gentleman Of Oxford	 21
+Gentleman Of Oxford	 20
 Gentleman Of Quality Of North britain	  1
 Gentleman Of Quality Who Was In The Service	  1
 Gentleman Of Salisbury	  1
 Gentleman Of Sunderland	  1
 Gentleman Of Swisserland	  1
+Gentleman Of That Nation	  1
 Gentleman Of The Academy Of Glasgow	  1
-Gentleman Of The Bar	  3
+Gentleman Of The Bar	  2
 Gentleman Of The Church Of England	  1
 Gentleman Of The Faculty	  1
-Gentleman Of The Inner temple	  5
+Gentleman Of The Inner temple	  8
 Gentleman Of The Law	  3
 Gentleman Of The Middle Temple	  5
 Gentleman Of The Temple	  1
 Gentleman Of The Town Of Elvas	  1
 Gentleman Of The University	  1
 Gentleman Of The University Of Cambridge	  1
+Gentleman Of The University Of Oxford	  1
 Gentleman Of Worth	  1
 Gentleman Present At The Time	  1
 Gentleman Residing At Paris	  3
 Gentleman That Wishes All Happinesse And Peace To This Distracted Kingdome	  1
-Gentleman Tobias	  5
+Gentleman Tobias	  2
 Gentleman Who Attended His Lordship In His Last Moments	  1
+Gentleman Who Has Made Angling His Diversion Upwards Of Twenty eight Years	  1
 Gentleman Who Has Resided Several Years In Jamaica	  1
 Gentleman Who Made The Tour Of Europe	  1
-Gentleman Who Resided Some Years In Sweden	  1
 Gentleman Who Was Taken In The Fleet	  1
 Gentleman Who Was Unlawfully Detain'd	  1
 Gentletouch Simon	  1
@@ -403,10 +386,10 @@ Gentlewoman	  1
 Gentlewoman Of Quality	  1
 German Gentleman	  3
 German Nobleman	  1
-Glass house Clerk	  3
+Glass house Clerk	  1
 Gloucestershire Gentleman	  1
 Goodwill	  1
-Graduate Of Oxford	  2
+Graduate Of Oxford	  1
 Graduate Of The University Of Cambridge	  1
 Grammer Goodwill	  1
 Grave Gentleman Once A Member Of This House Of Commons	  1
@@ -414,7 +397,6 @@ Greg's Ghost	  1
 H***	  2
 H****** Samuel	  1
 Hackball	  2
-Halesiados	  1
 Hanoverian Whig	  1
 He That Prayeth/studieth The Peace Of The King/kingdome	  1
 Hearty Lover Of His Country	  1
@@ -425,66 +407,58 @@ Hearty Well wisher To The Prosperity Of Both	  1
 Her Crete Prophet Of Wales	  1
 Hertfordshire Farmer	  1
 Hertfordshire Freeholder	  1
-Hibernicus	  5
+Hibernicus	  4
 Hiberno britannus	  1
-Hieronymus	681
+Hieronymus	249
 Hieronymus Magomastix	  1
 High German Artist	  1
 Highflyer Timothy	  1
-Highlander	  1
 His Lordship's Chaplain	  1
-Honest Irishman	  1
 Honest Man	  2
 Honest Protestant Dissenters	  1
-Honoria	  4
+Honoria	  3
 Hudibras	  1
-Humanus	  3
+Humanus	  2
+Husbandman's Advocate	  1
 Hypodidascalus	  1
-Idle Man	  1
 Impartial	  1
 Impartial Citizen	  3
 Impartial Eye witness	  1
-Impartial Hand	 11
+Impartial Hand	  9
 Impartial Hand And A Hearty Well wisher To The Church Of England	  1
 Impartial Inquirer After Truth	  1
-Impartial Lover Of Truth	  2
+Impartial Lover Of Truth	  1
 Impartial Pen	  2
 Impartiall Hand	  1
-Incognito	  1
 Incognitus	  2
 Inconnu	  2
 Independent Free Agent And Citizen Of The World	  1
 Independent Freeman	  1
-Independent Man	  2
-Independent Whig	  1
+Independent Man	  1
 India	  1
-India Proprietor	  2
+India Proprietor	  1
 Ingenious Hand	  1
 Inhabitant	  1
 Inhabitant Of Birmingham	  1
-Inhabitant Of Edinburgh	  7
+Inhabitant Of Edinburgh	  6
 Inhabitant Of One Of Those Great Cities	  1
-Inhabitant Of Westminster	  1
 Inspector	  1
 Integer	  1
-Irish Gentleman	  3
-Irishman	  7
+Irish Gentleman	  2
+Irishman	  6
 Jesuit	  1
 Jews harp Nahum	  1
-John Chrysostom	114
+John Chrysostom	175
 John Of The Crosse	  1
 John the giant killer	  2
-Justice Of Middlesex	  1
-Justice Of The Peace Within The County Of York	  1
-Juvenis	  5
+Justice Of Middlesex	  2
+Juvenis	  4
 Katholicus Cheirotechnes	  1
 Kentishman	  1
-Lady At Dublin	  1
 Lady Many Years A Resident In Moscow	  1
 Lady Of Distinction	  2
-Lady Of Fashion	  3
-Lady Of Honour	  1
-Lady Of Quality	  6
+Lady Of Fashion	  2
+Lady Of Quality	  7
 Lady Of The State Of New york	  2
 Laelius	  1
 Land tax Commissioner	  1
@@ -493,13 +467,14 @@ Late Deputy comptroller Of The Customs At Sunderland	  1
 Late Member Of One Of Those Colleges	  1
 Late Member Of Parliament	  1
 Late Pious And Reverend Author	  1
+Late Under graduate	  1
 Lawyer	  1
 Lawyer In The Countrey	  1
 Lay hand	  1
 Lay man	  1
 Lay member Of The Church Of England	  2
-Layman	 31
-Layman Of Conscience And Common Sense	  4
+Layman	 35
+Layman Of Conscience And Common Sense	  5
 Layman Of Middling Rank	  1
 Layman Of The Doctor's Communion	  1
 Layman Of The Established Church	  1
@@ -509,26 +484,26 @@ Learned Author	  1
 Learned Divine	  2
 Learned Prelate	  1
 Learned Protestant Divine	  1
-Libertus	  8
+Libertus	  3
 Lieutenant Of A Man Of War	  1
 Lintcarius Londinensis	  1
 Livery man	  1
 Lobby member	  1
 London Apprentice Of The Church Of England	  1
 London Minister	  2
+Lord	  1
 Lord John	  4
 Lord Knows Who	  1
-Lover	  1
+Lover And Strenuous Supporter Of The Constitution	  1
 Lover Of Children	  1
 Lover Of Commerce	  1
 Lover Of His Countrey	  2
 Lover Of His Countrey And The Protestant Religion	  1
-Lover Of His Countrey And Well wisher To The Prosperity Both Of The King And Kingdoms	  2
-Lover Of His Country	 15
-Lover Of His Country And The Army	  1
+Lover Of His Countrey And Well wisher To The Prosperity Both Of The King And Kingdoms	  1
+Lover Of His Country	  8
+Lover Of His King And Countrey	  1
 Lover Of His King And Country	  2
 Lover Of Humanity And A Friend To Learning	  1
-Lover Of Peace	  2
 Lover Of Peace And Truth	  1
 Lover Of Peace And Unity	  1
 Lover Of Physick And Surgery	  1
@@ -538,196 +513,183 @@ Lover Of The King The Government	  2
 Lover Of The Present Establish'd Government In Church And State	  1
 Lover Of Their Precious Souls	 13
 Lover Of Tranquillity And Peace	  1
-Lover Of True English Liberty	  1
-Lover Of Truth	  8
-Lover Of Truth And Peace	  5
+Lover Of True Holiness And Real Christianity	  1
+Lover Of Truth	 11
+Lover Of Truth And Peace	  6
 Lover Of Truth Peace	  2
 Lover Of Virtue	  1
 Lovesense Lawrence	  1
 Loyal Muse	  1
 Loyal Protestant	  1
-Loyall Orthodox Hand	  1
 Loyall Subject Of His Majesties	  2
-Lucifer	 26
-M	375
+Lucifer	 10
+M	270
 M d Jn	  1
 M m A r	  1
-Maggot Butterfly	  3
-Magistrate	  1
+Maggot Butterfly	  1
 Man Of Fashion	  1
-Man Of Kent	  2
+Man Of Kent	  1
 Mar phoreus	  1
 Marsom	  4
-Member	  3
+Member	  2
 Member Of One Of The Universities	  1
 Member Of P	  1
-Member Of Parliament	 30
+Member Of Parliament	 23
 Member Of Parliament And Of His Majesty's Privy Council	  1
-Member Of Parliament In London	  1
 Member Of Parliament In Scotland	  1
-Member Of Parliament In Town	  1
-Member Of That Company	  1
 Member Of The Agricultural Society Of The State Of New york	  1
 Member Of The Amicable Society	  1
 Member Of The Athenian Society	  3
-Member Of The Church Of England	  8
+Member Of The Church Of England	 10
 Member Of The Church Of England But No Party Man	  1
+Member Of The Church Of Scotland	  1
 Member Of The Club	  1
 Member Of The Congregation Under The Pastoral Care Of Samuel Pomfret	  1
 Member Of The Constitution club	  1
-Member Of The Convention	  1
 Member Of The Diet At Ratisbon	  1
 Member Of The English College Of Secular Priests At Lisbon	  1
 Member Of The Established Church	  2
 Member Of The Establishment	  1
-Member Of The Highland Society In London	  1
-Member Of The House Of Commons	 20
+Member Of The House Of Commons	 15
 Member Of The House Of Commons Of Ireland	  1
 Member Of The Inner Temple	  1
-Member Of The Last Parliament	  1
-Member Of The Late Parliament	  6
+Member Of The Last Parliament	  3
+Member Of The Late Parliament	  4
 Member Of The Lower House Of Convocation	  2
 Member Of The Parliament Of Scotland	  1
 Member Of The Reverend Commission Of The General Assembly Of The Church Of Scotland	  1
 Member Of The Said Factory	  1
 Member Of The Same Church	  1
 Member Of The Senate	  1
-Member Of The Society	  1
 Member Of The Society For Promoting Christian Knowledge	  1
 Member Of The Society For The Propagation Of Christian Knowledge In London	  1
 Member Of The Society Of Antiquarians	  1
 Member Of The States general In Holland	  2
 Member Of The University	  2
 Member Of The University Of Cambridge	  1
+Menedemus	  1
 Mentor	  2
-Merchant	 15
-Merchant And Citizen Of London	  1
+Merchant	 10
 Merchant At Amsterdam	  1
 Merchant In Bristol	  1
-Merchant Of Bristol	  2
-Merchant Of Dublin	  2
-Merchant Of London	  7
+Merchant Of Dublin	  1
+Merchant Of London	  4
 Merchant Retir'd	  1
 Mercurialist	  1
 Mercurio mastix Hibernicus	  1
-Mercurius	 19
+Mercurius	 11
 Mercurius Elenticus	  1
 Messenger From The Scots Armie	  1
-Mid lothian Farmer	  1
-Midnight Mary	  1
-Mignonneau	 40
+Mignonneau	 15
 Milanese Gentleman	  1
 Military Officer	  1
-Minis	  3
+Minis	  1
 Minister	  3
 Minister Of A City Parish	  1
 Minister Of London	  1
-Minister Of The Church Of England	 12
+Minister Of The Church Of England	 15
 Minister Of The Church Of England And Of The Diocess Of Exon	  1
 Minister Of The Gospel	  3
+Minister Of The Moravian Branch Of The Unitas Fratrum	  1
 Ministre De L'eglise Anglicane	  1
 Miso spilus	  1
 Misodiaboles	  1
 Misomastropus	  1
 Misonebulonides Philoeusebias	  3
 Misopapa Anonymus	  1
-Misophenax	  1
+Misophenax	  2
 Misoplanes	  1
 Misopseudes	  1
-Misopseudes Eusebes	  2
+Misopseudes Eusebes	  1
 Misorcus	  1
 Misoxulos	  1
 Moderate Conformist	  2
 Moderator	  2
-Monitor	  2
+Monitor	  1
 Monsigny	  2
-Mother	  5
+Mother	  4
 Mother Greg	  2
 Mr De ***	  1
-My Friend A Physician	  1
 Myself	  1
 Native	  1
 Native Of Ireland And A Lover Of The British Empire	  2
-Native Of Shetland	  1
 Naval Officer	  2
-Navigator	  1
 Neighbour	  1
 Neither side	  1
 New Fashion'd Poet	  1
 Night bell man Of Pickadilly	  1
 No Bigot To Nor Against The Church Of England	  1
 No head Peter	  1
+No Methodist	  1
 No Person Of Quality	  3
 Noble man Of Polonia	  1
 Noble Souldier	  1
-Noble Venetian	  2
-Nobleman	  3
+Noble Venetian	  1
+Nobleman	  2
 Nobleman Of That University	  1
 Non juror	  1
 Non swearing Parson	  1
+Northamptonshire Freeholder	  1
 Northamptonshire Gentleman	  1
 Nottinghamshire Magistrate	  1
-Novus Homo	  4
+Novus Homo	  5
 Obscure Edinburgher	  1
 Obscure Individual	  2
 Observateur Impartial	  8
-Observer	  5
+Observator	  1
+Observer	  3
 Odia Deflemus	  1
 Officer At Hanover	  4
 Officer In His Highness's Army	  1
 Officer In Ireland	  1
 Officer In The Army	  2
 Officer In The Camp Before Limerick	  1
-Officer In The East India Service	  1
 Officer In The Navy	  1
 Officer In The Service Of The East India Company	  1
 Officer In The Town	  2
 Officer Just Arrived In The Borrowsdale Transport	  1
-Officer Of Rank In The Continental Army	  1
 Officer Of That Army	  1
 Officer Of The Army	  2
 Officer Of The Army In Flanders	  1
 Officer Of The British Forces	  1
 Officer Of The Grand Vizir	  3
+Officer Of The Naval Army Of France	  1
 Officer Of The Parliaments Army	  1
-Officer Of The Stamp duties	  2
-Officer On Board The Russian Fleet	  1
+Officer On Board The Russian Fleet	  2
 Officer Out Of Scotland	  1
 Officer That Was Present In Those Actions	  1
+Officer Who Served Several Years Abroad	  1
 Officer Who Was In The Engagement	  1
-Officier	  1
 Old Artist	  1
 Old Christian In The Country	  1
 Old Correspondent	  1
-Old Country Justice	  2
-Old Englishman	  2
+Old Country Justice	  1
+Old Englishman	  1
 Old Fashion Farmer	  1
 Old Grand jury man Of Oxford shire	  1
 Old Inhabitant	  1
 Old Inhabitant Of Paisley	  1
-Old Magistrate	  5
-Old Member Of Parliament	  2
+Old Magistrate	  4
+Old Member Of Parliament	  3
 Old Member Of The Company	  1
-Old Merchant	  5
+Old Merchant	  3
 Old Officer In The Army	  1
-Old Ploughman	  1
+Old Patriotic Quaker	  1
 Old Practitioner	  1
-Old Proprietor	  3
+Old Proprietor	  1
 Old Sportsman	  2
 Old Whig	  6
 One In The Service Of The Republique	  1
-One Lately Come From Thence	  1
 One Of Her Majesties Servants	  1
 One Of His Brethren In The Clergy	  1
 One Of His Electors	  1
-One Of His Majesty's Justices Of The Peace	  2
 One Of His Secretaries That Had Nothing Else To Do	  1
 One Of That Sex	  1
 One Of The Agitators In The Army	  1
 One Of The Barbarous Blockheads Of The Lowest Mob	  1
 One Of The Camp Chaplains	  1
-One Of The Loyal Inhabitants Of That Antient Burrough	  1
-One Of The People	  4
+One Of The New Sect Of The Moralists	  1
+One Of The People	  3
 One Of The Subscribing Ministers	  1
 One Of Themselves	  4
 One Of Your Best Friends	  1
@@ -745,40 +707,34 @@ One Who Is A Friend To English Liberty	  1
 One Who Is A Lover Of Christianity	  1
 One Who Is Neither A Knight Nor A Member Of The House Of Commons	  5
 One Who Lived In All Those Times	  1
+One Who Thinks With That Eminent Judge Sir Matthew Hale	  1
 One Who Will At Any Time Work A Job Of Journey work To Serve His Countrey	  1
-Orangeman	  1
-Origen	 72
-Origenes	334
-Orphan Annuitant	  1
+Origen	 64
+Origenes	132
 Orthodox Dissenter	  2
 Orthodox Seceder	  1
 Orthodoxus	  1
 Othello	  1
-Oxford Annuitant	  2
-Oxford Graduate	  1
-Oxfordshire Farmer	  1
+Oxford Annuitant	  1
 Oxonian	  1
 P	  1
-Palaeophilus Anglicanus	  3
-Palaephatus	152
-Parishioner	  2
+Palaeophilus Anglicanus	  1
+Palaephatus	 72
+Parishioner	  1
 Parochial Minister	  2
-Passionate Lover Of His Country	  2
-Patriophilus	  6
+Passionate Lover Of His Country	  1
+Patriophilus	  4
 Patriot	  3
 Peaceable minded Man And A True Lover Of His Country	  1
 Peaceable Sonne Of The Same Church	  1
 Pen Neer The Covent Of Eluthery	  2
 Pennsylvanian	  1
 Perfect Honourer Of Their Worth	  2
-Person In Business	  2
 Person In Command In The Fleet	  4
-Person Of Distinction	  3
-Person Of Distinction At The Hague	  2
-Person Of Honour	 17
-Person Of Honour In The County Of Norfolk	  1
-Person Of Honour Lately Deceased	  3
-Person Of Quality	 69
+Person Of Distinction At The Hague	  1
+Person Of Honour	 16
+Person Of Honour Lately Deceased	  2
+Person Of Quality	 67
 Person Of Quality Abroad	  1
 Person Of Quality And Of A Publick Spirit	  1
 Person Of Quality Concerned In This Embassy	  1
@@ -791,87 +747,74 @@ Person Under Confinement	  1
 Person Who Attended The Hearing	  1
 Person Who Has Belonged To The Publick Offices Upwards Of Twenty Years	  1
 Persons Present At The Time	  1
-Phil porney	  3
-Philadelphian	  1
+Ph	  1
+Phil porney	  2
 Philadelphiensis	  1
-Philadelphos	  4
-Philadelphus	 17
-Philadelphus Theophilus	  2
+Philadelphos	  2
+Philadelphus	 14
 Philadelphus Timotheus	  2
-Philagathos	  3
+Philagathos	  2
 Philagathus	  1
 Philalathes Salem	  1
-Philalethes	 78
+Philalethes	 63
 Philalethes Anonymos	  2
 Philalethes Britannicus	  1
-Philalethes Eirenaeus	 34
-Philalethes Eugenius	  3
+Philalethes Eirenaeus	 29
+Philalethes Eugenius	  2
 Philalethes Philerenes	  1
-Philalethes Theophilus	  6
+Philalethes Theophilus	  4
 Philanactodemus	  1
-Philanax Anonomous	  1
 Philanax Misopapas	 11
-Philander	 14
+Philander	  7
 Philander Joakim	  2
-Philander Misaurus	  4
+Philander Misaurus	  5
 Philanglus	  1
-Philanthropic Butcher	  5
-Philanthropist	  1
-Philanthropos	 13
-Philanthropus	  2
+Philanthropic Butcher	  3
+Philanthropos	  9
 Philaxias	  1
-Phileleutherus	  7
-Philemon	  7
-Phileroy E	  1
+Phileleutherus	  4
+Philemon	  2
 Phileutheros	  1
-Philibert	 11
+Philibert	  7
 Philintochus Dunholmensis	  1
 Philo Africanus	  1
-Philo balladus	  1
-Philo britannicus	  4
-Philo caledon	  1
-Philo castitatis	  2
-Philo dicæus	  1
+Philo britannicus	  2
+Philo caledon	  3
+Philo castitatis	  1
 Philo dicaios	  1
 Philo hibernicus	  1
 Philo ierne	  1
-Philo militum	  1
 Philo nauticus	  1
 Philo Nauticus	  1
-Philo Oves	  1
 Philo Patria	  1
-Philo patriae	  3
+Philo patriae	  2
 Philo patris	  1
+Philo pegasus	  1
 Philo sophos	  1
 Philo strategos	  2
-Philo Strategos	  2
+Philo Strategos	  1
 Philobritannus	  1
 Philocatholicus Theophilus	  1
-Philoclerus	  1
 Philocles	  2
 Philoctetes Eyreneus	  2
-Philodemus	  9
+Philodemus	  3
 Philodikaios Irenicus	  1
-Philogamus	  1
-Philolethes	  1
 Philologos	  1
 Philologus	  4
 Philologus Philomusus	  1
-Philomusus	 13
+Philomusus	  6
 Philonomos	  2
 Philopator	  1
-Philopatriae	  1
-Philopatrius	  1
+Philopatriae	  2
 Philophilus	  1
-Philopoeus Carolus	  2
-Philopolis	  3
+Philopolis	  2
 Philopoliteius	  1
 Philopolites	  2
-Philostratus	 49
-Philotheos	  1
+Philopolites P	  1
+Philostratus	 45
 Philotriados	  3
 Philovite	  5
-Physician	 12
+Physician	 10
 Physician In Hertfordshire	  2
 Physician In The Country	  1
 Physician In Town	  1
@@ -879,63 +822,61 @@ Physician Of Bristol	  3
 Plain Clerk Thomas	  1
 Plain Countryman	  1
 Plain Honest Countryman	  1
-Plain Man	 10
+Plain Man	  7
 Plain Politician	  1
-Plain truth Peter	  1
+Plain truth Peter	  2
 Plaine English man	  2
 Pluralist	  2
-Poor Labourer	  1
 Poor Man's Friend	  1
 Poor Patt	  1
 Poor Robin	  8
 Portius	  2
 Posthumus	  1
-Practiser Of Both The Old And New Husbandry	  2
+Practiser Of Both The Old And New Husbandry	  1
 Practitioner In The Law	  2
 Presbyter	  1
-Presbyter Of The Church Of England	 20
+Presbyter Of The Church Of England	 24
 Presbyter Of The Church Of Scotland	  1
 Presbyterian	  1
 Presbyterian Of Qualitie	  1
-Presbyterian Of The Kirk Of Scotland	  1
+Presbyterian Of The Kirk Of Scotland	  2
+Primitive Catholick	  1
 Private Christian	  2
-Private Citizen	  3
+Private Citizen	  4
 Private Gentleman	  1
 Private Hand	  2
+Private Member Of The Established Church Of Scotland	  1
 Private Volunteer	  1
 Pro pinchbeck	  2
-Procopius	198
+Procopius	 82
 Professeur De Langues	  1
 Prophet Alexander	  1
-Proprietor	  3
+Proprietor	  2
 Proprietor And Sufferer	  1
-Proprietor In The Company's Stock	  1
 Proprietor Of East India Stock	  1
-Proprietor Of The Said Company	  1
-Protestant	 20
+Protestant	 16
 Protestant And Friend To The Citizens Of Coventry	  1
 Protestant And True English man	  1
 Protestant Dissenter	  2
 Protestant Divine	  1
+Protestant Gentleman In Ireland	  1
 Protestant Of The Church Of England	  2
 Protestant Of The Church Of Ireland	  2
 Protestant That Is For Liberty Of Conscience To All Perswasions	  1
-Protoplastos	  1
-Prudent Le Choyselat	  9
+Prudent Le Choyselat	  5
 Prudentia	  1
-Prudentius	 27
+Prudentius	 36
 Prussian Officer	  1
 Pseudo lentulus	  1
 Pseudo phalaris	 12
-Publicola	 15
-Puritanomastix Antibrownistus	  1
-R***	  3
+Publicola	 12
+R***	  2
 Ragged Roving Rum Dog	  1
-Rambler	  1
 Rational Christian	  1
 Rationalis Theophilus	  3
-Real Friend Of The People	  2
-Real Friend To Religion And To Britain	  3
+Real Friend Of The People	  1
+Real Friend To Religion And To Britain	  1
+Real Friend To Truth And The Gospel	  1
 Real Member Of This Most Envy'd As	  3
 Reason	  1
 Relator	  1
@@ -948,16 +889,17 @@ Right Honourable Aristocrat	  1
 Right Honourable Member Of The Venerable Assembly Of The Church Of Scotland	  1
 Rr	  1
 Rusticans Oxoniensis	  1
-Rusticus	  8
+Rusticus	  6
 S ini M r	  1
-S le R	  2
+S le R	  1
 S t	  2
-S***	 13
-Sailor	  6
-Sanchoniathon	  6
+S***	  5
+Sailor	  3
+Sanchoniathon	  2
 Saylor	  1
 Scholar In The University	  1
 Scholler Of Oxford	  1
+Schoolmaster	  1
 Scoto britannus	  1
 Scots Gentleman	  1
 Scots Gentleman In The Swedish Service	  2
@@ -966,31 +908,32 @@ Scriblerus Maximus	  1
 Scriptor Veritatis	  1
 Scruplous	  1
 Scrutator	  1
-Searcher After Truth	  2
-Servant	  3
+Searcher After Truth	  1
 Servant Of His Late Highness	  1
 Servant Of The Common Wealth Of England And A Lover Of The Armie	  1
+Servant Of The Company	  1
 Servitour Of The University Of Oxford	  1
-Shopkeeper	  2
+Several Well wishers To Our Settlement	  1
+Shopkeeper	  1
+Sincere Advocate For The Doctrine Of Christ	  1
 Sincere Lover Of His Country	  1
 Sincere Lover Of The Protestant Religion	  1
 Sincere Protestant And True Friend To His Countrey	  1
+Sincere Seeker	  1
 Sincere Well wisher Of The Protestant Interest And Clergy Of This Kingdom	  1
-Sincere Well wisher To The Honour And Interest Of His Country	  1
-Sincere Well wisher To The Old Protestant Religion	  1
+Sincere Well wisher To The Old Protestant Religion	  2
 Sincere Wellwisher To Our Happy Constitution In Church And State	  1
-Sincerus	 37
+Sincerus	 18
 Smackum Whackum	  1
 Some Oxford Electors	  1
 Son Of Liberty	  1
-Sophronius	  9
+Son Of The True Church	  1
+Sophronius	  1
 Speciall Hand	  1
-Spectator	  4
+Spectator	  3
 Stander by	  2
 Steady Patriot	  1
-Steady Proprietor	  1
-Stmitrk	  1
-Student	  3
+Student	  2
 Student In Aberdeen	  1
 Student In Oxford	  1
 Student Of Oxford	  2
@@ -1000,45 +943,39 @@ Student Of The Laws Of England And A Hearty Lover Of His Country	  1
 Subscriber To The York Lunatic Asylum	  1
 Suffolk Gentleman	  1
 Surly	  1
-Sussex Farmer	  2
+Sussex Farmer	  1
 Syllogism Sampson	  1
 T r R t	  1
-Telescope Tom	 11
+Telescope Tom	 12
 Tell troth Thomas	  2
 Tell troth Tim	  1
 Tell troth Tom	  2
 Tell truth Robert	  2
-Telltruth Stentor	  2
 Telltruth T	  1
-Telltruth Timothy	  2
+Telltruth Timothy	  1
 Terrae filius	  1
-Teutscher	  1
-Theocritus	469
-Theodoret	 60
-Theodulus	 45
-Theognis	225
-Theophilus	167
-Theophrastus	529
-Theosebes	  1
+Terrafilius	  1
+Theocritus	219
+Theodoret	 59
+Theodulus	 16
+Theognis	111
+Theophilus	 76
+Theophrastus	253
 Thermopilae	  1
-Thrasher William	  6
-Thumb	  3
+Thrasher William	  5
 Thumb Thomas	  2
 Thumb Tom	  6
-Tory	  1
-Tory Freeholder	  2
+Tory Freeholder	  1
 Tory Stephen	  1
 Tory Timothy	  1
-Town	  9
 Trader In Fish	  1
-Tradesman	  2
-Tradesman Of The City	  2
+Tradesman	  1
+Tradesman Of The City	  1
 Transformed Church warden	  2
-Traveller	  3
+Traveller	  2
 Traveller Of Distinction	  1
 Traveller Through Holland	  1
-True	  2
-True born Englishman	  2
+True born Englishman	  1
 True Briton	  4
 True Friend And Lover Of Those Powers And Magistrates That Be Of God	  1
 True hearted Well wisher To Great Brittanes Happinesse	  1
@@ -1049,19 +986,21 @@ True Lover Of His Nation And Especially Of The Said City	  1
 True Lover Of Our Happy Constitution Both In Church And State	  1
 True Lover Of The Church The King	  2
 True Lover Of The Constitution	  1
-True Lover Of The People	  6
+True Lover Of The People	  5
 True Lover Of The Protestant Religion And English Loyalty	  2
 True Lover Of The Queen And Country	  5
-True Member Of The Church Of England	  2
-True Patriot	  4
+True Loyall Subject And Lover Of The Parliament	  1
+True Member Of The Church Of England	  1
+True Patriot	  3
 True Penitent	  1
 True Protestant A Loyall Subject	  1
 True Protestant And English Man	  1
-True Protestant English Gentleman	  2
+True Protestant English Gentleman	  1
 True Protestant Of The Church Of England	  1
 True Scotchman And Lover Of His Country	  1
 True Son Of The Church	  1
-True Son Of The Church Of England	  5
+True Son Of The Church Of England	  6
+True Son Of The Protestant Church Of England	  1
 True Whig	  3
 Truelove	  3
 Truelove Francis	  1
@@ -1069,29 +1008,27 @@ Truly Loyal Subject	  1
 Truth	  3
 Tyro Of His Own School	  1
 Unbeneficed Clergyman Of The Church Of England	  1
-Under drawer At The 's head tavern In Gate street	  1
 Undergraduate	  2
 Unitarian Christian	  3
 Universal Friend	  1
 University Of Oxford	  1
 Unprejudiced Observer	  1
 Unprejudiced Traveller	  2
-Untainted Englishman	  1
 Untaxed Attorney	  1
 Unthank Isaac	  1
 Unthank John	  1
 Unworthy Servant And Subject Of Jesus Christ	  1
 V n W O	  1
 Venice	  2
-Verax	  7
+Verax	  4
 Verax Ebenezer	  3
-Verax Philanax	  5
-Veridicus	  5
-Veritas	 13
+Verax Philanax	  4
+Veridicus	  2
+Veritas	  8
 Veteran	  1
 Victor Verity	  2
-Vindex	  8
-Volunteer	  3
+Vindex	  7
+Volunteer	  2
 Volunteer In The British Service	  1
 Volunteer In The Expedition To The Coast Of France	  1
 Volunteer In The Said Expedition	  2
@@ -1100,18 +1037,17 @@ Wappineer	  2
 Wel wisher Of Peace And Truth	  1
 Wel wisher To Religion And Proprietie	  2
 Well meaning Briton	  1
-Well minded Petitioner For Peace And Truth	  3
+Well minded Petitioner For Peace And Truth	  4
 Well willer To The Publique Weale	  1
 Well wisher Of His Countrey	  1
-Well wisher Of His Country	  1
 Well Wisher Of The Common wealth	  2
 Well wisher Of The Established Church	  1
 Well wisher Of The Mathematicks	  2
 Well wisher Of Truth And Peace	  1
-Well wisher To England's Prosperity	  3
-Well wisher To Great britain	  1
+Well wisher To England's Prosperity	  2
+Well wisher To Her Sex	  1
 Well wisher To His Countrey	  1
-Well wisher To His Country	  4
+Well wisher To His Country	  2
 Well wisher To His King And Countrey	  1
 Well wisher To That Trade And The True English Interest	  1
 Well wisher To The Common wealth	  2
@@ -1121,30 +1057,28 @@ Well wisher To The Peace Of This Our Sion	  1
 Well wisher To The Publick Interest Of The Nation	  5
 Well wisher To The Royal Navy Of England	  1
 Well wisher To The True Security Of Both Christian And Civil Liberty	  1
-Well wisher To This Country	  1
-Well wisher To Trade And The Publick Good	  3
-Wellwisher To The Trade And Navigation Of Great britain	  2
+Well wisher To Trade And The Publick Good	  2
+Wellwisher To The Trade And Navigation Of Great britain	  1
 Welwisher To His Majesty	  1
 West country Clothier	  1
-West country Maltster	  1
-West india Merchant	  1
-West India Planter	  3
+West India Planter	  1
+Westminster Elector	  1
 Westminster Scholar	  2
 Whig Gentleman In The Country	  3
-Willon	  1
 Working Silver smith	  1
 Worthy Gentleman	  3
 Worthy Gentleman In Sir Thomas Fairfax His Army	  2
 Worthy Member Of Parliament	  1
-Yeoman Of Kent	  1
+Worthy Member Of The House Of Commons	  1
+Worthy Representative Of London	  1
 Young English Maid	  1
 Young Gentleman	  4
-Young Lady	 13
+Young Lady	 12
 Young Lady Of Quality	  1
 Young Nobleman	  1
 Young Oxford scholar	  1
 Younkercrape Toryrorydammeeplotshammee	  1
-Youth	  2
+Youth	  1
 Youth Of His Parish	  1
-Z h A r	  2
+Z h A r	  1
 Zealous Lover Of The Protestant Religion And A Hearty Friend To The City Of London	  1

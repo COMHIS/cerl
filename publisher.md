@@ -1,16 +1,18 @@
 ---
 title: "Publisher preprocessing summary"
 author: "Leo Lahti"
-date: "2016-10-22"
+date: "2018-06-20"
 output: markdown_document
 ---
 
 
 ### Publishers
 
- * 48634 [unique publishers](output.tables/publisher_accepted.csv)
+ * 792622 [unique publishers](output.tables/publisher_accepted.csv)
 
- * 75445 documents have unambiguous publisher information (84%). 
+ * 2260169 documents have unambiguous publisher information (84.3%). This includes documents identified as self-published; the author name is used as the publisher in those cases (if known).
+
+ * 177 documents are identified as self-published (0%). 
 
  * [Discarded publisher entries](output.tables/publisher_discarded.csv)
 
@@ -25,7 +27,7 @@ The 20 most common publishers are shown with the number of documents.
 
 Title count
 
-![plot of chunk summaryTop10pubtimeline](figure/summaryTop10pubtimeline-1.png)
+
 
 
 
@@ -33,17 +35,36 @@ Title count versus paper consumption (top publishers):
 
 ![plot of chunk publishertitlespapers](figure/publishertitlespapers-1.png)
 
-|publisher                   | titles| paper|
-|:---------------------------|------:|-----:|
-|imp. de P.-J. Mariette      |    261|     0|
-|imp. royale                 |    315|     0|
-|Imp. royale                 |    748|     0|
-|impr. de H. Guerin          |    167|     0|
-|impr. de L. Delatour        |    216|     0|
-|Impr. roy                   |    486|     0|
-|impr. royale                |    249|     0|
-|Impr. royale                |    159|     0|
-|P. Prault                   |    542|     0|
-|Vve Saugrain et : P. Prault |    238|     0|
+|publisher         | titles|     paper|
+|:-----------------|------:|---------:|
+|]                 |  13420|  60966820|
+|Dieterich         |   2458|  10664111|
+|Kilius            |   2414|  16800807|
+|kungl.tryckeriet) |   2396|   3327198|
+|Lucius            |   3840|  25986818|
+|Meyer             |   3244|  26593852|
+|Müller            |   5233|  44692203|
+|Mullerus          |   3349|  28785286|
+|s. n              |   8374|   9301364|
+|s.n               |  35383| 137469896|
+
+
+### Corporates
+
+Summaries of the corporate field.
+
+ * 0 [unique corporates](output.tables/corporate_accepted.csv)
+
+ * 0 documents have unambiguous corporate information (NaN%). 
+
+ * [Discarded corporate entries](output.tables/corporate_discarded.csv)
+
+ * [Conversions from original to final names](output.tables/corporate_conversion_nontrivial.csv) (only non-trivial conversions shown)
+
+
+The 20 most common corporates are shown with the number of documents. 
+
+![plot of chunk summarycorporate2](figure/summarycorporate2-1.png)
+
 
 

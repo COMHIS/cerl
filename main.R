@@ -1,43 +1,43 @@
-library(devtools)
-load_all("~/Rpackages/bibliographica")
-
-# I/O definitions
-output.folder <- "output.tables/"
-
-fs <- list.files("data/cerl", full.names = TRUE, pattern = ".csv")
-catalog <- "cerl"
-
-# Languages to consider in cleanup.
-# TODO: recognize the necessary languages automatically ?
-languages <- c("english")
-
-# Cores
-mc.cores <- 1 # Some problems occur with multiple cores
-
-# FIXME: does not work if this is on
-# update.fields <- "publication_place"
-update.fields <- NULL
-
-# Remove selected fields (almost empty and hence rather uninformative)
-ignore.fields <- c("publication_frequency", "publication_interval") # CERL
+# TODO: move the script in the Gitlab repos so all in one place..
+source("init.R")
 
 # ----------------------------------------------------
 #            LOAD DATA FOR PREPROCESSING
 # ----------------------------------------------------
 
-# Initialize and read raw data
 reload.data <- FALSE
+if (!"df.raw.Rds" %in% dir("data/unified/polished")) {
+  reload.data <- TRUE
+}
 source(system.file("extdata/init.R", package = "bibliographica"))
 df.orig <- load_initial_datafile(fs, ignore.fields, reload.data)
 
 # Selected subsets of the raw data
 check <- "filtering"
-# source("filtering.R") 
-# df.orig <- df.orig[1:1e5, ]
+source("filtering.R") 
+#df.orig <- df.orig[1:1e5, ]
 
 data.preprocessing <- get_preprocessing_data(df.orig, 
                                              update.fields,
                                              ignore.fields)
+
+# ----------------------------------------------------------------
+
+preprocessed <- list()
+
+# PREPROCESS GEODATA
+source("preprocess_publication_place.R")
+
+# Ideally, we would then rewrite the updates into the
+# final data file. Have to think what's the best way..
+# Update preprocessed data in the datafile
+# FIXME: this step could be sped up with the
+# rio/feather/data.table packages/tools
+# update.mode <- "overwrite"
+# f <- update_preprocessed_data_file(datafile, df.preprocessed, mode = update.mode)
+
+# Remove these fields from further processing
+data.preprocessing$update.fields <- setdiff(data.preprocessing$update.fields, c("publication_place"))
 
 # ----------------------------------------------------
 #           PREPROCESS DATA
@@ -48,32 +48,33 @@ check <- "preprocess1"
 source(system.file("extdata/preprocessing.R", package = "bibliographica"))
 data.preprocessed <- preprocess_data(data.preprocessing, 
                                      df.orig,
-                                     languages, 
-                                     mc.cores = mc.cores)
-# rm(data.preprocessing)
-# df.preprocessed <- readRDS("df0.Rds")
+                                     languages)
+rm(data.preprocessing)
 
 # ----------------------------------------------------
 #           VALIDATE PREPROCESSED DATA
 # ----------------------------------------------------
 
-source(system.file("extdata/validation.R", package = "bibliographica"))
+check <- "validate"
+library(bibliographica)
+# data.preprocessed <- readRDS("data/unified/polished/df0.Rds")
 data.validated <- validate_preprocessed_data(data.preprocessed)
-# rm(data.preprocessed)
+rm(data.preprocessed)
 
 # -----------------------------------------------------
 #           ENRICH VALIDATED DATA
 # ----------------------------------------------------
 
 check <- "enrich"
-source(system.file("extdata/enrich.R", package = "bibliographica"))
+# source("init.R")
 data.enriched <- enrich_preprocessed_data(data.validated, df.orig)
 rm(data.validated)
 
 # Validate enriched data one more time
+check <- "validate2"
 data.validated2 <- validate_preprocessed_data(data.enriched)
-
 df.preprocessed <- data.validated2$df.preprocessed
+rm(data.validated2)
 
 # ----------------------------------------------------
 
@@ -95,11 +96,16 @@ write.table(dim.estimates, sep = ",", row.names = F, file = paste(output.folder,
 
 # -------------------------------------------------
 
+# Combine separately processed fields
+df.preprocessed <- merge(df.preprocessed, preprocessed$publication_place, by = "original_row")
+
+# --------------------------------------------------
+
 check <- "save"
 print("Saving preprocessed data")
 gc()
-saveRDS(df.preprocessed, file = "df.Rds", compress = TRUE)
-# df.preprocessed <- readRDS("df.Rds")
+saveRDS(df.preprocessed, file = datafile, compress = TRUE)
+rm(df.preprocessed)
 
 # --------------------------------------------------
 
