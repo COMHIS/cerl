@@ -61,6 +61,13 @@ for (sel.gatherings in top.gatherings) {
 
 ### Examples
 
+
+In the original preprocessed data, width information is available for `r round(100 * mean(!is.na(df.preprocessed$width.original)), 1)`% (N=`r sum(!is.na(df.preprocessed$width.original))`) documents.
+
+In the original preprocessed data, height information is available for `r round(100 * mean(!is.na(df.preprocessed$height.original)), 1)`% (N=`r sum(!is.na(df.preprocessed$height.original))`) documents.
+
+
+
 ```{r quarto, echo=FALSE, message=FALSE, warning=FALSE, fig.width=8, fig.height=5, out.width="50%"}
 # Select specific gatherings
 sel.gatherings <- "4to"
