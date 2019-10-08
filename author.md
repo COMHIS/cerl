@@ -1,16 +1,16 @@
 ---
 title: "Author preprocessing summary"
 author: "Leo Lahti"
-date: "2018-06-20"
+date: "2019-10-08"
 output: markdown_document
 ---
 
 ## Authors
 
- * 369109 [unique authors](output.tables/author_accepted.csv) These final names capture all name variants from the custom [author synonyme table](https://github.com/COMHIS/bibliographica/blob/master/inst/extdata/ambiguous-authors.csv), and exclude known pseudonymes (see below). If multiple names for the same author are still observed on this list, they should be added on the [author synonyme table](https://github.com/COMHIS/bibliographica/blob/master/inst/extdata/ambiguous-authors.csv).
- * 2011002 documents have unambiguous author information (75%). 
- * 1082 [unique pseudonymes](output.tables/pseudonyme_accepted.csv) are recognized based on [custom pseudonyme lists](https://github.com/COMHIS/bibliographica/blob/master/inst/extdata/names/pseudonymes/custom_pseudonymes.csv).
- * 484 [discarded author names](output.tables/author_discarded.csv) This list should not include any real authors (if it does, please send a note to the admin). The stopword lists are considered when discarding names.
+ * 583071 [unique authors](output.tables/author_accepted.csv) These final names capture all name variants from the custom [author synonyme table](https://github.com/COMHIS/bibliographica/blob/master/inst/extdata/ambiguous-authors.csv), and exclude known pseudonymes (see below). If multiple names for the same author are still observed on this list, they should be added on the [author synonyme table](https://github.com/COMHIS/bibliographica/blob/master/inst/extdata/ambiguous-authors.csv).
+ * 3841478 documents have unambiguous author information (71%). 
+ * 1148 [unique pseudonymes](output.tables/pseudonyme_accepted.csv) are recognized based on [custom pseudonyme lists](https://github.com/COMHIS/bibliographica/blob/master/inst/extdata/names/pseudonymes/custom_pseudonymes.csv).
+ * 721 [discarded author names](output.tables/author_discarded.csv) This list should not include any real authors (if it does, please send a note to the admin). The stopword lists are considered when discarding names.
  * [Author name conversions](output.tables/author_conversion_nontrivial.csv) Non-trivial conversions from the original raw data to final names.
 
 
@@ -32,9 +32,9 @@ Authors with ambiguous living year information - can we spot here
 cases where these are clearly known identical or distinct authors?
 Should also add living year information from supporting sources later.
 
-252693 [authors with missing life years](output.tables/authors_missing_lifeyears.csv) (Life year info can be augmented [here](https://github.com/COMHIS/bibliographica/blob/master/inst/extdata/author_info.csv))
+448127 [authors with missing life years](output.tables/authors_missing_lifeyears.csv) (Life year info can be augmented [here](https://github.com/COMHIS/bibliographica/blob/master/inst/extdata/author_info.csv))
 
-3.1026 &times; 10<sup>4</sup> [authors with ambiguous life years](output.tables/author_life_ambiguous.csv) Some of these might be synonymous and could be added to [author synonyme list](https://github.com/COMHIS/bibliographica/blob/master/inst/extdata/ambiguous-authors.csv) (the first term will be selected for the final data)
+3.9728 &times; 10<sup>4</sup> [authors with ambiguous life years](output.tables/author_life_ambiguous.csv) Some of these might be synonymous and could be added to [author synonyme list](https://github.com/COMHIS/bibliographica/blob/master/inst/extdata/ambiguous-authors.csv) (the first term will be selected for the final data)
 
 
 ### Life span of uniquely identified top authors
@@ -46,7 +46,7 @@ Ordered by productivity (number of documents))
 
 ### Author age
 
-935252 documents (35%) have author age at the publication year. These have been calculated for documents where the publication year and author life years (birth and death) are available, and the document has been printed during the author's life time.
+1704965 documents (32%) have author age at the publication year. These have been calculated for documents where the publication year and author life years (birth and death) are available, and the document has been printed during the author's life time.
 
 
 ![plot of chunk author_age](figure_slides/author_age-1.png)
@@ -60,11 +60,6 @@ Title count versus paper consumption (all authors):
 
 ![plot of chunk authortitlespapers](figure_slides/authortitlespapers-1.png)
 
-
-
-```
-## Warning: Removed 3 rows containing missing values (position_stack).
-```
 
 ![plot of chunk summaryTop10authorstimeline](figure_slides/summaryTop10authorstimeline-1.png)
 

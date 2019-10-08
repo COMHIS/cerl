@@ -12,6 +12,8 @@ library(gridExtra)
 library(knitr)
 library(devtools)
 
+load_all("~/Rpackages/estc")
+
 # I/O definitions
 output.folder <- "output.tables/"
 # Create the output directory if not yet exists
@@ -27,7 +29,7 @@ author <- "Leo Lahti"
 ntop <- 20
 
 # Set global parameters
-# timespan <- c(1460, 1830)
+timespan <- c(1460, 1830)
 
 # Languages to consider in cleanup.
 # TODO: recognize the necessary languages automatically ?
